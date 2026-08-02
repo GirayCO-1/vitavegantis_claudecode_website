@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --color-forest: #0b4a28;
+  --color-sage: #8b9a6f;
+  --color-cream: #f7f3ea;
+  --color-sun: #f2b705;
+  --color-coral: #ff6b4a;
+  --color-plum: #6b2d5c;
+  --color-mint: #bfe6d2;
+
+  --background: var(--color-cream);
+  --foreground: var(--color-forest);
+}
+
+@theme inline {
+  --color-forest: var(--color-forest);
+  --color-sage: var(--color-sage);
+  --color-cream: var(--color-cream);
+  --color-sun: var(--color-sun);
+  --color-coral: var(--color-coral);
+  --color-plum: var(--color-plum);
+  --color-mint: var(--color-mint);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+  --font-accent: var(--font-caveat);
+  --font-playful: var(--font-baloo);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0e2116;
+    --foreground: #f7f3ea;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+.font-playful {
+  font-family: var(--font-playful);
+}
+
+::selection {
+  background: var(--color-sun);
+  color: var(--color-forest);
+}
+
+@keyframes steam-rise {
+  0% {
+    transform: translateY(0) scaleY(0.8);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-28px) scaleY(1.2);
+    opacity: 0;
+  }
+}
+
+.steam-wisp {
+  animation: steam-rise 2.4s ease-in-out infinite;
+}
+
+@keyframes basket-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.basket-float {
+  animation: basket-float 5s ease-in-out infinite;
+}
