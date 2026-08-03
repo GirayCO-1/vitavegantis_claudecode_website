@@ -62,14 +62,12 @@ export default async function ProductPage({
             <p className="mt-6 leading-relaxed text-forest/80">
               {product.description}
             </p>
-            <a
-              href="https://vitavegantis.com/satisnoktalari/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/satisnoktalari"
               className="mt-8 inline-block rounded-full bg-forest px-8 py-3 text-sm font-semibold text-cream transition-transform hover:scale-105 hover:bg-coral"
             >
               Satın Al
-            </a>
+            </Link>
           </div>
         </div>
       </section>

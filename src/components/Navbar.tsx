@@ -48,14 +48,12 @@ export default function Navbar() {
           })}
         </ul>
 
-        <a
-          href="https://vitavegantis.com/satisnoktalari/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/satisnoktalari"
           className="hidden rounded-full bg-forest px-5 py-2 text-sm font-medium text-cream transition-colors hover:bg-coral md:inline-block"
         >
           Satış Noktaları
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -91,14 +89,13 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <a
-                href="https://vitavegantis.com/satisnoktalari/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/satisnoktalari"
                 className="mt-2 inline-block rounded-full bg-forest px-5 py-2 text-sm font-medium text-cream"
+                onClick={() => setOpen(false)}
               >
                 Satış Noktaları
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

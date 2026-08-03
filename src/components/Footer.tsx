@@ -31,14 +31,9 @@ export default function Footer() {
               <li><Link href="/blog" className="hover:text-sun">Blog</Link></li>
               <li><Link href="/iletisim" className="hover:text-sun">İletişim</Link></li>
               <li>
-                <a
-                  href="https://vitavegantis.com/satisnoktalari/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-sun"
-                >
+                <Link href="/satisnoktalari" className="hover:text-sun">
                   Satış Noktaları
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
