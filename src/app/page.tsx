@@ -4,12 +4,36 @@ import { products } from "@/lib/products";
 // Önceki hero (tencere/sepet animasyonu) geri alınmak istenirse:
 // import ScrollHero from "@/components/hero/ScrollHero"; ve aşağıda <StoryHero /> yerine <ScrollHero /> kullanın.
 import StoryHero from "@/components/story/StoryHero";
+import LifestyleStrip from "@/components/story/LifestyleStrip";
+import BlobNav from "@/components/story/BlobNav";
 
 export default function Home() {
   return (
     <>
+      {/* Giriş videosu → scroll ile ilerleyen video → "Kimiz" anlatısı */}
       <StoryHero />
 
+      {/* Sokakta / evde / restoranda yaşam sahneleri */}
+      <LifestyleStrip />
+
+      {/* Vizyon & Misyon · Tarifler · Neden bitki bazlı */}
+      <BlobNav />
+
+      {/* Hikayeden ürünlere geçiş */}
+      <section className="bg-cream px-6 py-20 text-center">
+        <p className="font-accent text-2xl text-plum">Hikayemiz burada başlıyor</p>
+        <h2 className="font-display mx-auto mt-2 max-w-2xl text-3xl font-semibold text-forest sm:text-4xl">
+          Şimdi sofranıza ne getirdiğimize bakalım
+        </h2>
+        <a
+          href="#urunler-vitrini"
+          className="mt-8 inline-block rounded-full bg-forest px-8 py-3 text-sm font-semibold text-cream transition-transform hover:scale-105 hover:bg-coral"
+        >
+          Ürünlerimizi Keşfet ↓
+        </a>
+      </section>
+
+      {/* Ürün vitrini */}
       <section id="urunler-vitrini" className="bg-sage/10 px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
