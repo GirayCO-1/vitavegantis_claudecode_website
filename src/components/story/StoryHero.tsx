@@ -17,9 +17,16 @@ const scenes = [
   },
 ] as const;
 
+// Scroll ile ilerleyen sahne, videodan çıkarılmış kare dizisi olarak oynatılır.
+// MP4'te her seek yeniden çözümleme gerektirdiği için hızlı kaydırmada takılıyordu;
+// önceden yüklenmiş kareleri canvas'a çizmek akıcı sonuç veriyor.
+const FRAME_COUNT = 121;
+const framePath = (i: number) =>
+  `/frames/f${String(i + 1).padStart(3, "0")}.webp`;
+
 export default function StoryHero() {
   const rootRef = useRef<HTMLDivElement>(null);
-  const scrubVideoRef = useRef<HTMLVideoElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const lenis = new Lenis({ autoRaf: false });
@@ -30,6 +37,7 @@ export default function StoryHero() {
     gsap.ticker.lagSmoothing(0);
 
     const splitInstances: SplitText[] = [];
+    const cleanupFns: Array<() => void> = [];
 
     const ctx = gsap.context(() => {
       // --- Giriş sahnesi: video üzerinde wordmark reveal ---
@@ -61,53 +69,73 @@ export default function StoryHero() {
         },
       });
 
-      // --- Scroll ile ilerleyen video ---
-      const video = scrubVideoRef.current;
-      if (video) {
-        const setupScrub = () => {
-          const duration = video.duration;
-          if (!duration || Number.isNaN(duration)) return;
+      // --- Scroll ile ilerleyen kare dizisi ---
+      const canvas = canvasRef.current;
+      if (canvas) {
+        const context = canvas.getContext("2d");
+        const images: HTMLImageElement[] = [];
+        const state = { frame: 0 };
 
-          video.pause();
-          video.currentTime = 0;
+        const draw = () => {
+          const img = images[Math.round(state.frame)];
+          if (!context || !img || !img.complete || !img.naturalWidth) return;
 
-          gsap.to(video, {
-            currentTime: duration,
+          const cw = canvas.width;
+          const ch = canvas.height;
+          const scale = Math.max(cw / img.naturalWidth, ch / img.naturalHeight);
+          const w = img.naturalWidth * scale;
+          const h = img.naturalHeight * scale;
+          context.drawImage(img, (cw - w) / 2, (ch - h) / 2, w, h);
+        };
+
+        const resize = () => {
+          const dpr = Math.min(window.devicePixelRatio || 1, 2);
+          canvas.width = Math.floor(window.innerWidth * dpr);
+          canvas.height = Math.floor(window.innerHeight * dpr);
+          draw();
+        };
+
+        resize();
+        window.addEventListener("resize", resize);
+
+        for (let i = 0; i < FRAME_COUNT; i++) {
+          const img = new Image();
+          img.src = framePath(i);
+          if (i === 0) img.onload = draw;
+          images.push(img);
+        }
+
+        gsap.to(state, {
+          frame: FRAME_COUNT - 1,
+          ease: "none",
+          onUpdate: draw,
+          scrollTrigger: {
+            trigger: ".story-scrub",
+            start: "top top",
+            end: "+=220%",
+            scrub: 0.3,
+            pin: true,
+            pinSpacing: true,
+          },
+        });
+
+        gsap.fromTo(
+          ".story-scrub-caption",
+          { opacity: 0, y: 20 },
+          {
+            opacity: 1,
+            y: 0,
             ease: "none",
             scrollTrigger: {
               trigger: ".story-scrub",
               start: "top top",
-              end: "+=220%",
-              scrub: 0.35,
-              pin: true,
-              pinSpacing: true,
+              end: "+=60%",
+              scrub: true,
             },
-          });
+          },
+        );
 
-          gsap.fromTo(
-            ".story-scrub-caption",
-            { opacity: 0, y: 20 },
-            {
-              opacity: 1,
-              y: 0,
-              ease: "none",
-              scrollTrigger: {
-                trigger: ".story-scrub",
-                start: "top top",
-                end: "+=60%",
-                scrub: true,
-              },
-            },
-          );
-
-          ScrollTrigger.refresh();
-        };
-
-        if (video.readyState >= 1) {
-          setupScrub();
-        } else {
-          video.addEventListener("loadedmetadata", setupScrub, { once: true });
-        }
+        cleanupFns.push(() => window.removeEventListener("resize", resize));
       }
 
       // --- Anlatı sahneleri ---
@@ -153,6 +181,7 @@ export default function StoryHero() {
     return () => {
       ctx.revert();
       splitInstances.forEach((s) => s.revert());
+      cleanupFns.forEach((fn) => fn());
       gsap.ticker.remove(raf);
       lenis.destroy();
     };
@@ -192,13 +221,11 @@ export default function StoryHero() {
 
       {/* 2) Scroll ile ilerleyen video */}
       <section className="story-scrub relative h-screen overflow-hidden bg-[#0e2116]">
-        <video
-          ref={scrubVideoRef}
-          className="absolute inset-0 h-full w-full object-cover"
-          src="/video/scrub-raw.mp4"
-          muted
-          playsInline
-          preload="auto"
+        <canvas
+          ref={canvasRef}
+          aria-label="Suya düşen taze sebzeler"
+          role="img"
+          className="absolute inset-0 h-full w-full"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0e2116]/50 via-transparent to-[#0e2116]/70" />
 
