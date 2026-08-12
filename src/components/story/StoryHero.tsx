@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
@@ -99,7 +100,8 @@ export default function StoryHero() {
         window.addEventListener("resize", resize);
 
         for (let i = 0; i < FRAME_COUNT; i++) {
-          const img = new Image();
+          // next/image'ın Image adını gölgelememesi için window.Image
+          const img = new window.Image();
           img.src = framePath(i);
           if (i === 0) img.onload = draw;
           images.push(img);
@@ -245,15 +247,28 @@ export default function StoryHero() {
           key={scene.heading}
           className="story-scene relative flex h-screen flex-col items-center justify-center overflow-hidden bg-cream px-6 text-center"
         >
-          <p className="story-scene-fade font-accent text-2xl text-plum">
-            {scene.kicker}
-          </p>
-          <h2 className="story-scene-heading font-display mt-3 max-w-3xl text-4xl font-semibold text-forest sm:text-5xl md:text-6xl">
-            {scene.heading}
-          </h2>
-          <p className="story-scene-fade mt-6 max-w-xl text-base leading-relaxed text-forest/75 sm:text-lg">
-            {scene.body}
-          </p>
+          <Image
+            src="/lifestyle/kimiz-bg.webp"
+            alt=""
+            fill
+            sizes="100vw"
+            priority
+            className="object-cover"
+          />
+          {/* Metnin okunabilirliği için hafif açık perde */}
+          <div className="absolute inset-0 bg-cream/45" />
+
+          <div className="relative flex flex-col items-center">
+            <p className="story-scene-fade font-accent text-2xl text-coral">
+              {scene.kicker}
+            </p>
+            <h2 className="story-scene-heading font-display mt-3 max-w-3xl text-4xl font-semibold text-forest sm:text-5xl md:text-6xl">
+              {scene.heading}
+            </h2>
+            <p className="story-scene-fade mt-6 max-w-xl text-base leading-relaxed text-forest/80 sm:text-lg">
+              {scene.body}
+            </p>
+          </div>
         </section>
       ))}
     </div>
