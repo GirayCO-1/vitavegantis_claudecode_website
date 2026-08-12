@@ -234,7 +234,7 @@ export default function StoryHero() {
             Saf ve katkısız
           </p>
           <h2 className="font-display mx-auto mt-2 max-w-2xl text-3xl font-medium text-cream sm:text-5xl">
-            Özü doğadan, formülü bizde
+            Özü doğadan, formülü bizden
           </h2>
         </div>
       </section>
