@@ -10,15 +10,15 @@ export type IngredientMap = {
 // koordinatların da yeniden ölçülmesi gerekir.
 const hotspots: Record<string, IngredientHotspot[]> = {
   "vegan-sosis": [
-    { name: "Tofu", x: 49.3, y: 15.3 },
-    { name: "Nohut Unu", x: 70.5, y: 21.7 },
-    { name: "Yulaf Unu", x: 82.0, y: 38.8 },
-    { name: "Besin Mayası", x: 82.0, y: 62.2 },
-    { name: "Buğday Gluteni", x: 66.7, y: 78.1 },
-    { name: "Kurutulmuş Sebzeler", x: 42.0, y: 82.5 },
-    { name: "Ayçiçek Yağı", x: 18.6, y: 64.5 },
-    { name: "Soya Sosu", x: 19.8, y: 39.1 },
-    { name: "Baharat Karışımı", x: 29.6, y: 22.5 },
+    { name: "Tofu", x: 39.1, y: 14.1 },
+    { name: "Nohut Unu", x: 63.6, y: 15.0 },
+    { name: "Yulaf Unu", x: 82.7, y: 30.5 },
+    { name: "Besin Mayası", x: 85.9, y: 55.9 },
+    { name: "Buğday Gluteni", x: 75.0, y: 82.3 },
+    { name: "Kurutulmuş Sebzeler", x: 42.7, y: 82.7 },
+    { name: "Ayçiçek Yağı", x: 19.5, y: 75.5 },
+    { name: "Soya Sosu", x: 15.0, y: 51.4 },
+    { name: "Baharat Karışımı", x: 21.8, y: 29.1 },
   ],
 
   "ispanakli-sosis": [
