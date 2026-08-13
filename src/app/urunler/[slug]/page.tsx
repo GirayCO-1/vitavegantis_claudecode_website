@@ -3,6 +3,9 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import StaticIngredientRing from "@/components/StaticIngredientRing";
+import IngredientsMap, {
+  VEGAN_SOSIS_INGREDIENTS,
+} from "@/components/IngredientsMap";
 import ProductCard from "@/components/ProductCard";
 import { getProduct, products } from "@/lib/products";
 
@@ -113,7 +116,20 @@ export default async function ProductPage({
           </div>
 
           <div className="flex justify-center">
-            <StaticIngredientRing ingredients={product.ingredients} accent={product.accent} />
+            {product.ingredientsImage ? (
+              <div className="w-full max-w-[460px]">
+                <IngredientsMap
+                  image={product.ingredientsImage}
+                  ingredients={VEGAN_SOSIS_INGREDIENTS}
+                  alt={`${product.name} içindekileri`}
+                />
+              </div>
+            ) : (
+              <StaticIngredientRing
+                ingredients={product.ingredients}
+                accent={product.accent}
+              />
+            )}
           </div>
         </div>
       </section>
