@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ProductCard from "@/components/ProductCard";
+import SalesPointsCta from "@/components/SalesPointsCta";
 import { products } from "@/lib/products";
 
 export const metadata: Metadata = {
@@ -28,6 +29,8 @@ export default function ProductsIndexPage() {
           ))}
         </div>
       </div>
+
+      <SalesPointsCta />
     </section>
   );
 }

@@ -11,7 +11,6 @@ export type Product = {
   sceneImage: string;
   ingredients: string[];
   nutrition: { label: string; value: string }[];
-  ingredientsComplete: boolean;
 };
 
 export const products: Product[] = [
@@ -37,12 +36,11 @@ export const products: Product[] = [
       "Baharat Karışımı",
     ],
     nutrition: [
-      { label: "Enerji", value: "—" },
-      { label: "Protein", value: "—" },
-      { label: "Yağ", value: "—" },
-      { label: "Karbonhidrat", value: "—" },
+      { label: "Enerji", value: "218 kcal" },
+      { label: "Protein", value: "10.8 g" },
+      { label: "Yağ", value: "6.5 g" },
+      { label: "Karbonhidrat", value: "29 g" },
     ],
-    ingredientsComplete: true,
   },
   {
     slug: "ispanakli-sosis",
@@ -65,12 +63,11 @@ export const products: Product[] = [
       "Baharat Karışımı",
     ],
     nutrition: [
-      { label: "Enerji", value: "—" },
-      { label: "Protein", value: "—" },
-      { label: "Yağ", value: "—" },
-      { label: "Karbonhidrat", value: "—" },
+      { label: "Enerji", value: "217 kcal" },
+      { label: "Protein", value: "24.1 g" },
+      { label: "Yağ", value: "8.6 g" },
+      { label: "Karbonhidrat", value: "10.6 g" },
     ],
-    ingredientsComplete: true,
   },
   {
     slug: "vegan-sucuk",
@@ -92,17 +89,16 @@ export const products: Product[] = [
       "Özel Baharat Karışımı",
     ],
     nutrition: [
-      { label: "Enerji", value: "—" },
-      { label: "Protein", value: "—" },
-      { label: "Yağ", value: "—" },
-      { label: "Karbonhidrat", value: "—" },
+      { label: "Enerji", value: "315 kcal" },
+      { label: "Protein", value: "28 g" },
+      { label: "Yağ", value: "11 g" },
+      { label: "Karbonhidrat", value: "26 g" },
     ],
-    ingredientsComplete: true,
   },
   {
     slug: "tavuk-doner",
     name: "Tavuk Döner Tadında",
-    weight: "—",
+    weight: "150g",
     accent: "sun",
     tagline: "Sokak lezzeti, bitkisel imza",
     description:
@@ -121,12 +117,11 @@ export const products: Product[] = [
       "Baharat Karışımı",
     ],
     nutrition: [
-      { label: "Enerji", value: "—" },
-      { label: "Protein", value: "—" },
-      { label: "Yağ", value: "—" },
-      { label: "Karbonhidrat", value: "—" },
+      { label: "Enerji", value: "232 kcal" },
+      { label: "Protein", value: "29.7 g" },
+      { label: "Yağ", value: "8.1 g" },
+      { label: "Karbonhidrat", value: "13.7 g" },
     ],
-    ingredientsComplete: true,
   },
   {
     slug: "isvec-kofte",
@@ -152,7 +147,6 @@ export const products: Product[] = [
       { label: "Yağ", value: "26 g" },
       { label: "Karbonhidrat", value: "9 g" },
     ],
-    ingredientsComplete: true,
   },
   {
     slug: "besin-mayasi",
@@ -171,7 +165,6 @@ export const products: Product[] = [
       { label: "Yağ", value: "—" },
       { label: "Karbonhidrat", value: "—" },
     ],
-    ingredientsComplete: false,
   },
   {
     slug: "hot-dog",
@@ -199,7 +192,6 @@ export const products: Product[] = [
       { label: "Yağ", value: "—" },
       { label: "Karbonhidrat", value: "—" },
     ],
-    ingredientsComplete: false,
   },
 ];
 

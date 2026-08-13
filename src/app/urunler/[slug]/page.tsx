@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import StaticIngredientRing from "@/components/StaticIngredientRing";
 import IngredientsMap from "@/components/IngredientsMap";
+import SalesPointsCta from "@/components/SalesPointsCta";
 import { ingredientMaps } from "@/lib/ingredientMaps";
 import ProductCard from "@/components/ProductCard";
 import { getProduct, products } from "@/lib/products";
@@ -37,6 +38,8 @@ export default async function ProductPage({
 
   const others = products.filter((p) => p.slug !== product.slug).slice(0, 3);
   const ingredientMap = ingredientMaps[product.slug];
+  // Değeri girilmemiş ürünlerde tabloyu hiç göstermiyoruz
+  const hasNutrition = product.nutrition.some((n) => n.value !== "—");
 
   return (
     <>
@@ -81,11 +84,6 @@ export default async function ProductPage({
             <h2 className="font-display text-2xl font-semibold text-forest">
               İçindekiler
             </h2>
-            {!product.ingredientsComplete && (
-              <p className="mt-2 text-xs font-medium tracking-wide text-coral uppercase">
-                Tam içerik listesi yakında güncellenecek
-              </p>
-            )}
             <ul className="mt-6 space-y-3">
               {product.ingredients.map((ing) => (
                 <li
@@ -98,21 +96,27 @@ export default async function ProductPage({
               ))}
             </ul>
 
-            <h2 className="font-display mt-10 text-2xl font-semibold text-forest">
-              Besin Değerleri
-            </h2>
-            <p className="mt-1 text-xs text-forest/50">100g başına (yakında eklenecek)</p>
-            <dl className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
-              {product.nutrition.map((n) => (
-                <div
-                  key={n.label}
-                  className="rounded-2xl border border-forest/10 bg-white/60 px-4 py-3 text-center"
-                >
-                  <dt className="text-xs text-forest/60">{n.label}</dt>
-                  <dd className="font-display mt-1 text-lg text-forest">{n.value}</dd>
-                </div>
-              ))}
-            </dl>
+            {hasNutrition && (
+              <>
+                <h2 className="font-display mt-10 text-2xl font-semibold text-forest">
+                  Besin Değerleri
+                </h2>
+                <p className="mt-1 text-xs text-forest/50">100g başına</p>
+                <dl className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
+                  {product.nutrition.map((n) => (
+                    <div
+                      key={n.label}
+                      className="rounded-2xl border border-forest/10 bg-white/60 px-4 py-3 text-center"
+                    >
+                      <dt className="text-xs text-forest/60">{n.label}</dt>
+                      <dd className="font-display mt-1 text-lg text-forest">
+                        {n.value}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+              </>
+            )}
           </div>
 
           <div className="flex justify-center">
@@ -151,6 +155,8 @@ export default async function ProductPage({
           </div>
         </div>
       </section>
+
+      <SalesPointsCta />
     </>
   );
 }
