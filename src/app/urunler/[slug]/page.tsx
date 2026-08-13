@@ -3,9 +3,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import StaticIngredientRing from "@/components/StaticIngredientRing";
-import IngredientsMap, {
-  VEGAN_SOSIS_INGREDIENTS,
-} from "@/components/IngredientsMap";
+import IngredientsMap from "@/components/IngredientsMap";
+import { ingredientMaps } from "@/lib/ingredientMaps";
 import ProductCard from "@/components/ProductCard";
 import { getProduct, products } from "@/lib/products";
 
@@ -37,6 +36,7 @@ export default async function ProductPage({
   if (!product) notFound();
 
   const others = products.filter((p) => p.slug !== product.slug).slice(0, 3);
+  const ingredientMap = ingredientMaps[product.slug];
 
   return (
     <>
@@ -116,11 +116,11 @@ export default async function ProductPage({
           </div>
 
           <div className="flex justify-center">
-            {product.ingredientsImage ? (
+            {ingredientMap ? (
               <div className="w-full max-w-[460px]">
                 <IngredientsMap
-                  image={product.ingredientsImage}
-                  ingredients={VEGAN_SOSIS_INGREDIENTS}
+                  image={ingredientMap.image}
+                  ingredients={ingredientMap.hotspots}
                   alt={`${product.name} içindekileri`}
                 />
               </div>

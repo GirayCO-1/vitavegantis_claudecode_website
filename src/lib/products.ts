@@ -9,8 +9,6 @@ export type Product = {
   description: string;
   image: string;
   sceneImage: string;
-  /** Varsa, içindekiler bölümünde etkileşimli malzeme haritası gösterilir. */
-  ingredientsImage?: string;
   ingredients: string[];
   nutrition: { label: string; value: string }[];
   ingredientsComplete: boolean;
@@ -27,7 +25,6 @@ export const products: Product[] = [
       "Tofu ve nohut ununun gücünü kurutulmuş sebzelerle birleştirdiğimiz, ailece sevilen klasik sosis lezzeti — bitkisel, katkısız, saf.",
     image: "/products/vegan-sosis.jpg",
     sceneImage: "/products/scenes/vegan-sosis-pizza-scene-v2.png",
-    ingredientsImage: "/urunler/vegan-sosis-icindekiler.png",
     ingredients: [
       "Tofu",
       "Nohut Unu",
@@ -166,7 +163,7 @@ export const products: Product[] = [
     description:
       "B12 vitamini ile zenginleştirilmiş, glutensiz besin mayamız; yemeklerinize peynirimsi bir lezzet ve yüksek protein katar.",
     image: "/products/besin-mayasi.png",
-    sceneImage: "/products/scenes/besin-mayasi-scene.png",
+    sceneImage: "/products/scenes/besin-mayasi-scene.webp",
     ingredients: ["İnaktif Besin Mayası (B12 Vitamini ile Zenginleştirilmiş)"],
     nutrition: [
       { label: "Enerji", value: "—" },
