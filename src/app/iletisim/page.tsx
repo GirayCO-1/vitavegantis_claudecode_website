@@ -45,7 +45,7 @@ export default function IletisimPage() {
               </dt>
               <dd className="mt-1 text-sm text-forest/80">
                 Seyran Bağları Mahallesi Seyran Caddesi No:42/A,
-                Çankırı / Ankara
+                Çankaya / Ankara
               </dd>
             </div>
             <div>

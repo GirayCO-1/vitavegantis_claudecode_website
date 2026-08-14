@@ -19,7 +19,7 @@ export function organizationSchema() {
     address: {
       "@type": "PostalAddress",
       streetAddress: "Seyran Bağları Mahallesi Seyran Caddesi No:42/A",
-      addressLocality: "Çankırı",
+      addressLocality: "Çankaya",
       addressRegion: "Ankara",
       addressCountry: "TR",
     },

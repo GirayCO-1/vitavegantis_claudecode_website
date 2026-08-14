@@ -43,7 +43,7 @@ export default function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-cream/80">
               <li>
                 Seyran Bağları Mahallesi Seyran Caddesi No:42/A,
-                Çankırı / Ankara
+                Çankaya / Ankara
               </li>
               <li>
                 <a href="tel:08503074990" className="hover:text-sun">
