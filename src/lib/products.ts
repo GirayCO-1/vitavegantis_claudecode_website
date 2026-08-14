@@ -156,7 +156,7 @@ export const products: Product[] = [
     tagline: "Mutfağınızın süperfood dostu",
     description:
       "B12 vitamini ile zenginleştirilmiş, glutensiz besin mayamız; yemeklerinize peynirimsi bir lezzet ve yüksek protein katar.",
-    image: "/products/besin-mayasi.png",
+    image: "/products/besin-mayasi.webp",
     sceneImage: "/products/scenes/besin-mayasi-scene.webp",
     ingredients: ["İnaktif Besin Mayası (B12 Vitamini ile Zenginleştirilmiş)"],
     nutrition: [
@@ -174,7 +174,7 @@ export const products: Product[] = [
     tagline: "Tütsü aromalı, sokak lezzeti",
     description:
       "Tütsü aromasıyla zenginleştirdiğimiz bitki bazlı sosisimiz, klasik hot dog keyfini katkısız ve yüksek proteinli bir sofraya taşıyor.",
-    image: "/products/hot-dog.png",
+    image: "/products/hot-dog.webp",
     sceneImage: "/products/scenes/hot-dog-scene.png",
     ingredients: [
       "Tofu",
