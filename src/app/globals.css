@@ -124,3 +124,67 @@ body {
 .vv-fade-up {
   animation: vv-fade-up 0.25s ease-out;
 }
+
+/* Blog yazılarının markdown'dan üretilen gövdesi */
+.article-body {
+  color: color-mix(in srgb, var(--color-forest) 80%, transparent);
+  line-height: 1.8;
+}
+
+.article-body h2 {
+  font-family: var(--font-fraunces), serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-forest);
+  margin-top: 2.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.article-body h3 {
+  font-family: var(--font-fraunces), serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-forest);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-body p {
+  margin-bottom: 1.15rem;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1.5rem 1.25rem;
+  padding-left: 0.75rem;
+}
+
+.article-body ul {
+  list-style: disc;
+}
+
+.article-body ol {
+  list-style: decimal;
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+
+.article-body strong {
+  color: var(--color-forest);
+  font-weight: 600;
+}
+
+.article-body blockquote {
+  border-left: 3px solid var(--color-coral);
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  margin: 1.75rem 0;
+  font-style: italic;
+  color: color-mix(in srgb, var(--color-forest) 70%, transparent);
+}
+
+.article-body a {
+  color: var(--color-coral);
+  text-decoration: underline;
+}

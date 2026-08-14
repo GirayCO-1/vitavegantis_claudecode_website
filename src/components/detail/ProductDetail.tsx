@@ -1,41 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import { notFound } from "next/navigation";
-import type { Metadata } from "next";
 import StaticIngredientRing from "@/components/StaticIngredientRing";
 import IngredientsMap from "@/components/IngredientsMap";
 import SalesPointsCta from "@/components/SalesPointsCta";
-import { ingredientMaps } from "@/lib/ingredientMaps";
 import ProductCard from "@/components/ProductCard";
-import { getProduct, products } from "@/lib/products";
+import { ingredientMaps } from "@/lib/ingredientMaps";
+import { products, type Product } from "@/lib/products";
 
-export function generateStaticParams() {
-  return products.map((p) => ({ slug: p.slug }));
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const { slug } = await params;
-  const product = getProduct(slug);
-  if (!product) return {};
-  return {
-    title: `${product.name} — VitaVegantis`,
-    description: product.description,
-  };
-}
-
-export default async function ProductPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-  const product = getProduct(slug);
-  if (!product) notFound();
-
+export default function ProductDetail({ product }: { product: Product }) {
   const others = products.filter((p) => p.slug !== product.slug).slice(0, 3);
   const ingredientMap = ingredientMaps[product.slug];
   // Değeri girilmemiş ürünlerde tabloyu hiç göstermiyoruz
@@ -160,3 +132,4 @@ export default async function ProductPage({
     </>
   );
 }
+

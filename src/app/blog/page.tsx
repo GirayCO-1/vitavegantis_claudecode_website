@@ -1,14 +1,43 @@
 import type { Metadata } from "next";
+import { SITE_URL, canonical } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema, itemListSchema } from "@/lib/structuredData";
 import Image from "next/image";
+import Link from "next/link";
 import { blogPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog — VitaVegantis",
-  description: "Bitki bazlı beslenme üzerine yazılar ve haberler.",
+  title: "Blog",
+  description: "Bitki bazlı beslenme, bitkisel protein, sürdürülebilirlik ve vegan mutfak üzerine VitaVegantis blogundan yazılar.",
+  alternates: { canonical: canonical("blog") },
+  openGraph: {
+    type: "website",
+    url: canonical("blog"),
+    title: "Blog — VitaVegantis",
+    description: "Bitki bazlı beslenme, bitkisel protein, sürdürülebilirlik ve vegan mutfak üzerine VitaVegantis blogundan yazılar.",
+    images: [`${SITE_URL}/blog/vegan-urun-tuketimi.webp`],
+  }
 };
 
 export default function BlogPage() {
   return (
+    <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Ana Sayfa", path: "/" },
+          { name: "Blog", path: "blog" },
+        ])}
+      />
+      <JsonLd
+        data={itemListSchema(
+          "blog",
+          "VitaVegantis Blog",
+          blogPosts.map((p) => ({
+            name: p.title,
+            urlSlug: p.href.replace(/^\//, ""),
+          })),
+        )}
+      />
     <section className="px-6 py-20">
       <div className="mx-auto max-w-5xl">
         <div className="mx-auto max-w-2xl text-center">
@@ -24,11 +53,9 @@ export default function BlogPage() {
 
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2">
           {blogPosts.map((post) => (
-            <a
+            <Link
               key={post.href}
               href={post.href}
-              target="_blank"
-              rel="noopener noreferrer"
               className="group flex flex-col overflow-hidden rounded-3xl border border-forest/10 bg-white/60 transition-shadow hover:shadow-lg"
             >
               <div className="relative h-48 w-full overflow-hidden">
@@ -51,10 +78,11 @@ export default function BlogPage() {
                   Devamını oku →
                 </span>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
     </section>
+    </>
   );
 }

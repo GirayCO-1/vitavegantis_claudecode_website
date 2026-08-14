@@ -2,6 +2,8 @@ import type { Accent } from "@/lib/products";
 
 export type Recipe = {
   slug: string;
+  /** Eski sitedeki URL — SEO devamlılığı için public adres budur. */
+  urlSlug: string;
   title: string;
   teaser: string;
   time: string;
@@ -18,6 +20,7 @@ export type Recipe = {
 export const recipes: Recipe[] = [
   {
     slug: "vegan-iskender",
+    urlSlug: "vegan-iskender-tarifi",
     title: "Vegan İskender",
     teaser:
       "Tavuk Döner Tadında ürünümüzle hazırlanan, tereyağlı domates sosu ve yoğurtla servis edilen klasik bir lezzet.",
@@ -43,6 +46,7 @@ export const recipes: Recipe[] = [
   },
   {
     slug: "sucuklu-kuru-fasulye",
+    urlSlug: "bitki-bazli-sucuklu-kuru-fasulye-tarifi",
     title: "Bitki Bazlı Sucuklu Kuru Fasulye",
     teaser:
       "Vegan Sucuk ile hazırlanan, ailece sevilen bir Türk mutfağı klasiğinin bitkisel yorumu.",
@@ -68,6 +72,7 @@ export const recipes: Recipe[] = [
   },
   {
     slug: "salcali-sosis",
+    urlSlug: "bitki-bazli-salcali-sosis-tarifi",
     title: "Bitki Bazlı Salçalı Sosis",
     teaser:
       "Vegan Sosis Tadında ürünümüzle hazırlanan, ekmek arası veya ana yemek olarak servis edilebilen pratik bir tarif.",
@@ -92,3 +97,7 @@ export const recipes: Recipe[] = [
     ],
   },
 ];
+
+export function getRecipeByUrl(urlSlug: string) {
+  return recipes.find((r) => r.urlSlug === urlSlug);
+}

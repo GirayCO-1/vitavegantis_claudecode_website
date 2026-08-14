@@ -1,15 +1,33 @@
 import type { Metadata } from "next";
+import { SITE_URL, canonical } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/structuredData";
 import Image from "next/image";
 import { salesPoints } from "@/lib/salesPoints";
 
 export const metadata: Metadata = {
-  title: "Satış Noktaları — VitaVegantis",
+  title: "Satış Noktaları",
   description:
     "VitaVegantis ürünlerini bulabileceğiniz online mağazalar ve pazar yerleri.",
+  alternates: { canonical: canonical("satisnoktalari") },
+  openGraph: {
+    type: "website",
+    url: canonical("satisnoktalari"),
+    title: "Satış Noktaları — VitaVegantis",
+    description: "VitaVegantis ürünlerini bulabileceğiniz online mağazalar ve pazar yerleri.",
+    images: [`${SITE_URL}/lifestyle/hotdog-cart.webp`],
+  }
 };
 
 export default function SatisNoktalariPage() {
   return (
+    <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Ana Sayfa", path: "/" },
+          { name: "Satış Noktaları", path: "satisnoktalari" },
+        ])}
+      />
     <section className="px-6 py-20">
       <div className="mx-auto max-w-5xl">
         <div className="mx-auto max-w-2xl text-center">
@@ -60,5 +78,6 @@ export default function SatisNoktalariPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

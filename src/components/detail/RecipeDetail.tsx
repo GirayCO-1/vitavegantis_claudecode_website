@@ -1,10 +1,14 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
-import type { Metadata } from "next";
 import RecipePhoto from "@/components/recipe/RecipePhoto";
-import { SmileyIcon, ClockIcon, LeafIcon, ShieldIcon, BoltIcon } from "@/components/recipe/RecipeIcons";
+import {
+  SmileyIcon,
+  ClockIcon,
+  LeafIcon,
+  ShieldIcon,
+  BoltIcon,
+} from "@/components/recipe/RecipeIcons";
 import RecipeCard from "@/components/recipe/RecipeCard";
-import { recipes } from "@/lib/recipes";
+import { recipes, type Recipe } from "@/lib/recipes";
 
 const badges = [
   { label: "Vegan", Icon: LeafIcon },
@@ -12,30 +16,7 @@ const badges = [
   { label: "Yüksek Protein", Icon: BoltIcon },
 ];
 
-export function generateStaticParams() {
-  return recipes.map((r) => ({ slug: r.slug }));
-}
-
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const { slug } = await params;
-  const recipe = recipes.find((r) => r.slug === slug);
-  if (!recipe) return {};
-  return { title: `${recipe.title} — VitaVegantis`, description: recipe.teaser };
-}
-
-export default async function RecipeDetailPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-  const recipe = recipes.find((r) => r.slug === slug);
-  if (!recipe) notFound();
-
+export default function RecipeDetail({ recipe }: { recipe: Recipe }) {
   const others = recipes.filter((r) => r.slug !== recipe.slug);
 
   return (
@@ -133,3 +114,4 @@ export default async function RecipeDetailPage({
     </>
   );
 }
+

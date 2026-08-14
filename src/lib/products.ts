@@ -2,6 +2,8 @@ export type Accent = "sun" | "coral" | "plum" | "sage";
 
 export type Product = {
   slug: string;
+  /** Eski sitedeki URL — SEO devamlılığı için public adres budur. */
+  urlSlug: string;
   name: string;
   weight: string;
   accent: Accent;
@@ -16,6 +18,7 @@ export type Product = {
 export const products: Product[] = [
   {
     slug: "vegan-sosis",
+    urlSlug: "vita-vegantis-vegan-sosis-tadinda",
     name: "Vegan Sosis Tadında",
     weight: "200g",
     accent: "coral",
@@ -44,6 +47,7 @@ export const products: Product[] = [
   },
   {
     slug: "ispanakli-sosis",
+    urlSlug: "vita-vegantis-ispanakli-sosis-tadinda",
     name: "Ispanaklı Bitki Bazlı Sosis",
     weight: "180g",
     accent: "sage",
@@ -71,6 +75,7 @@ export const products: Product[] = [
   },
   {
     slug: "vegan-sucuk",
+    urlSlug: "vita-vegantis-vegan-sucuk",
     name: "Vegan Sucuk",
     weight: "150g",
     accent: "plum",
@@ -97,6 +102,7 @@ export const products: Product[] = [
   },
   {
     slug: "tavuk-doner",
+    urlSlug: "vita-vegantis-tavuk-doner-tadinda",
     name: "Tavuk Döner Tadında",
     weight: "150g",
     accent: "sun",
@@ -125,6 +131,7 @@ export const products: Product[] = [
   },
   {
     slug: "isvec-kofte",
+    urlSlug: "vita-vegantis-vegan-isvec-kofte",
     name: "Bitki Bazlı İsveç Köfte",
     weight: "180g",
     accent: "sun",
@@ -150,6 +157,7 @@ export const products: Product[] = [
   },
   {
     slug: "besin-mayasi",
+    urlSlug: "vita-vegantis-besin-mayasi",
     name: "Besin Mayası",
     weight: "100g",
     accent: "sun",
@@ -168,6 +176,7 @@ export const products: Product[] = [
   },
   {
     slug: "hot-dog",
+    urlSlug: "vita-vegantis-hot-dog-vosis",
     name: "Hot Dog Vosis",
     weight: "180g",
     accent: "coral",
@@ -197,6 +206,10 @@ export const products: Product[] = [
 
 export function getProduct(slug: string) {
   return products.find((p) => p.slug === slug);
+}
+
+export function getProductByUrl(urlSlug: string) {
+  return products.find((p) => p.urlSlug === urlSlug);
 }
 
 export const accentHex: Record<Accent, string> = {

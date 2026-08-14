@@ -18,7 +18,7 @@ export default function RecipeCard({
 }) {
   return (
     <Link
-      href={`/tarifler/${recipe.slug}`}
+      href={`/${recipe.urlSlug}`}
       className="group flex flex-col overflow-hidden rounded-[32px] bg-white shadow-lg shadow-forest/10 transition-transform duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl hover:shadow-forest/20"
     >
       <RecipePhoto src={recipe.image} alt={recipe.title} />

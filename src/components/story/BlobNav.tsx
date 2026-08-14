@@ -18,7 +18,7 @@ export default function BlobNav() {
     <section className="bg-mint px-6 py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-3">
         {/* 1) Vizyon & Misyon */}
-        <Link href="/vizyon-misyon" className={CARD}>
+        <Link href="/hakkimizda" className={CARD}>
           <span
             aria-hidden
             className="absolute inset-0 bg-forest transition-transform duration-500 ease-out group-hover:scale-[1.03]"

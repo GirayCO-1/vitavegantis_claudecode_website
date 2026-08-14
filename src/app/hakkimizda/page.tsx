@@ -1,11 +1,22 @@
 import type { Metadata } from "next";
+import { SITE_URL, canonical } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/structuredData";
 import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Vizyonumuz & Misyonumuz — VitaVegantis",
+  title: "Hakkımızda",
   description:
     "Daha iyi ve daha sağlıklı bir dünyaya katkı: VitaVegantis'in vizyonu, misyonu ve değerleri.",
+  alternates: { canonical: canonical("hakkimizda") },
+  openGraph: {
+    type: "website",
+    url: canonical("hakkimizda"),
+    title: "Hakkımızda — Vizyonumuz & Misyonumuz | VitaVegantis",
+    description: "Daha iyi ve daha sağlıklı bir dünyaya katkı: VitaVegantis'in vizyonu, misyonu ve değerleri.",
+    images: [`${SITE_URL}/lifestyle/kahvalti-sofrasi.webp`],
+  }
 };
 
 const values = [
@@ -30,6 +41,12 @@ const values = [
 export default function VizyonMisyonPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Ana Sayfa", path: "/" },
+          { name: "Hakkımızda", path: "hakkimizda" },
+        ])}
+      />
       <section className="relative overflow-hidden bg-forest px-6 py-24 text-cream">
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-accent text-2xl text-sun">Vizyonumuz &amp; Misyonumuz</p>

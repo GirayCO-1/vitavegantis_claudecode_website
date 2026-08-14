@@ -5,7 +5,7 @@ import type { Product } from "@/lib/products";
 export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link
-      href={`/urunler/${product.slug}`}
+      href={`/${product.urlSlug}`}
       className="group flex flex-col items-center rounded-3xl border border-forest/10 bg-white/60 p-8 text-center transition-all hover:-translate-y-1 hover:border-forest/20 hover:shadow-xl hover:shadow-forest/10"
     >
       <div className="relative h-48 w-full">

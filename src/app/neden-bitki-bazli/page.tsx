@@ -1,11 +1,22 @@
 import type { Metadata } from "next";
+import { SITE_URL, canonical } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/structuredData";
 import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Neden Bitki Bazlı? — VitaVegantis",
+  title: "Neden Bitki Bazlı?",
   description:
     "Bitki bazlı beslenmenin bedeniniz, damak tadınız ve gezegen için ne anlama geldiğini anlatıyoruz.",
+  alternates: { canonical: canonical("neden-bitki-bazli") },
+  openGraph: {
+    type: "website",
+    url: canonical("neden-bitki-bazli"),
+    title: "Neden Bitki Bazlı? — VitaVegantis",
+    description: "Bitki bazlı beslenmenin bedeniniz, damak tadınız ve gezegen için ne anlama geldiğini anlatıyoruz.",
+    images: [`${SITE_URL}/lifestyle/fine-dining.webp`],
+  }
 };
 
 const reasons = [
@@ -52,6 +63,12 @@ const myths = [
 export default function NedenBitkiBazliPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Ana Sayfa", path: "/" },
+          { name: "Neden Bitki Bazlı?", path: "neden-bitki-bazli" },
+        ])}
+      />
       <section className="relative overflow-hidden bg-gradient-to-b from-mint to-cream px-6 py-24">
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-accent text-2xl text-plum">Merak edenler için</p>

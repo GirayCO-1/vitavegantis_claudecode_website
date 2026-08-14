@@ -1,13 +1,31 @@
 import type { Metadata } from "next";
+import { SITE_URL, canonical } from "@/lib/site";
+import JsonLd from "@/components/JsonLd";
+import { breadcrumbSchema } from "@/lib/structuredData";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "İletişim — VitaVegantis",
-  description: "VitaVegantis ile iletişime geçin.",
+  title: "İletişim",
+  description: "Sorularınız, öneri ve iş birliği talepleriniz için VitaVegantis'e ulaşın: adres, telefon, e-posta ve iletişim formu.",
+  alternates: { canonical: canonical("iletisim") },
+  openGraph: {
+    type: "website",
+    url: canonical("iletisim"),
+    title: "İletişim — VitaVegantis",
+    description: "Sorularınız, öneri ve iş birliği talepleriniz için VitaVegantis'e ulaşın: adres, telefon, e-posta ve iletişim formu.",
+    images: [`${SITE_URL}/lifestyle/kahvalti-sofrasi.webp`],
+  }
 };
 
 export default function IletisimPage() {
   return (
+    <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Ana Sayfa", path: "/" },
+          { name: "İletişim", path: "iletisim" },
+        ])}
+      />
     <section className="px-6 py-20">
       <div className="mx-auto grid max-w-5xl gap-16 md:grid-cols-2">
         <div>
@@ -73,5 +91,6 @@ export default function IletisimPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }
