@@ -13,8 +13,8 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 const scenes = [
   {
     kicker: "Kimiz",
-    heading: "Doğaya ve Bedene Bir Söz",
-    body: "VitaVegantis'te bitkisel proteini sadece bir alternatif değil, bedenimizi beslemenin ve gezegeni korumanın bir yolu olarak görüyoruz. Her ürünümüz, sofralarınıza yalnızca lezzet değil; daha temiz bir gelecek, daha sağlıklı bir yaşam biçimi getirme sözüyle çıkıyor.",
+    heading: "Doğaya Bir Söz",
+    body: "VitaVegantis'te bitkisel ürünleri sadece bir alternatif değil, bedenimizi beslemenin ve gezegeni korumanın bir yolu olarak görüyoruz. Her ürünümüz, sofralarınıza yalnızca lezzet değil; daha temiz bir gelecek, daha sağlıklı bir yaşam biçimi getirme sözüyle çıkıyor.",
   },
 ] as const;
 
@@ -248,15 +248,23 @@ export default function StoryHero() {
           className="story-scene relative flex h-screen flex-col items-center justify-center overflow-hidden bg-cream px-6 text-center"
         >
           <Image
-            src="/lifestyle/kimiz-bg.webp"
+            src="/lifestyle/kimiz-hotdog-bg.webp"
             alt=""
             fill
             sizes="100vw"
             priority
             className="object-cover"
           />
-          {/* Metnin okunabilirliği için hafif açık perde */}
-          <div className="absolute inset-0 bg-cream/45" />
+          {/* Perde yalnızca metnin arkasında yoğunlaşır; kenarlarda fotoğraf
+              (sosisli ve kalabalık sokak) net kalsın diye açılır. */}
+          <div className="absolute inset-0 bg-cream/20" />
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "radial-gradient(ellipse 62% 34% at 50% 47%, rgba(247,243,234,0.86) 0%, rgba(247,243,234,0.5) 60%, rgba(247,243,234,0) 100%)",
+            }}
+          />
 
           <div className="relative flex flex-col items-center">
             <p className="story-scene-fade font-accent text-2xl text-coral">
