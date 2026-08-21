@@ -293,18 +293,20 @@ export default function StoryHero({ locale = "tr" }: { locale?: Locale }) {
             preload="metadata"
             aria-hidden="true"
           />
-          {/* Perde metnin arkasında yoğunlaşır; kenarlarda alev ve sosis
-              görünür kalsın diye açılır. */}
-          <div className="absolute inset-0 bg-[#0b1c12]/35" />
+          {/* Video canlı kalsın diye perde olabildiğince ince; okunabilirlik
+              ağırlıklı olarak metin gölgesinden geliyor. */}
           <div
             className="absolute inset-0"
             style={{
               backgroundImage:
-                "radial-gradient(ellipse 68% 40% at 50% 47%, rgba(11,28,18,0.85) 0%, rgba(11,28,18,0.55) 60%, rgba(11,28,18,0.1) 100%)",
+                "radial-gradient(ellipse 58% 34% at 50% 47%, rgba(11,28,18,0.58) 0%, rgba(11,28,18,0.26) 60%, rgba(11,28,18,0) 100%)",
             }}
           />
 
-          <div className="relative flex flex-col items-center">
+          <div
+            className="relative flex flex-col items-center"
+            style={{ textShadow: "0 2px 18px rgba(0,0,0,0.65), 0 1px 4px rgba(0,0,0,0.5)" }}
+          >
             <p className="story-scene-fade font-accent text-2xl text-sun">
               {scene.kicker}
             </p>
