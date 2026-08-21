@@ -188,3 +188,15 @@ body {
   color: var(--color-coral);
   text-decoration: underline;
 }
+
+/* Hareket azaltma tercihinde arka plan videosu oynamasın; poster kalsın. */
+@media (prefers-reduced-motion: reduce) {
+  .story-scene-video {
+    display: none;
+  }
+  .story-scene {
+    background-image: url("/video/grill-poster.webp");
+    background-size: cover;
+    background-position: center;
+  }
+}

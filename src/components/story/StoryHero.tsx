@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
@@ -245,35 +244,40 @@ export default function StoryHero() {
       {scenes.map((scene) => (
         <section
           key={scene.heading}
-          className="story-scene relative flex h-screen flex-col items-center justify-center overflow-hidden bg-cream px-6 text-center"
+          className="story-scene relative flex h-screen flex-col items-center justify-center overflow-hidden bg-[#0e2116] px-6 text-center"
         >
-          <Image
-            src="/lifestyle/kimiz-hotdog-bg.webp"
-            alt=""
-            fill
-            sizes="100vw"
-            priority
-            className="object-cover"
+          {/* Mangalda cızırdayan sosis. Sessiz ve döngüsel — dekoratif arka
+              plan. Hareketi azaltılmış tercihlerde poster karesi kalır. */}
+          <video
+            className="story-scene-video absolute inset-0 h-full w-full object-cover"
+            src="/video/grill.mp4"
+            poster="/video/grill-poster.webp"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-hidden="true"
           />
-          {/* Perde yalnızca metnin arkasında yoğunlaşır; kenarlarda fotoğraf
-              (sosisli ve kalabalık sokak) net kalsın diye açılır. */}
-          <div className="absolute inset-0 bg-cream/20" />
+          {/* Perde metnin arkasında yoğunlaşır; kenarlarda alev ve sosis
+              görünür kalsın diye açılır. */}
+          <div className="absolute inset-0 bg-[#0b1c12]/35" />
           <div
             className="absolute inset-0"
             style={{
               backgroundImage:
-                "radial-gradient(ellipse 62% 34% at 50% 47%, rgba(247,243,234,0.86) 0%, rgba(247,243,234,0.5) 60%, rgba(247,243,234,0) 100%)",
+                "radial-gradient(ellipse 68% 40% at 50% 47%, rgba(11,28,18,0.85) 0%, rgba(11,28,18,0.55) 60%, rgba(11,28,18,0.1) 100%)",
             }}
           />
 
           <div className="relative flex flex-col items-center">
-            <p className="story-scene-fade font-accent text-2xl text-coral">
+            <p className="story-scene-fade font-accent text-2xl text-sun">
               {scene.kicker}
             </p>
-            <h2 className="story-scene-heading font-display mt-3 max-w-3xl text-4xl font-semibold text-forest sm:text-5xl md:text-6xl">
+            <h2 className="story-scene-heading font-display mt-3 max-w-3xl text-4xl font-semibold text-cream sm:text-5xl md:text-6xl">
               {scene.heading}
             </h2>
-            <p className="story-scene-fade mt-6 max-w-xl text-base leading-relaxed text-forest/80 sm:text-lg">
+            <p className="story-scene-fade mt-6 max-w-xl text-base leading-relaxed text-cream/85 sm:text-lg">
               {scene.body}
             </p>
           </div>

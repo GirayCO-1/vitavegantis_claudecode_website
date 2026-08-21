@@ -7,7 +7,6 @@ export type SalesPoint = {
 // vitavegantis.com/satisnoktalari/ üzerindeki gerçek satış noktası
 // ortakları, logoları ve bağlantıları.
 export const salesPoints: SalesPoint[] = [
-  { name: "Depodone", logo: "/satisnoktalari/depodone.webp", href: "https://depodone.com/tr" },
   { name: "Boldy TR", logo: "/satisnoktalari/boldytr.jpeg", href: "https://boldy.com.tr/tr" },
   { name: "Sade Gıda", logo: "/satisnoktalari/sadegida.png", href: "https://sadegida.com.tr/" },
   { name: "Vegan Pazaryeri", logo: "/satisnoktalari/veganpazaryeri.png", href: "https://veganpazaryeri.com/vitavegantis" },
