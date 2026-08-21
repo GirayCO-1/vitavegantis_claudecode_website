@@ -1,5 +1,15 @@
 import type { Accent } from "@/lib/products";
 
+/** İngilizce site için çevrilen alanlar; kaynak veri Türkçedir. */
+export type RecipeEn = {
+  title: string;
+  teaser: string;
+  time: string;
+  servings: string;
+  ingredients: string[];
+  steps: string[];
+};
+
 export type Recipe = {
   slug: string;
   /** Eski sitedeki URL — SEO devamlılığı için public adres budur. */
@@ -12,6 +22,7 @@ export type Recipe = {
   image: string;
   ingredients: string[];
   steps: string[];
+  en: RecipeEn;
 };
 
 // Başlıklar vitavegantis.com/blog üzerindeki gerçek tariflerden alınmıştır.
@@ -43,6 +54,28 @@ export const recipes: Recipe[] = [
       "Pidelerin üzerine döneri, ardından sosu ve yoğurdu ekleyin.",
       "Eritilmiş bitkisel tereyağını gezdirip sıcak servis edin.",
     ],
+    en: {
+      title: "Vegan İskender",
+      teaser:
+        "A Turkish classic made with our Chicken Döner Style, served with buttery tomato sauce and plant-based yoghurt.",
+      time: "25 min",
+      servings: "Serves 2",
+      ingredients: [
+        "1 pack VitaVegantis Chicken Döner Style",
+        "2 slices of pide (Turkish flatbread)",
+        "2 tbsp tomato paste",
+        "1 cup plant-based yoghurt",
+        "2 tbsp plant-based butter",
+        "Salt, black pepper",
+      ],
+      steps: [
+        "Slice the flatbread and spread it over a serving plate.",
+        "Pan-fry the VitaVegantis Chicken Döner Style over medium heat.",
+        "Loosen the tomato paste with water and simmer into a sauce.",
+        "Layer the döner over the bread, then add the sauce and yoghurt.",
+        "Drizzle with melted plant-based butter and serve hot.",
+      ],
+    },
   },
   {
     slug: "sucuklu-kuru-fasulye",
@@ -69,6 +102,28 @@ export const recipes: Recipe[] = [
       "Haşlanmış fasulyeyi ekleyip kısık ateşte 15 dakika pişirin.",
       "Tuzunu ayarlayıp sıcak servis edin.",
     ],
+    en: {
+      title: "Plant-Based White Bean Stew with Vegan Sucuk",
+      teaser:
+        "A plant-based take on a beloved Turkish family classic, made with our Vegan Sucuk.",
+      time: "40 min",
+      servings: "Serves 4",
+      ingredients: [
+        "2 VitaVegantis Vegan Sucuk, sliced",
+        "2.5 cups cooked white beans",
+        "1 onion",
+        "2 tbsp tomato paste",
+        "2 tbsp olive oil",
+        "Salt, chilli flakes",
+      ],
+      steps: [
+        "Sauté the onion in olive oil.",
+        "Add the sliced vegan sucuk and cook for a few more minutes.",
+        "Stir in the tomato paste, cook briefly, then add hot water.",
+        "Add the cooked beans and simmer over low heat for 15 minutes.",
+        "Season with salt and serve hot.",
+      ],
+    },
   },
   {
     slug: "salcali-sosis",
@@ -95,6 +150,28 @@ export const recipes: Recipe[] = [
       "Salçayı su ile açıp tavaya ekleyin, kısık ateşte 5 dakika pişirin.",
       "Baharatlarla tatlandırıp sıcak servis edin.",
     ],
+    en: {
+      title: "Plant-Based Sausages in Tomato Sauce",
+      teaser:
+        "A quick recipe made with our Vegan Sausage Style — serve it in bread or as a main dish.",
+      time: "20 min",
+      servings: "Serves 2",
+      ingredients: [
+        "1 pack VitaVegantis Vegan Sausage Style",
+        "1 tbsp tomato paste",
+        "1 clove of garlic",
+        "1 tbsp olive oil",
+        "Half a cup of water",
+        "Salt, black pepper, thyme",
+      ],
+      steps: [
+        "Slice the sausages however you like.",
+        "Lightly sauté the garlic in olive oil.",
+        "Add the sausages and fry for a few minutes.",
+        "Loosen the tomato paste with water, add to the pan and simmer for 5 minutes.",
+        "Season with the spices and serve hot.",
+      ],
+    },
   },
 ];
 

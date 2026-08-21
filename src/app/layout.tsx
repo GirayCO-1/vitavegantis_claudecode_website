@@ -1,7 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter, Caveat, Baloo_2 } from "next/font/google";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL, canonical } from "@/lib/site";
 import { organizationSchema, websiteSchema } from "@/lib/structuredData";
@@ -103,9 +101,7 @@ export default function RootLayout({
       <body className="flex min-h-full flex-col bg-cream text-forest">
         <JsonLd data={organizationSchema()} />
         <JsonLd data={websiteSchema()} />
-        <Navbar />
-        <main className="flex flex-1 flex-col">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

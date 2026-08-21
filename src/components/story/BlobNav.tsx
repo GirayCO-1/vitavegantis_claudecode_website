@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { href, type Locale } from "@/lib/i18n";
 
 // Organik "blob" köşe yarıçapları — referanstaki damla formunu marka
 // paletiyle yeniden yorumluyor.
@@ -13,12 +14,37 @@ const CARD = "group relative flex min-h-[360px] items-center justify-center";
 const CONTENT =
   "relative z-10 flex w-[72%] flex-col items-center gap-4 py-10 text-center";
 
-export default function BlobNav() {
+const TEXT = {
+  tr: {
+    visionBadge: "Vizyonumuz & Misyonumuz",
+    visionHeading: "Daha iyi ve daha sağlıklı bir dünyaya katkı",
+    visionCta: "Keşfet →",
+    recipesHeading: "Bugün ne pişirsem?",
+    recipesCta: "Tarifini bul",
+    whyHeading: "Neden bitki bazlı?",
+    whyBody: "Bedeniniz ve gezegen için ne anlama geldiğini anlatıyoruz.",
+    whyCta: "Nedenini öğren",
+  },
+  en: {
+    visionBadge: "Our Vision & Mission",
+    visionHeading: "Contributing to a better, healthier world",
+    visionCta: "Discover →",
+    recipesHeading: "What should I cook today?",
+    recipesCta: "Find your recipe",
+    whyHeading: "Why plant-based?",
+    whyBody: "What it means for your body and the planet.",
+    whyCta: "Find out why",
+  },
+} as const;
+
+export default function BlobNav({ locale = "tr" }: { locale?: Locale }) {
+  const t = TEXT[locale];
+
   return (
     <section className="bg-mint px-6 py-24">
       <div className="mx-auto grid max-w-6xl items-center gap-10 md:grid-cols-3">
         {/* 1) Vizyon & Misyon */}
-        <Link href="/hakkimizda" className={CARD}>
+        <Link href={href("hakkimizda", locale)} className={CARD}>
           <span
             aria-hidden
             className="absolute inset-0 bg-forest transition-transform duration-500 ease-out group-hover:scale-[1.03]"
@@ -26,19 +52,19 @@ export default function BlobNav() {
           />
           <div className={CONTENT}>
             <span className="rounded-full bg-cream px-3 py-1 text-[10px] font-semibold tracking-wide text-forest uppercase">
-              Vizyonumuz &amp; Misyonumuz
+              {t.visionBadge}
             </span>
             <h3 className="font-display text-2xl leading-tight font-semibold text-cream">
-              Daha iyi ve daha sağlıklı bir dünyaya katkı
+              {t.visionHeading}
             </h3>
             <span className="text-sm font-medium text-sun group-hover:underline">
-              Keşfet →
+              {t.visionCta}
             </span>
           </div>
         </Link>
 
         {/* 2) Tarifler */}
-        <Link href="/tarifler" className={CARD}>
+        <Link href={href("tarifler", locale)} className={CARD}>
           <span
             aria-hidden
             className="absolute inset-0 overflow-hidden transition-transform duration-500 ease-out group-hover:scale-[1.03]"
@@ -55,16 +81,16 @@ export default function BlobNav() {
           </span>
           <div className={CONTENT}>
             <h3 className="font-display text-2xl leading-tight font-semibold text-cream">
-              Bugün ne pişirsem?
+              {t.recipesHeading}
             </h3>
             <span className="rounded-full bg-cream px-5 py-2 text-sm font-semibold text-forest">
-              Tarifini bul
+              {t.recipesCta}
             </span>
           </div>
         </Link>
 
         {/* 3) Neden bitki bazlı */}
-        <Link href="/neden-bitki-bazli" className={CARD}>
+        <Link href={href("neden-bitki-bazli", locale)} className={CARD}>
           <span
             aria-hidden
             className="absolute inset-0 bg-sage/45 transition-transform duration-500 ease-out group-hover:scale-[1.03]"
@@ -72,13 +98,13 @@ export default function BlobNav() {
           />
           <div className={CONTENT}>
             <h3 className="font-display text-2xl leading-tight font-semibold text-forest">
-              Neden bitki bazlı?
+              {t.whyHeading}
             </h3>
             <p className="text-sm leading-relaxed text-forest/75">
-              Bedeniniz ve gezegen için ne anlama geldiğini anlatıyoruz.
+              {t.whyBody}
             </p>
             <span className="rounded-full bg-forest px-5 py-2 text-sm font-semibold text-cream">
-              Nedenini öğren
+              {t.whyCta}
             </span>
           </div>
         </Link>

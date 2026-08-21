@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
+import type { Locale } from "@/lib/i18n";
 
 /**
  * Eski sitedeki blog yazıları. İçerikler src/content/blog altında markdown
@@ -8,6 +9,7 @@ import { marked } from "marked";
  * tamamı, JavaScript çalışmadan da sayfanın kaynağında yer alıyor.
  *
  * urlSlug, eski sitedeki adresin birebir aynısıdır; SEO devamlılığı buna bağlı.
+ * İngilizce çeviriler src/content/blog/en altında aynı slug ile durur.
  */
 export type BlogArticle = {
   urlSlug: string;
@@ -37,12 +39,12 @@ function parseFrontmatter(raw: string) {
   return { data, body: match[2] };
 }
 
-function load(): BlogArticle[] {
+function load(dir: string): BlogArticle[] {
   return fs
-    .readdirSync(CONTENT_DIR)
+    .readdirSync(dir)
     .filter((file) => file.endsWith(".md"))
     .map((file) => {
-      const raw = fs.readFileSync(path.join(CONTENT_DIR, file), "utf8");
+      const raw = fs.readFileSync(path.join(dir, file), "utf8");
       const { data, body } = parseFrontmatter(raw);
       return {
         urlSlug: file.replace(/\.md$/, ""),
@@ -55,8 +57,13 @@ function load(): BlogArticle[] {
     });
 }
 
-export const blogArticles: BlogArticle[] = load();
+export const blogArticles: BlogArticle[] = load(CONTENT_DIR);
+export const blogArticlesEn: BlogArticle[] = load(path.join(CONTENT_DIR, "en"));
 
-export function getArticleByUrl(urlSlug: string) {
-  return blogArticles.find((a) => a.urlSlug === urlSlug);
+export function articlesFor(locale: Locale): BlogArticle[] {
+  return locale === "en" ? blogArticlesEn : blogArticles;
+}
+
+export function getArticleByUrl(urlSlug: string, locale: Locale = "tr") {
+  return articlesFor(locale).find((a) => a.urlSlug === urlSlug);
 }

@@ -1,5 +1,6 @@
-import { blogArticles } from "@/lib/blogArticles";
+import { articlesFor } from "@/lib/blogArticles";
 import { recipes } from "@/lib/recipes";
+import { itemHref, type Locale } from "@/lib/i18n";
 
 export type BlogPost = {
   title: string;
@@ -28,24 +29,24 @@ const order = [
   "veganlik-nedir",
 ];
 
-function build(): BlogPost[] {
+export function blogPostsFor(locale: Locale): BlogPost[] {
   const bySlug = new Map<string, BlogPost>();
 
   for (const recipe of recipes) {
     bySlug.set(recipe.urlSlug, {
-      title: recipe.title,
-      excerpt: recipe.teaser,
+      title: locale === "en" ? recipe.en.title : recipe.title,
+      excerpt: locale === "en" ? recipe.en.teaser : recipe.teaser,
       image: recipe.image,
-      href: `/${recipe.urlSlug}`,
+      href: itemHref(recipe.urlSlug, locale),
     });
   }
 
-  for (const article of blogArticles) {
+  for (const article of articlesFor(locale)) {
     bySlug.set(article.urlSlug, {
       title: article.title,
       excerpt: article.description,
       image: article.image,
-      href: `/${article.urlSlug}`,
+      href: itemHref(article.urlSlug, locale),
     });
   }
 
@@ -54,4 +55,4 @@ function build(): BlogPost[] {
     .filter((post): post is BlogPost => Boolean(post));
 }
 
-export const blogPosts: BlogPost[] = build();
+export const blogPosts: BlogPost[] = blogPostsFor("tr");

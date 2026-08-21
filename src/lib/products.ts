@@ -1,5 +1,13 @@
 export type Accent = "sun" | "coral" | "plum" | "sage";
 
+/** İngilizce site için çevrilen alanlar; kaynak veri Türkçedir. */
+export type ProductEn = {
+  name: string;
+  tagline: string;
+  description: string;
+  ingredients: string[];
+};
+
 export type Product = {
   slug: string;
   /** Eski sitedeki URL — SEO devamlılığı için public adres budur. */
@@ -13,6 +21,7 @@ export type Product = {
   sceneImage: string;
   ingredients: string[];
   nutrition: { label: string; value: string }[];
+  en: ProductEn;
 };
 
 export const products: Product[] = [
@@ -44,6 +53,23 @@ export const products: Product[] = [
       { label: "Yağ", value: "6.5 g" },
       { label: "Karbonhidrat", value: "29 g" },
     ],
+    en: {
+      name: "Vegan Sausage Style",
+      tagline: "A new take on a classic",
+      description:
+        "The beloved classic sausage flavour, built from the power of tofu and chickpea flour combined with dried vegetables — plant-based, additive-free, pure.",
+      ingredients: [
+        "Tofu",
+        "Chickpea Flour",
+        "Oat Flour",
+        "Nutritional Yeast",
+        "Wheat Gluten",
+        "Dried Vegetables (Carrot, Celery, Onion, Leek, Parsley, Beetroot)",
+        "Sunflower Oil",
+        "Soy Sauce",
+        "Spice Mix",
+      ],
+    },
   },
   {
     slug: "ispanakli-sosis",
@@ -72,6 +98,22 @@ export const products: Product[] = [
       { label: "Yağ", value: "8.6 g" },
       { label: "Karbonhidrat", value: "10.6 g" },
     ],
+    en: {
+      name: "Spinach Plant-Based Sausage",
+      tagline: "Green at its most delicious",
+      description:
+        "A sausage that pairs the freshness of dried spinach with a light smoky aroma, adding colour and nutrition to your meals.",
+      ingredients: [
+        "Tofu",
+        "Wheat Gluten",
+        "Chickpea Flour",
+        "Oat Flour",
+        "Nutritional Yeast",
+        "Dried Spinach",
+        "Smoke Flavouring",
+        "Spice Mix",
+      ],
+    },
   },
   {
     slug: "vegan-sucuk",
@@ -99,6 +141,21 @@ export const products: Product[] = [
       { label: "Yağ", value: "11 g" },
       { label: "Karbonhidrat", value: "26 g" },
     ],
+    en: {
+      name: "Vegan Sucuk",
+      tagline: "Spiced, bold, plant-based",
+      description:
+        "We blended the power of kidney beans with our signature spice mix — bringing a bold take on Turkey's beloved spiced sausage to your table.",
+      ingredients: [
+        "Kidney Beans",
+        "Onion",
+        "Garlic",
+        "Soy Sauce",
+        "Sunflower Oil",
+        "Wheat Gluten",
+        "Signature Spice Mix",
+      ],
+    },
   },
   {
     slug: "tavuk-doner",
@@ -128,6 +185,23 @@ export const products: Product[] = [
       { label: "Yağ", value: "8.1 g" },
       { label: "Karbonhidrat", value: "13.7 g" },
     ],
+    en: {
+      name: "Chicken Döner Style",
+      tagline: "Street food, plant-based signature",
+      description:
+        "Döner lovers don't have to give up plant-based eating — we recreated the familiar flavour with nutritional yeast and our spice mix.",
+      ingredients: [
+        "Wheat Gluten",
+        "Nutritional Yeast",
+        "Chickpea Flour",
+        "Potato Starch",
+        "Sunflower Oil",
+        "Coconut Oil",
+        "Soy Sauce",
+        "Tomato Paste",
+        "Spice Mix",
+      ],
+    },
   },
   {
     slug: "isvec-kofte",
@@ -154,6 +228,20 @@ export const products: Product[] = [
       { label: "Yağ", value: "26 g" },
       { label: "Karbonhidrat", value: "9 g" },
     ],
+    en: {
+      name: "Plant-Based Swedish Meatballs",
+      tagline: "A plant-based take on Nordic cooking",
+      description:
+        "We brought the power of pea protein together with the classic meatball flavour of Swedish cuisine — high in protein, plant-based and additive-free.",
+      ingredients: [
+        "Pea Protein",
+        "Sunflower Oil",
+        "Spice Mix",
+        "Coconut Oil",
+        "Methylcellulose",
+        "Nutritional Yeast",
+      ],
+    },
   },
   {
     slug: "besin-mayasi",
@@ -173,6 +261,13 @@ export const products: Product[] = [
       { label: "Yağ", value: "—" },
       { label: "Karbonhidrat", value: "—" },
     ],
+    en: {
+      name: "Nutritional Yeast",
+      tagline: "Your kitchen's superfood companion",
+      description:
+        "Our gluten-free nutritional yeast, fortified with vitamin B12, adds a cheesy flavour and high protein to your dishes.",
+      ingredients: ["Inactive Nutritional Yeast (Fortified with Vitamin B12)"],
+    },
   },
   {
     slug: "hot-dog",
@@ -201,6 +296,22 @@ export const products: Product[] = [
       { label: "Yağ", value: "—" },
       { label: "Karbonhidrat", value: "—" },
     ],
+    en: {
+      name: "Hot Dog Vosis",
+      tagline: "Smoky street-food flavour",
+      description:
+        "Our smoke-flavoured plant-based sausage brings the classic hot dog experience to an additive-free, high-protein table.",
+      ingredients: [
+        "Tofu",
+        "Chickpea Flour",
+        "Oat Flour",
+        "Nutritional Yeast",
+        "Wheat Gluten",
+        "Smoke Flavouring",
+        "Sunflower Oil",
+        "Spice Mix",
+      ],
+    },
   },
 ];
 

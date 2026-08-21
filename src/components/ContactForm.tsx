@@ -1,15 +1,36 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import type { Locale } from "@/lib/i18n";
 
-export default function ContactForm() {
+const TEXT = {
+  tr: {
+    name: "Ad Soyad",
+    email: "E-posta",
+    message: "Mesajınız",
+    send: "Mesajı Gönder",
+    note: "Gönder butonuna bastığınızda, mesajınızla birlikte e-posta uygulamanız açılır.",
+    subject: (name: string) => `Web sitesi mesajı — ${name}`,
+  },
+  en: {
+    name: "Full Name",
+    email: "Email",
+    message: "Your Message",
+    send: "Send Message",
+    note: "When you press send, your email app opens with the message ready to go.",
+    subject: (name: string) => `Website message — ${name}`,
+  },
+} as const;
+
+export default function ContactForm({ locale = "tr" }: { locale?: Locale }) {
+  const t = TEXT[locale];
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
   function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    const subject = encodeURIComponent(`Web sitesi mesajı — ${name}`);
+    const subject = encodeURIComponent(t.subject(name));
     const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
     window.location.href = `mailto:info@vitavegantis.com?subject=${subject}&body=${body}`;
   }
@@ -18,7 +39,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
         <label htmlFor="name" className="text-sm font-medium text-forest">
-          Ad Soyad
+          {t.name}
         </label>
         <input
           id="name"
@@ -30,7 +51,7 @@ export default function ContactForm() {
       </div>
       <div>
         <label htmlFor="email" className="text-sm font-medium text-forest">
-          E-posta
+          {t.email}
         </label>
         <input
           id="email"
@@ -43,7 +64,7 @@ export default function ContactForm() {
       </div>
       <div>
         <label htmlFor="message" className="text-sm font-medium text-forest">
-          Mesajınız
+          {t.message}
         </label>
         <textarea
           id="message"
@@ -58,12 +79,9 @@ export default function ContactForm() {
         type="submit"
         className="w-full rounded-full bg-forest px-8 py-3 text-sm font-semibold text-cream transition-colors hover:bg-coral sm:w-auto"
       >
-        Mesajı Gönder
+        {t.send}
       </button>
-      <p className="text-xs text-forest/50">
-        Gönder butonuna bastığınızda, mesajınızla birlikte e-posta uygulamanız
-        açılır.
-      </p>
+      <p className="text-xs text-forest/50">{t.note}</p>
     </form>
   );
 }

@@ -2,16 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 import type { BlogArticle } from "@/lib/blogArticles";
 import SalesPointsCta from "@/components/SalesPointsCta";
+import { href, type Locale } from "@/lib/i18n";
 
-export default function ArticleDetail({ article }: { article: BlogArticle }) {
+const BACK = { tr: "← Blog", en: "← Blog" } as const;
+
+export default function ArticleDetail({
+  article,
+  locale = "tr",
+}: {
+  article: BlogArticle;
+  locale?: Locale;
+}) {
   return (
     <article className="px-6 py-16">
       <div className="mx-auto max-w-3xl">
         <Link
-          href="/blog"
+          href={href("blog", locale)}
           className="text-sm font-medium text-coral hover:underline"
         >
-          ← Blog
+          {BACK[locale]}
         </Link>
 
         <h1 className="font-display mt-4 text-3xl leading-tight font-semibold text-forest sm:text-4xl md:text-5xl">
@@ -39,7 +48,7 @@ export default function ArticleDetail({ article }: { article: BlogArticle }) {
         />
       </div>
 
-      <SalesPointsCta />
+      <SalesPointsCta locale={locale} />
     </article>
   );
 }

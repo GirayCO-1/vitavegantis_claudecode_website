@@ -12,7 +12,7 @@ export function organizationSchema() {
     name: SITE_NAME,
     legalName: "Vita Vegantis Gıda Sanayi ve Ticaret Limited Şirketi",
     url: `${SITE_URL}/`,
-    logo: `${SITE_URL}/icon-512.png`,
+    logo: `${SITE_URL}/brand/logo.png`,
     image: `${SITE_URL}/og-cover.webp`,
     slogan: "Enjoy Nature",
     sameAs: ["https://www.instagram.com/vitavegantis/"],
@@ -46,13 +46,17 @@ export function websiteSchema() {
 }
 
 /** Blog yazıları için BlogPosting şeması. */
-export function articleSchema(article: {
-  urlSlug: string;
-  title: string;
-  description: string;
-  image: string;
-}) {
-  const url = canonical(article.urlSlug);
+export function articleSchema(
+  article: {
+    urlSlug: string;
+    title: string;
+    description: string;
+    image: string;
+  },
+  locale: "tr" | "en" = "tr",
+) {
+  const en = locale === "en";
+  const url = canonical(en ? `en/${article.urlSlug}` : article.urlSlug);
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -62,7 +66,7 @@ export function articleSchema(article: {
     image: `${SITE_URL}${article.image}`,
     url,
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
-    inLanguage: "tr-TR",
+    inLanguage: en ? "en" : "tr-TR",
     author: { "@id": ORG_ID },
     publisher: { "@id": ORG_ID },
   };
@@ -97,8 +101,9 @@ function nutritionValue(product: Product, label: string) {
   return product.nutrition.find((n) => n.label === label)?.value;
 }
 
-export function productSchema(product: Product) {
-  const url = canonical(product.urlSlug);
+export function productSchema(product: Product, locale: "tr" | "en" = "tr") {
+  const en = locale === "en";
+  const url = canonical(en ? `en/${product.urlSlug}` : product.urlSlug);
   const energy = nutritionValue(product, "Enerji");
   const hasNutrition = energy && energy !== "—";
 
@@ -106,13 +111,13 @@ export function productSchema(product: Product) {
     "@context": "https://schema.org",
     "@type": "Product",
     "@id": `${url}#product`,
-    name: product.name,
-    description: product.description,
+    name: en ? product.en.name : product.name,
+    description: en ? product.en.description : product.description,
     image: `${SITE_URL}${product.image}`,
     url,
     brand: { "@type": "Brand", name: SITE_NAME },
     manufacturer: { "@id": ORG_ID },
-    category: "Bitki Bazlı Gıda",
+    category: en ? "Plant-Based Food" : "Bitki Bazlı Gıda",
     ...(product.weight !== "—" && { weight: product.weight }),
     ...(hasNutrition && {
       nutrition: {
@@ -127,10 +132,10 @@ export function productSchema(product: Product) {
     additionalProperty: [
       {
         "@type": "PropertyValue",
-        name: "İçindekiler",
-        value: product.ingredients.join(", "),
+        name: en ? "Ingredients" : "İçindekiler",
+        value: (en ? product.en.ingredients : product.ingredients).join(", "),
       },
-      { "@type": "PropertyValue", name: "Beslenme", value: "Vegan" },
+      { "@type": "PropertyValue", name: en ? "Diet" : "Beslenme", value: "Vegan" },
     ],
   };
 }
@@ -147,27 +152,32 @@ function servingCount(turkish: string) {
   return Number.isFinite(n) ? String(n) : undefined;
 }
 
-export function recipeSchema(recipe: Recipe) {
-  const url = canonical(recipe.urlSlug);
+export function recipeSchema(recipe: Recipe, locale: "tr" | "en" = "tr") {
+  const en = locale === "en";
+  const url = canonical(en ? `en/${recipe.urlSlug}` : recipe.urlSlug);
+  const ingredients = en ? recipe.en.ingredients : recipe.ingredients;
+  const steps = en ? recipe.en.steps : recipe.steps;
   return {
     "@context": "https://schema.org",
     "@type": "Recipe",
     "@id": `${url}#recipe`,
-    name: recipe.title,
-    description: recipe.teaser,
+    name: en ? recipe.en.title : recipe.title,
+    description: en ? recipe.en.teaser : recipe.teaser,
     image: [`${SITE_URL}${recipe.image}`],
     url,
     author: { "@id": ORG_ID },
     publisher: { "@id": ORG_ID },
-    inLanguage: "tr-TR",
-    recipeCategory: "Ana Yemek",
-    recipeCuisine: "Türk",
+    inLanguage: en ? "en" : "tr-TR",
+    recipeCategory: en ? "Main Course" : "Ana Yemek",
+    recipeCuisine: en ? "Turkish" : "Türk",
     suitableForDiet: "https://schema.org/VeganDiet",
-    keywords: "vegan, bitki bazlı, VitaVegantis",
+    keywords: en
+      ? "vegan, plant-based, VitaVegantis"
+      : "vegan, bitki bazlı, VitaVegantis",
     totalTime: isoDuration(recipe.time),
     recipeYield: servingCount(recipe.servings),
-    recipeIngredient: recipe.ingredients,
-    recipeInstructions: recipe.steps.map((step, i) => ({
+    recipeIngredient: ingredients,
+    recipeInstructions: steps.map((step, i) => ({
       "@type": "HowToStep",
       position: i + 1,
       text: step,

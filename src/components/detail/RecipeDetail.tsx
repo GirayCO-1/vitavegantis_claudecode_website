@@ -9,35 +9,75 @@ import {
 } from "@/components/recipe/RecipeIcons";
 import RecipeCard from "@/components/recipe/RecipeCard";
 import { recipes, type Recipe } from "@/lib/recipes";
+import { href, type Locale } from "@/lib/i18n";
 
-const badges = [
-  { label: "Vegan", Icon: LeafIcon },
-  { label: "Katkısız", Icon: ShieldIcon },
-  { label: "Yüksek Protein", Icon: BoltIcon },
-];
+const TEXT = {
+  tr: {
+    back: "← Tüm tarifler",
+    forThis: "Bu tarif için",
+    ingredients: "Malzemeler",
+    steps: "Hazırlanışı",
+    others: "Diğer Tarifler",
+    badges: [
+      { label: "Vegan", Icon: LeafIcon },
+      { label: "Katkısız", Icon: ShieldIcon },
+      { label: "Yüksek Protein", Icon: BoltIcon },
+    ],
+  },
+  en: {
+    back: "← All recipes",
+    forThis: "For this recipe",
+    ingredients: "Ingredients",
+    steps: "Method",
+    others: "Other Recipes",
+    badges: [
+      { label: "Vegan", Icon: LeafIcon },
+      { label: "Additive-Free", Icon: ShieldIcon },
+      { label: "High Protein", Icon: BoltIcon },
+    ],
+  },
+} as const;
 
-export default function RecipeDetail({ recipe }: { recipe: Recipe }) {
+export default function RecipeDetail({
+  recipe,
+  locale = "tr",
+}: {
+  recipe: Recipe;
+  locale?: Locale;
+}) {
+  const t = TEXT[locale];
   const others = recipes.filter((r) => r.slug !== recipe.slug);
+
+  const title = locale === "en" ? recipe.en.title : recipe.title;
+  const teaser = locale === "en" ? recipe.en.teaser : recipe.teaser;
+  const time = locale === "en" ? recipe.en.time : recipe.time;
+  const servings = locale === "en" ? recipe.en.servings : recipe.servings;
+  const ingredients =
+    locale === "en" ? recipe.en.ingredients : recipe.ingredients;
+  const steps = locale === "en" ? recipe.en.steps : recipe.steps;
 
   return (
     <>
       <section className="bg-mint px-6 pt-12 pb-20">
         <div className="mx-auto max-w-4xl">
-          <Link href="/tarifler" className="text-sm font-medium text-forest/70 hover:text-forest">
-            ← Tüm tarifler
+          <Link
+            href={href("tarifler", locale)}
+            className="text-sm font-medium text-forest/70 hover:text-forest"
+          >
+            {t.back}
           </Link>
 
           <div className="mt-6 overflow-hidden rounded-[32px] bg-white shadow-lg shadow-forest/10">
             <div className="max-h-80 overflow-hidden">
-              <RecipePhoto src={recipe.image} alt={recipe.title} priority />
+              <RecipePhoto src={recipe.image} alt={title} priority />
             </div>
 
             <div className="flex flex-col items-center px-8 pt-8 pb-10 text-center">
               <h1 className="font-playful text-3xl font-bold text-forest sm:text-4xl">
-                {recipe.title}
+                {title}
               </h1>
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-forest/70">
-                {recipe.teaser}
+                {teaser}
               </p>
 
               <div className="mt-6 flex items-center justify-center gap-6">
@@ -45,21 +85,21 @@ export default function RecipeDetail({ recipe }: { recipe: Recipe }) {
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-forest text-cream">
                     <SmileyIcon className="h-4 w-4" />
                   </span>
-                  {recipe.servings}
+                  {servings}
                 </span>
                 <span className="flex items-center gap-2 text-sm font-semibold text-forest">
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-forest text-cream">
                     <ClockIcon className="h-4 w-4" />
                   </span>
-                  {recipe.time}
+                  {time}
                 </span>
               </div>
 
               <p className="mt-6 text-xs font-medium tracking-wide text-forest/60 uppercase">
-                Bu tarif için
+                {t.forThis}
               </p>
               <div className="mt-3 flex items-center justify-center gap-3">
-                {badges.map(({ label, Icon }) => (
+                {t.badges.map(({ label, Icon }) => (
                   <span
                     key={label}
                     title={label}
@@ -74,9 +114,11 @@ export default function RecipeDetail({ recipe }: { recipe: Recipe }) {
 
           <div className="mt-10 grid gap-10 sm:grid-cols-2">
             <div>
-              <h2 className="font-display text-xl font-semibold text-forest">Malzemeler</h2>
+              <h2 className="font-display text-xl font-semibold text-forest">
+                {t.ingredients}
+              </h2>
               <ul className="mt-4 space-y-2">
-                {recipe.ingredients.map((ing) => (
+                {ingredients.map((ing) => (
                   <li key={ing} className="flex items-start gap-2 text-sm text-forest/80">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
                     {ing}
@@ -85,9 +127,11 @@ export default function RecipeDetail({ recipe }: { recipe: Recipe }) {
               </ul>
             </div>
             <div>
-              <h2 className="font-display text-xl font-semibold text-forest">Hazırlanışı</h2>
+              <h2 className="font-display text-xl font-semibold text-forest">
+                {t.steps}
+              </h2>
               <ol className="mt-4 space-y-3">
-                {recipe.steps.map((step, idx) => (
+                {steps.map((step, idx) => (
                   <li key={idx} className="flex gap-3 text-sm text-forest/80">
                     <span className="font-display shrink-0 text-plum">{idx + 1}.</span>
                     {step}
@@ -102,11 +146,11 @@ export default function RecipeDetail({ recipe }: { recipe: Recipe }) {
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <h2 className="font-display text-center text-2xl font-semibold text-forest">
-            Diğer Tarifler
+            {t.others}
           </h2>
           <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
             {others.map((r) => (
-              <RecipeCard key={r.slug} recipe={r} />
+              <RecipeCard key={r.slug} recipe={r} locale={locale} />
             ))}
           </div>
         </div>
@@ -114,4 +158,3 @@ export default function RecipeDetail({ recipe }: { recipe: Recipe }) {
     </>
   );
 }
-
