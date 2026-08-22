@@ -4,6 +4,7 @@ import { href, type Locale } from "@/lib/i18n";
 
 const TEXT = {
   tr: {
+    motto: "Enfes Lezzetiyle Bitki Bazlı",
     blurb:
       "Bitkisel proteini bedeninizi beslemenin ve gezegeni korumanın bir yolu olarak görüyoruz. Katkı maddesi yok, sır yok — sadece doğanın kendisi.",
     explore: "Keşfet",
@@ -19,6 +20,7 @@ const TEXT = {
     tagline: "Doğadan sofranıza — tek bir katkı maddesi olmadan.",
   },
   en: {
+    motto: "Deliciously Plant Based",
     blurb:
       "We see plant protein as a way to nourish your body and protect the planet. No additives, no secrets — just nature itself.",
     explore: "Explore",
@@ -52,7 +54,7 @@ export default function Footer({ locale = "tr" }: { locale?: Locale }) {
                 className="h-7 w-auto"
               />
             </Link>
-            <p className="font-accent mt-3 text-2xl text-sun">Enjoy Nature</p>
+            <p className="font-accent mt-3 text-2xl text-sun">{t.motto}</p>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-cream/75">
               {t.blurb}
             </p>

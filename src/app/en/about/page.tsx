@@ -136,7 +136,7 @@ export default function AboutPageEn() {
             />
           </div>
           <div>
-            <p className="font-accent text-2xl text-plum">Enjoy Nature</p>
+            <p className="font-accent text-2xl text-plum">Deliciously Plant Based</p>
             <h2 className="font-display mt-2 text-3xl font-semibold text-forest">
               Every bite, a nod of respect to nature
             </h2>

@@ -14,7 +14,7 @@ export function organizationSchema() {
     url: `${SITE_URL}/`,
     logo: `${SITE_URL}/brand/logo.png`,
     image: `${SITE_URL}/og-cover.webp`,
-    slogan: "Enjoy Nature",
+    slogan: "Deliciously Plant Based",
     sameAs: ["https://www.instagram.com/vitavegantis/"],
     address: {
       "@type": "PostalAddress",

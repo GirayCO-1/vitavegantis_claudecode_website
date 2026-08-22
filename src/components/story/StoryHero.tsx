@@ -13,10 +13,10 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 // NOT: Anlatı metinleri buradan güncellenir; sahne yapısı ve animasyonlar aynı kalır.
 const TEXT = {
   tr: {
-    tagline: "Enjoy Nature",
+    tagline: "Enfes Lezzetiyle Bitki Bazlı",
     hint: "Kaydırın",
     canvasAlt: "Suya düşen taze sebzeler",
-    scrubKicker: "Saf ve katkısız",
+    scrubKicker: "Bitkilerin lezzetle buluştuğu yer",
     scrubHeading: "Özü doğadan, formülü bizden",
     scenes: [
       {
@@ -27,10 +27,10 @@ const TEXT = {
     ],
   },
   en: {
-    tagline: "Enjoy Nature",
+    tagline: "Deliciously Plant Based",
     hint: "Scroll",
     canvasAlt: "Fresh vegetables falling into water",
-    scrubKicker: "Pure and additive-free",
+    scrubKicker: "Where Plants Meet Flavor",
     scrubHeading: "Rooted in nature, crafted by us",
     scenes: [
       {

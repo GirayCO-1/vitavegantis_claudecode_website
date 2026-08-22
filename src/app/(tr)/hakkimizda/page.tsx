@@ -125,7 +125,7 @@ export default function VizyonMisyonPage() {
             />
           </div>
           <div>
-            <p className="font-accent text-2xl text-plum">Enjoy Nature</p>
+            <p className="font-accent text-2xl text-plum">Enfes Lezzetiyle Bitki Bazlı</p>
             <h2 className="font-display mt-2 text-3xl font-semibold text-forest">
               Her lokma, doğaya duyulan bir saygı
             </h2>
