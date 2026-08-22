@@ -29,8 +29,8 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    title: "No Additives",
-    body: "Whatever is in our products is on the label. We use no preservatives, no hidden additives, no ingredient we couldn't explain.",
+    title: "High Nutritional Value",
+    body: "We build our products on powerful plant proteins. With sources like peas, wheat protein and tofu, every serving brings real, satisfying nourishment to your table.",
   },
   {
     title: "No Compromise on Flavour",

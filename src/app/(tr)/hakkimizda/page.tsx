@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 
 const values = [
   {
-    title: "Katkısızlık",
-    body: "Ürünlerimizin içinde ne varsa etiketinde de o var. Koruyucu madde, gizli katkı ya da açıklayamayacağımız bir bileşen kullanmıyoruz.",
+    title: "Yüksek Besin Değeri",
+    body: "Ürünlerimizi güçlü bitkisel proteinler üzerine kuruyoruz. Bezelye, buğday proteini ve tofu gibi kaynaklar sayesinde her porsiyon, sofranıza doyurucu ve besleyici bir karşılık taşır.",
   },
   {
     title: "Lezzetten Ödün Yok",
