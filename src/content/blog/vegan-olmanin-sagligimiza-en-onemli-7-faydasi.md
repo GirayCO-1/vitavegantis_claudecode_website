@@ -1,6 +1,6 @@
 ---
 title: Vegan Olmanın Sağlığımıza En Önemli 7 Faydası
-description: Fiziksel performanstan cilt sağlığına, migrenden ruh haline: vegan beslenmenin sağlık üzerindeki en önemli yedi etkisi ve arkasındaki araştırmalar.
+description: 'Fiziksel performanstan cilt sağlığına, migrenden ruh haline: vegan beslenmenin sağlık üzerindeki en önemli yedi etkisi ve arkasındaki araştırmalar.'
 image: /blog/vegan-7-faydasi.webp
 ---
 

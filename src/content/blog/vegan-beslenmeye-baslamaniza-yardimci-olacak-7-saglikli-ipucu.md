@@ -1,6 +1,6 @@
 ---
 title: Vegan Beslenmeye Başlamanıza Yardımcı Olacak 7 Sağlıklı İpucu
-seoTitle: Vegan Beslenmeye Başlangıç: 7 Sağlıklı İpucu
+seoTitle: 'Vegan Beslenmeye Başlangıç: 7 Sağlıklı İpucu'
 description: Sebzeden tam tahıla, bitkisel proteinden B12'ye — iyi planlanmış ve sağlıklı bir vegan beslenmeye başlamak için yedi pratik ipucu.
 image: /blog/7-saglikli-ipucu.jpg
 ---

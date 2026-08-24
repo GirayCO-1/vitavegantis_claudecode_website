@@ -1,0 +1,44 @@
+{
+  "order": 2,
+  "urlSlug": "bitki-bazli-sucuklu-kuru-fasulye-tarifi",
+  "accent": "plum",
+  "image": "/recipes/sucuklu-kuru-fasulye.webp",
+  "title": "Bitki Bazlı Sucuklu Kuru Fasulye",
+  "teaser": "Vegan Sucuk ile hazırlanan, ailece sevilen bir Türk mutfağı klasiğinin bitkisel yorumu.",
+  "time": "40 dk",
+  "servings": "4 kişilik",
+  "ingredients": [
+    "2 adet VitaVegantis Vegan Sucuk, dilimlenmiş",
+    "2,5 su bardağı haşlanmış kuru fasulye",
+    "1 soğan",
+    "2 yemek kaşığı domates salçası",
+    "2 yemek kaşığı zeytinyağı",
+    "Tuz, pul biber"
+  ],
+  "steps": [
+    "Soğanı zeytinyağında kavurun.",
+    "Dilimlenmiş vegan sucuğu ekleyip birkaç dakika kavurmaya devam edin.",
+    "Salçayı ekleyip kısa süre kavurun, ardından sıcak su ilave edin.",
+    "Haşlanmış fasulyeyi ekleyip kısık ateşte 15 dakika pişirin.",
+    "Tuzunu ayarlayıp sıcak servis edin."
+  ],
+  "titleEn": "Plant-Based White Bean Stew with Vegan Sucuk",
+  "teaserEn": "A plant-based take on a beloved Turkish family classic, made with our Vegan Sucuk.",
+  "timeEn": "40 min",
+  "servingsEn": "Serves 4",
+  "ingredientsEn": [
+    "2 VitaVegantis Vegan Sucuk, sliced",
+    "2.5 cups cooked white beans",
+    "1 onion",
+    "2 tbsp tomato paste",
+    "2 tbsp olive oil",
+    "Salt, chilli flakes"
+  ],
+  "stepsEn": [
+    "Sauté the onion in olive oil.",
+    "Add the sliced vegan sucuk and cook for a few more minutes.",
+    "Stir in the tomato paste, cook briefly, then add hot water.",
+    "Add the cooked beans and simmer over low heat for 15 minutes.",
+    "Season with salt and serve hot."
+  ]
+}

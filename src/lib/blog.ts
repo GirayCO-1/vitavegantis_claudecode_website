@@ -11,10 +11,10 @@ export type BlogPost = {
 };
 
 /**
- * Blog listesi: eski sitedeki sıralamayı korur.
- * Tarif yazıları tarif sayfalarına, diğerleri taşınan makale sayfalarına gider.
+ * Eski sitedeki blog sıralaması. Bu listede yer almayan yazılar (panelden
+ * eklenen yeniler) listenin başında, tarihe göre yeniden eskiye sıralanır.
  */
-const order = [
+const legacyOrder = [
   "vegan-iskender-tarifi",
   "bitki-bazli-sucuklu-kuru-fasulye-tarifi",
   "bitki-bazli-salcali-sosis-tarifi",
@@ -31,6 +31,7 @@ const order = [
 
 export function blogPostsFor(locale: Locale): BlogPost[] {
   const bySlug = new Map<string, BlogPost>();
+  const dates = new Map<string, string>();
 
   for (const recipe of recipes) {
     bySlug.set(recipe.urlSlug, {
@@ -48,9 +49,15 @@ export function blogPostsFor(locale: Locale): BlogPost[] {
       image: article.image,
       href: itemHref(article.urlSlug, locale),
     });
+    if (article.date) dates.set(article.urlSlug, article.date);
   }
 
-  return order
+  const legacy = legacyOrder.filter((slug) => bySlug.has(slug));
+  const added = [...bySlug.keys()]
+    .filter((slug) => !legacyOrder.includes(slug))
+    .sort((a, b) => (dates.get(b) ?? "").localeCompare(dates.get(a) ?? ""));
+
+  return [...added, ...legacy]
     .map((slug) => bySlug.get(slug))
     .filter((post): post is BlogPost => Boolean(post));
 }

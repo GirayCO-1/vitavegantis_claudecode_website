@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { marked } from "marked";
+import { load as parseYaml } from "js-yaml";
 import type { Locale } from "@/lib/i18n";
 
 /**
@@ -18,24 +19,24 @@ export type BlogArticle = {
   seoTitle?: string;
   description: string;
   image: string;
+  /** Panelden eklenen yazılarda yayın tarihi (YYYY-AA-GG); listede sıralar. */
+  date?: string;
   /** Markdown'dan üretilmiş HTML gövde. */
   html: string;
 };
 
 const CONTENT_DIR = path.join(process.cwd(), "src", "content", "blog");
 
-/** Basit frontmatter ayrıştırıcı: `---` blokları arasındaki `anahtar: değer`. */
+/**
+ * `---` blokları arasındaki YAML frontmatter. Admin paneli değerleri tırnak
+ * içinde veya çok satırlı yazabildiği için gerçek YAML ayrıştırıcı kullanılıyor.
+ */
 function parseFrontmatter(raw: string) {
   const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
   if (!match) {
     throw new Error("Frontmatter bulunamadı");
   }
-  const data: Record<string, string> = {};
-  for (const line of match[1].split(/\r?\n/)) {
-    const sep = line.indexOf(":");
-    if (sep === -1) continue;
-    data[line.slice(0, sep).trim()] = line.slice(sep + 1).trim();
-  }
+  const data = (parseYaml(match[1]) ?? {}) as Record<string, string>;
   return { data, body: match[2] };
 }
 
@@ -52,6 +53,7 @@ function load(dir: string): BlogArticle[] {
         ...(data.seoTitle && { seoTitle: data.seoTitle }),
         description: data.description,
         image: data.image,
+        ...(data.date && { date: String(data.date).slice(0, 10) }),
         html: marked.parse(body, { async: false }) as string,
       };
     });

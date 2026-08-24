@@ -1,0 +1,44 @@
+{
+  "order": 1,
+  "urlSlug": "vegan-iskender-tarifi",
+  "accent": "coral",
+  "image": "/recipes/vegan-iskender.jpg",
+  "title": "Vegan İskender",
+  "teaser": "Tavuk Döner Tadında ürünümüzle hazırlanan, tereyağlı domates sosu ve yoğurtla servis edilen klasik bir lezzet.",
+  "time": "25 dk",
+  "servings": "2 kişilik",
+  "ingredients": [
+    "1 paket VitaVegantis Tavuk Döner Tadında",
+    "2 dilim pide",
+    "2 yemek kaşığı domates salçası",
+    "1 su bardağı bitkisel yoğurt",
+    "2 yemek kaşığı bitkisel tereyağı",
+    "Tuz, karabiber"
+  ],
+  "steps": [
+    "Pideleri dilimleyip bir servis tabağına yayın.",
+    "VitaVegantis Tavuk Döner Tadında ürününü orta ateşte kızartın.",
+    "Salçayı su ile açıp kaynatarak sos hazırlayın.",
+    "Pidelerin üzerine döneri, ardından sosu ve yoğurdu ekleyin.",
+    "Eritilmiş bitkisel tereyağını gezdirip sıcak servis edin."
+  ],
+  "titleEn": "Vegan İskender",
+  "teaserEn": "A Turkish classic made with our Chicken Döner Style, served with buttery tomato sauce and plant-based yoghurt.",
+  "timeEn": "25 min",
+  "servingsEn": "Serves 2",
+  "ingredientsEn": [
+    "1 pack VitaVegantis Chicken Döner Style",
+    "2 slices of pide (Turkish flatbread)",
+    "2 tbsp tomato paste",
+    "1 cup plant-based yoghurt",
+    "2 tbsp plant-based butter",
+    "Salt, black pepper"
+  ],
+  "stepsEn": [
+    "Slice the flatbread and spread it over a serving plate.",
+    "Pan-fry the VitaVegantis Chicken Döner Style over medium heat.",
+    "Loosen the tomato paste with water and simmer into a sauce.",
+    "Layer the döner over the bread, then add the sauce and yoghurt.",
+    "Drizzle with melted plant-based butter and serve hot."
+  ]
+}

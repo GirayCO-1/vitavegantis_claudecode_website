@@ -1,0 +1,175 @@
+# VitaVegantis içerik paneli.
+# Panelde yapılan her kayıt GitHub deposuna işlenir; Vercel siteyi 1-2 dakika
+# içinde yeniden yayınlar. Ayrı bir veritabanı yoktur.
+
+backend:
+  name: github
+  repo: GirayCO-1/vitavegantis_claudecode_website
+  branch: main
+  base_url: https://vitavegantis-claudecode-website.vercel.app
+  auth_endpoint: api/auth
+
+# Yüklenen görseller doğrudan depoya gider.
+media_folder: public/uploads
+public_folder: /uploads
+
+locale: tr
+
+collections:
+  # ---------------------------------------------------------------- Blog (TR)
+  - name: blog_tr
+    label: Blog Yazıları (Türkçe)
+    label_singular: Blog Yazısı
+    folder: src/content/blog
+    extension: md
+    format: frontmatter
+    create: true
+    slug: "{{slug}}"
+    media_folder: /public/blog
+    public_folder: /blog
+    summary: "{{title}}"
+    description: >-
+      Yazının dosya adı aynı zamanda yayın adresidir
+      (ör. veganlik-nedir → vitavegantis.com/veganlik-nedir/).
+      Yayındaki bir yazının adını değiştirmeyin — arama motorundaki yeri kaybolur.
+    fields:
+      - { name: title, label: Başlık, widget: string }
+      - name: seoTitle
+        label: Kısa başlık (Google için)
+        widget: string
+        required: false
+        hint: >-
+          Başlık 45 karakterden uzunsa doldurun. Arama sonucunda bu görünür,
+          sayfada yine uzun başlık kalır.
+      - name: description
+        label: Özet
+        widget: text
+        hint: Blog listesinde ve Google'da görünen açıklama. 120-160 karakter idealdir.
+      - { name: image, label: Kapak görseli, widget: image }
+      - name: date
+        label: Yayın tarihi
+        widget: datetime
+        required: false
+        date_format: DD.MM.YYYY
+        time_format: false
+        picker_utc: true
+        hint: Yeni yazılar listenin başında, tarihe göre sıralanır.
+      - { name: body, label: Yazı, widget: markdown }
+
+  # ---------------------------------------------------------------- Blog (EN)
+  - name: blog_en
+    label: Blog Yazıları (İngilizce)
+    label_singular: Blog Yazısı (EN)
+    folder: src/content/blog/en
+    extension: md
+    format: frontmatter
+    create: true
+    slug: "{{slug}}"
+    media_folder: /public/blog
+    public_folder: /blog
+    summary: "{{title}}"
+    description: >-
+      Türkçe yazının İngilizce karşılığı. Dosya adı Türkçesiyle birebir aynı
+      olmalı — iki dil bu isim üzerinden eşleşiyor.
+    fields:
+      - { name: title, label: Başlık (EN), widget: string }
+      - { name: seoTitle, label: Kısa başlık (EN), widget: string, required: false }
+      - { name: description, label: Özet (EN), widget: text }
+      - { name: image, label: Kapak görseli, widget: image }
+      - name: date
+        label: Yayın tarihi
+        widget: datetime
+        required: false
+        date_format: DD.MM.YYYY
+        time_format: false
+        picker_utc: true
+      - { name: body, label: Yazı (EN), widget: markdown }
+
+  # ------------------------------------------------------------------ Tarifler
+  - name: recipes
+    label: Tarifler
+    label_singular: Tarif
+    folder: src/content/recipes
+    extension: json
+    create: true
+    slug: "{{slug}}"
+    media_folder: /public/recipes
+    public_folder: /recipes
+    summary: "{{title}}"
+    description: >-
+      Her tarif hem Türkçe hem İngilizce alanları içerir. Yayın adresi
+      "Yayın adresi" alanından gelir; yayındaki bir tarifte bunu değiştirmeyin.
+    fields:
+      - name: order
+        label: Sıra
+        widget: number
+        value_type: int
+        default: 10
+        hint: Küçük sayı önce görünür.
+      - name: urlSlug
+        label: Yayın adresi
+        widget: string
+        pattern: ['^[a-z0-9-]+$', 'Yalnızca küçük harf, rakam ve tire kullanın']
+        hint: "Örnek: vegan-iskender-tarifi → vitavegantis.com/vegan-iskender-tarifi/"
+      - name: accent
+        label: Renk vurgusu
+        widget: select
+        options:
+          - { label: Mercan, value: coral }
+          - { label: Erik, value: plum }
+          - { label: Günebakan, value: sun }
+          - { label: Adaçayı, value: sage }
+        default: coral
+      - { name: image, label: Tarif fotoğrafı, widget: image }
+
+      - { name: title, label: Başlık, widget: string }
+      - { name: teaser, label: Kısa tanıtım, widget: text }
+      - { name: time, label: Süre, widget: string, hint: "Örnek: 25 dk" }
+      - { name: servings, label: Porsiyon, widget: string, hint: "Örnek: 2 kişilik" }
+      - name: ingredients
+        label: Malzemeler
+        widget: list
+        field: { name: item, label: Malzeme, widget: string }
+      - name: steps
+        label: Hazırlanışı
+        widget: list
+        field: { name: item, label: Adım, widget: string }
+
+      - { name: titleEn, label: Başlık (EN), widget: string }
+      - { name: teaserEn, label: Kısa tanıtım (EN), widget: text }
+      - { name: timeEn, label: Süre (EN), widget: string, hint: "Örnek: 25 min" }
+      - { name: servingsEn, label: Porsiyon (EN), widget: string, hint: "Örnek: Serves 2" }
+      - name: ingredientsEn
+        label: Malzemeler (EN)
+        widget: list
+        field: { name: item, label: Ingredient, widget: string }
+      - name: stepsEn
+        label: Hazırlanışı (EN)
+        widget: list
+        field: { name: item, label: Step, widget: string }
+
+  # ----------------------------------------------------------- Satış Noktaları
+  - name: sales_points
+    label: Satış Noktaları
+    files:
+      - name: list
+        label: Satış Noktaları Listesi
+        file: src/content/sales-points.json
+        media_folder: /public/satisnoktalari
+        public_folder: /satisnoktalari
+        description: >-
+          Kartlar bu listedeki sırayla görünür; sürükleyerek sıralayabilirsiniz.
+          Bağlantı alanı boş bırakılırsa kart tıklanmaz.
+        fields:
+          - name: points
+            label: Satış noktaları
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: Adı, widget: string }
+              - { name: logo, label: Logo, widget: image }
+              - name: href
+                label: Bağlantı
+                widget: string
+                required: false
+                hint: Ürünlerimizin listelendiği sayfanın tam adresi.

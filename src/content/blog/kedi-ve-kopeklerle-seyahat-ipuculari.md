@@ -1,6 +1,6 @@
 ---
 title: Kedi ve Köpeklerle Seyahat İpuçları
-description: Yola çıkmadan önce yapılacaklar, çantada bulunması gerekenler ve yolculuk sırasında dikkat edilecekler: kedi ve köpeklerle güvenli seyahat rehberi.
+description: 'Yola çıkmadan önce yapılacaklar, çantada bulunması gerekenler ve yolculuk sırasında dikkat edilecekler: kedi ve köpeklerle güvenli seyahat rehberi.'
 image: /blog/kedi-kopek-seyahat.jpg
 ---
 

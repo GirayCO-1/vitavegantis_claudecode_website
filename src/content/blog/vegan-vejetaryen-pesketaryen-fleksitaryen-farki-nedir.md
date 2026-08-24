@@ -1,7 +1,7 @@
 ---
 title: Vegan, Vejetaryen, Pesketaryen & Fleksitaryen Farkı Nedir?
 seoTitle: Vegan, Vejetaryen ve Pesketaryen Farkı
-description: Sık sık birbirine karıştırılan dört beslenme biçiminin farkları: veganlık, vejetaryenlik ve alt grupları, pesketaryenlik ve fleksitaryenlik.
+description: 'Sık sık birbirine karıştırılan dört beslenme biçiminin farkları: veganlık, vejetaryenlik ve alt grupları, pesketaryenlik ve fleksitaryenlik.'
 image: /blog/vegan-vejetaryen-farki.webp
 ---
 

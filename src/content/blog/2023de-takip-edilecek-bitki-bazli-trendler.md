@@ -1,7 +1,7 @@
 ---
 title: 2023'te Takip Edilecek Bitki Bazlı Trendler
 seoTitle: Takip Edilecek Bitki Bazlı Trendler
-description: Temiz etiketten bitki bazlı deniz ürünlerine, bebek mamasından atıştırmalıklara: bitki bazlı gıda dünyasında öne çıkan trendler.
+description: 'Temiz etiketten bitki bazlı deniz ürünlerine, bebek mamasından atıştırmalıklara: bitki bazlı gıda dünyasında öne çıkan trendler.'
 image: /blog/2023-trendler.webp
 ---
 

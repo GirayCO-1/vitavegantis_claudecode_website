@@ -26,6 +26,12 @@ const nextConfig: NextConfig = {
   // Adreslerin birebir aynı kalması için aynı biçimi sürdürüyoruz.
   trailingSlash: true,
 
+  // İçerik paneli public/admin altında düz bir HTML dosyası; Next.js klasör
+  // adresini kendiliğinden index.html'e bağlamadığı için elle eşliyoruz.
+  async rewrites() {
+    return [{ source: "/admin", destination: "/admin/index.html" }];
+  },
+
   async redirects() {
     return [
       ...Object.entries(legacyProductUrls).map(([slug, urlSlug]) => ({

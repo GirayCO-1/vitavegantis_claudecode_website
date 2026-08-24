@@ -1,0 +1,44 @@
+{
+  "order": 3,
+  "urlSlug": "bitki-bazli-salcali-sosis-tarifi",
+  "accent": "sun",
+  "image": "/recipes/salcali-sosis.webp",
+  "title": "Bitki Bazlı Salçalı Sosis",
+  "teaser": "Vegan Sosis Tadında ürünümüzle hazırlanan, ekmek arası veya ana yemek olarak servis edilebilen pratik bir tarif.",
+  "time": "20 dk",
+  "servings": "2 kişilik",
+  "ingredients": [
+    "1 paket VitaVegantis Vegan Sosis Tadında",
+    "1 yemek kaşığı domates salçası",
+    "1 diş sarımsak",
+    "1 yemek kaşığı zeytinyağı",
+    "Yarım su bardağı su",
+    "Tuz, karabiber, kekik"
+  ],
+  "steps": [
+    "Sosisleri istediğiniz şekilde dilimleyin.",
+    "Zeytinyağında sarımsağı hafifçe kavurun.",
+    "Sosisleri ekleyip birkaç dakika kızartın.",
+    "Salçayı su ile açıp tavaya ekleyin, kısık ateşte 5 dakika pişirin.",
+    "Baharatlarla tatlandırıp sıcak servis edin."
+  ],
+  "titleEn": "Plant-Based Sausages in Tomato Sauce",
+  "teaserEn": "A quick recipe made with our Vegan Sausage Style — serve it in bread or as a main dish.",
+  "timeEn": "20 min",
+  "servingsEn": "Serves 2",
+  "ingredientsEn": [
+    "1 pack VitaVegantis Vegan Sausage Style",
+    "1 tbsp tomato paste",
+    "1 clove of garlic",
+    "1 tbsp olive oil",
+    "Half a cup of water",
+    "Salt, black pepper, thyme"
+  ],
+  "stepsEn": [
+    "Slice the sausages however you like.",
+    "Lightly sauté the garlic in olive oil.",
+    "Add the sausages and fry for a few minutes.",
+    "Loosen the tomato paste with water, add to the pan and simmer for 5 minutes.",
+    "Season with the spices and serve hot."
+  ]
+}
