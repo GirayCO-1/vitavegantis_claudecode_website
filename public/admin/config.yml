@@ -2,12 +2,14 @@
 # Panelde yapılan her kayıt GitHub deposuna işlenir; Vercel siteyi 1-2 dakika
 # içinde yeniden yayınlar. Ayrı bir veritabanı yoktur.
 
+# Giriş, GitHub kişisel erişim anahtarı (token) ile yapılır. Sunucu tarafı
+# kod gerektirmediği için panel hem Vercel'de hem IHS'de aynı şekilde çalışır.
+# Panelde "Erişim Token'ı Kullanarak Giriş Yap" seçeneğini kullanın.
 backend:
   name: github
   repo: GirayCO-1/vitavegantis_claudecode_website
   branch: main
-  base_url: https://vitavegantis-claudecode-website.vercel.app
-  auth_endpoint: api/auth
+  auth_type: pat
 
 # Yüklenen görseller doğrudan depoya gider.
 media_folder: public/uploads

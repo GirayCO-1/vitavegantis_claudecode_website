@@ -5,6 +5,9 @@ import { recipes } from "@/lib/recipes";
 import { canonical } from "@/lib/site";
 import { sectionMap } from "@/lib/i18n";
 
+// Statik dışa aktarmada (IHS) bu rota derleme anında üretilmeli.
+export const dynamic = "force-static";
+
 type Entry = {
   tr: string; // TR yolu (kök seviyede)
   en: string; // EN yolu (/en altında)

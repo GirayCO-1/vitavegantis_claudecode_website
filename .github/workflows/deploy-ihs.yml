@@ -1,0 +1,46 @@
+name: IHS'ye yayınla
+
+# Elle başlatılır. IHS'ye geçildiğinde aşağıdaki "push" bloğunun başındaki
+# yorum işaretleri kaldırılırsa, her içerik değişikliğinde otomatik çalışır.
+on:
+  workflow_dispatch:
+  # push:
+  #   branches: [main]
+
+concurrency:
+  group: ihs-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Bağımlılıkları kur
+        run: npm ci
+
+      - name: Statik siteyi derle
+        run: npm run build:static
+
+      - name: Çıktıyı doğrula
+        run: node verify-htaccess.mjs
+
+      - name: FTP ile IHS'ye yükle
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.IHS_FTP_SERVER }}
+          username: ${{ secrets.IHS_FTP_USERNAME }}
+          password: ${{ secrets.IHS_FTP_PASSWORD }}
+          # IHS'de sitenin kök klasörü. Genelde /public_html/ olur;
+          # FTP bilgileriyle gelen klasör adına göre düzeltin.
+          server-dir: ${{ secrets.IHS_FTP_DIR }}
+          local-dir: ./out/
+          # Yalnızca değişen dosyalar yüklenir; ilk yükleme uzun sürer,
+          # sonrakiler saniyeler içinde biter.
+          dangerous-clean-slate: false

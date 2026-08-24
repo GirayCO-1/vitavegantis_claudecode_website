@@ -1,6 +1,9 @@
 import type { MetadataRoute } from "next";
 import { SITE_DESCRIPTION, SITE_NAME } from "@/lib/site";
 
+// Statik dışa aktarmada (IHS) bu rota derleme anında üretilmeli.
+export const dynamic = "force-static";
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: `${SITE_NAME} — Bitki Bazlı Yüksek Proteinli Vegan Ürünler`,
