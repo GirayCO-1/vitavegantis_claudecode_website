@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: canonical("urunler"),
     title: "Ürünler — VitaVegantis",
     description: "Vegan sosis, sucuk, döner, İsveç köfte, hot dog ve besin mayası: VitaVegantis'in bitki bazlı, yüksek proteinli ürün ailesini keşfedin.",
-    images: [`${SITE_URL}/products/scenes/vegan-sucuk-scene-2.png`],
+    images: [`${SITE_URL}/products/scenes/vegan-sucuk-scene-2.webp`],
   }
 };
 

@@ -1,7 +1,7 @@
 ---
 title: Veganizm ve Çevre
 description: Hayvansal tarımın ormanlar, su kaynakları ve iklim üzerindeki etkisi; veganizmin çevresel karşılığı üzerine kapsamlı bir derleme.
-image: /blog/veganizm-ve-cevre.jpg
+image: /blog/veganizm-ve-cevre.webp
 ---
 
 Veganizm ve çevre konusundan bahsedeceğimiz yazımıza hoş geldiniz. Veganizm yaşam biçiminin çevreye olan katkısını değerlendireceğiz.

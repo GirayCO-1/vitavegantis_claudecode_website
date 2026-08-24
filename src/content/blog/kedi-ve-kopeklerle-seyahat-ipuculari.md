@@ -1,7 +1,7 @@
 ---
 title: Kedi ve Köpeklerle Seyahat İpuçları
 description: 'Yola çıkmadan önce yapılacaklar, çantada bulunması gerekenler ve yolculuk sırasında dikkat edilecekler: kedi ve köpeklerle güvenli seyahat rehberi.'
-image: /blog/kedi-kopek-seyahat.jpg
+image: /blog/kedi-kopek-seyahat.webp
 ---
 
 Köpekler ve kedilerle seyahat etmek eğlenceli ve ödüllendirici olabilir, ancak bunu güvenli bir şekilde yapmak biraz fazladan planlama gerektirir. "Daima hazırlıklı olun" yalnızca iyi bir slogan değil; aynı zamanda iyi bir tavsiye.

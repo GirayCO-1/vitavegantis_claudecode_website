@@ -1,7 +1,7 @@
 ---
 title: Tips for Travelling with Cats and Dogs
 description: What to do before you set off, what to pack, and what to watch for on the road - a guide to safe travel with cats and dogs.
-image: /blog/kedi-kopek-seyahat.jpg
+image: /blog/kedi-kopek-seyahat.webp
 ---
 
 Travelling with dogs and cats can be fun and rewarding, but doing it safely takes a little extra planning. "Always be prepared" isn't just a good motto; it's good advice.

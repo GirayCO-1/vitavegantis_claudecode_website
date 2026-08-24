@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "Products — VitaVegantis",
     description:
       "Vegan sausage, sucuk, döner, Swedish meatballs, hot dog and nutritional yeast: VitaVegantis' plant-based, high-protein product family.",
-    images: [`${SITE_URL}/products/scenes/vegan-sucuk-scene-2.png`],
+    images: [`${SITE_URL}/products/scenes/vegan-sucuk-scene-2.webp`],
   },
 };
 

@@ -1,7 +1,7 @@
 ---
 title: What Is Veganism?
 description: What is veganism, how did it emerge and who were its pioneers? A primer on the etymology, definition and philosophy of the vegan movement.
-image: /blog/veganlik-nedir.jpg
+image: /blog/veganlik-nedir.webp
 ---
 
 What is veganism, how did it come about, and who were the pioneers of the movement? Welcome to our guide to the essentials of veganism.

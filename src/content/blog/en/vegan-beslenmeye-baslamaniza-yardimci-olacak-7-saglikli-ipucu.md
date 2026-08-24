@@ -2,7 +2,7 @@
 title: 7 Healthy Tips to Help You Start Eating Vegan
 seoTitle: 7 Tips for Starting a Vegan Diet
 description: From vegetables to whole grains, plant protein to B12 — seven practical tips for a well-planned, healthy start to vegan eating.
-image: /blog/7-saglikli-ipucu.jpg
+image: /blog/7-saglikli-ipucu.webp
 ---
 
 A vegan diet is a healthy way of eating when your meals are full of vegetables, fruit, legumes and whole grains. To avoid missing essential nutrients — or living on processed vegan foods alone — you need a well-planned vegan diet. Here are 7 simple tips for an easy, healthy vegan diet. Even if you're simply trying to eat more plant-based for better health, these tips are a great place to start.

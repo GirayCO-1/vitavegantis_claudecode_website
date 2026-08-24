@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     url: canonical("tarifler"),
     title: "Tarifler — VitaVegantis",
     description: "Vegan İskender'den sucuklu kuru fasulyeye: VitaVegantis ürünleriyle evde kolayca hazırlayabileceğiniz bitki bazlı tarifler ve pişirme önerileri.",
-    images: [`${SITE_URL}/recipes/vegan-iskender.jpg`],
+    images: [`${SITE_URL}/recipes/vegan-iskender.webp`],
   }
 };
 

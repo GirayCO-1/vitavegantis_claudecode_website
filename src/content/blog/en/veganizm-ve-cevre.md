@@ -1,7 +1,7 @@
 ---
 title: Veganism and the Environment
 description: How animal agriculture affects forests, water and the climate — and what veganism offers the environment. A comprehensive overview.
-image: /blog/veganizm-ve-cevre.jpg
+image: /blog/veganizm-ve-cevre.webp
 ---
 
 Welcome to our article on veganism and the environment, where we look at what a vegan way of living contributes to the planet.

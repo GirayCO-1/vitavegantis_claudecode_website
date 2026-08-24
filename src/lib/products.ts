@@ -34,8 +34,8 @@ export const products: Product[] = [
     tagline: "Klasik sofraların yeni hali",
     description:
       "Tofu ve nohut ununun gücünü kurutulmuş sebzelerle birleştirdiğimiz, ailece sevilen klasik sosis lezzeti — bitkisel, katkısız, saf.",
-    image: "/products/vegan-sosis.jpg",
-    sceneImage: "/products/scenes/vegan-sosis-pizza-scene-v2.png",
+    image: "/products/vegan-sosis.webp",
+    sceneImage: "/products/scenes/vegan-sosis-pizza-scene-v2.webp",
     ingredients: [
       "Tofu",
       "Nohut Unu",
@@ -80,8 +80,8 @@ export const products: Product[] = [
     tagline: "Yeşilin en lezzetli hali",
     description:
       "Kurutulmuş ıspanağın tazeliğini hafif tütsü aromasıyla buluşturduğumuz, yemeklerinize renk ve besin değeri katan bir sosis.",
-    image: "/products/ispanakli-sosis.jpg",
-    sceneImage: "/products/scenes/ispanakli-sosis-scene.png",
+    image: "/products/ispanakli-sosis.webp",
+    sceneImage: "/products/scenes/ispanakli-sosis-scene.webp",
     ingredients: [
       "Tofu",
       "Buğday Gluteni",
@@ -125,7 +125,7 @@ export const products: Product[] = [
     description:
       "Meksika fasulyesinin gücünü özel baharat karışımımızla harmanladık — sofralarınıza cesur bir lezzet getiriyor.",
     image: "/products/vegan-sucuk.webp",
-    sceneImage: "/products/scenes/vegan-sucuk-scene-2.png",
+    sceneImage: "/products/scenes/vegan-sucuk-scene-2.webp",
     ingredients: [
       "Meksika Fasulyesi",
       "Soğan",
@@ -167,7 +167,7 @@ export const products: Product[] = [
     description:
       "Döner severlerin bitki bazlı beslenmeden vazgeçmesine gerek yok — besin mayası ve baharat karışımımızla tanıdık lezzeti yeniden yarattık.",
     image: "/products/tavuk-doner.webp",
-    sceneImage: "/products/scenes/tavuk-doner-scene.png",
+    sceneImage: "/products/scenes/tavuk-doner-scene.webp",
     ingredients: [
       "Buğday Gluteni",
       "Besin Mayası",
@@ -212,8 +212,8 @@ export const products: Product[] = [
     tagline: "Kuzey mutfağının bitkisel yorumu",
     description:
       "Bezelye proteininin gücünü İsveç mutfağının klasik köfte lezzetiyle buluşturduk — yüksek proteinli, bitkisel ve katkısız.",
-    image: "/products/isvec-kofte.jpg",
-    sceneImage: "/products/scenes/isvec-kofte-scene.png",
+    image: "/products/isvec-kofte.webp",
+    sceneImage: "/products/scenes/isvec-kofte-scene.webp",
     ingredients: [
       "Bezelye Proteini",
       "Ayçiçek Yağı",
@@ -279,7 +279,7 @@ export const products: Product[] = [
     description:
       "Tütsü aromasıyla zenginleştirdiğimiz bitki bazlı sosisimiz, klasik hot dog keyfini katkısız ve yüksek proteinli bir sofraya taşıyor.",
     image: "/products/hot-dog.webp",
-    sceneImage: "/products/scenes/hot-dog-scene.png",
+    sceneImage: "/products/scenes/hot-dog-scene.webp",
     ingredients: [
       "Tofu",
       "Nohut Unu",

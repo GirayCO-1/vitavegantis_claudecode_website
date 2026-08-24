@@ -1,7 +1,7 @@
 ---
 title: Veganlık Nedir?
 description: Veganlık nedir, nasıl ortaya çıkmıştır ve veganizmin öncüleri kimlerdir? Veganlığın etimolojisi, tanımı ve felsefesi üzerine temel bir rehber.
-image: /blog/veganlik-nedir.jpg
+image: /blog/veganlik-nedir.webp
 ---
 
 Veganlık nedir, nasıl ortaya çıkmıştır ve veganizmin öncüleri kimlerdir? Veganlık ile ilgili temel bilgilere erişebileceğiniz yazımıza hoş geldiniz.

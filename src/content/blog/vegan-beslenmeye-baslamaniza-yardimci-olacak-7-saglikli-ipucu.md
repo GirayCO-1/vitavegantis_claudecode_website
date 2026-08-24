@@ -2,7 +2,7 @@
 title: Vegan Beslenmeye Başlamanıza Yardımcı Olacak 7 Sağlıklı İpucu
 seoTitle: 'Vegan Beslenmeye Başlangıç: 7 Sağlıklı İpucu'
 description: Sebzeden tam tahıla, bitkisel proteinden B12'ye — iyi planlanmış ve sağlıklı bir vegan beslenmeye başlamak için yedi pratik ipucu.
-image: /blog/7-saglikli-ipucu.jpg
+image: /blog/7-saglikli-ipucu.webp
 ---
 
 Vegan beslenme; öğünleriniz sebze, meyve, baklagiller ve tam tahıllarla dolu olduğunda sağlıklı bir yemek yeme şeklidir. Temel besinleri kaçırmamak veya yalnızca işlenmiş vegan yiyecekleri tüketmemek için iyi planlanmış bir vegan diyetine ihtiyacınız var. İşte kolay ve sağlıklı bir vegan diyeti için 7 basit ipucu. Daha iyi sağlık için daha fazla bitki bazlı bir diyet benimsemeye çalışıyor olsanız bile, bu ipuçları başlamak için harika bir yol.

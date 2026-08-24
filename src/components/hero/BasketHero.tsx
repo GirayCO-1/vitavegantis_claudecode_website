@@ -83,7 +83,7 @@ function HandBasketCard({ progress }: { progress: MotionValue<number> }) {
     >
       <div className="relative aspect-[4/5] w-full bg-cream">
         <Image
-          src="/hero-basket/hand-basket.png"
+          src="/hero-basket/hand-basket.webp"
           alt="Taze sebzeler sepetten dökülüyor"
           fill
           sizes="280px"
@@ -107,7 +107,7 @@ function ProductBasketCard({ progress }: { progress: MotionValue<number> }) {
       <div className="basket-float overflow-hidden rounded-[28px] shadow-2xl">
         <div className="relative aspect-square w-full bg-cream">
           <Image
-            src="/hero-basket/product-basket.png"
+            src="/hero-basket/product-basket.webp"
             alt="VitaVegantis ürünleriyle dolu sepet"
             fill
             sizes="380px"
@@ -190,10 +190,10 @@ function StaticHero() {
       <p className="font-accent mt-4 text-2xl text-plum sm:text-3xl">Enjoy Nature</p>
       <div className="mt-12 flex w-full max-w-3xl items-center justify-between gap-6">
         <div className="relative aspect-[4/5] w-40 shrink-0 overflow-hidden rounded-3xl shadow-xl -rotate-6 sm:w-56">
-          <Image src="/hero-basket/hand-basket.png" alt="Taze sebzeler" fill sizes="220px" className="object-cover" />
+          <Image src="/hero-basket/hand-basket.webp" alt="Taze sebzeler" fill sizes="220px" className="object-cover" />
         </div>
         <div className="relative aspect-square w-40 shrink-0 overflow-hidden rounded-3xl shadow-xl rotate-3 sm:w-56">
-          <Image src="/hero-basket/product-basket.png" alt="VitaVegantis ürün sepeti" fill sizes="220px" className="object-cover" />
+          <Image src="/hero-basket/product-basket.webp" alt="VitaVegantis ürün sepeti" fill sizes="220px" className="object-cover" />
         </div>
       </div>
     </section>
