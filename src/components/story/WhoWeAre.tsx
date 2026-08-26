@@ -10,16 +10,20 @@ const TEXT = {
     eyebrow: "Biz Kimiz",
     heading: "Gıda teknolojileri firması",
     paragraphs: [
-      "VitaVegantis, 2022 yılında kurulmuş bir gıda teknolojileri firmasıdır. Sağlıklı, besleyici ve herkesin bütçesine uygun yenilikçi ürünler geliştirmek için çalışıyoruz.",
-      "Üretimimizi ISO 22000 Gıda Güvenliği Sertifikası ile yapıyoruz. Gıda alanında uzman kadromuzun geliştirdiği alternatif et ürünleri ve bitkisel şarküteri çeşitlerimizle — vegan sosis, vegan sucuk, vegan döner, vegan İsveç köfte — alıştığınız lezzetleri doğadan gelen içeriklerle yeniden kuruyoruz.",
+      "Vita Vegantis Gıda San. ve Tic. Ltd. Şti., 2022 yılında kurulan, yenilikçi gıda teknolojileriyle lezzetli ve besleyici bitki bazlı gıdalar geliştiren bir gıda şirketidir.",
+      "Gıda teknolojileri alanındaki uzman ekibimizin geliştirdiği bitki bazlı et alternatiflerini Ankara'daki, ISO 22000 Gıda Güvenliği Yönetim Sistemi sertifikasına sahip üretim tesisimizde üretiyoruz.",
+      "Ürün portföyümüzde vegan sosis çeşitleri, vegan sucuk, vegan döner, vegan köfte, besin mayası gibi farklı damak zevklerine hitap eden bitki bazlı ürünler yer almaktadır.",
+      "Amacımız; bitkisel kaynaklardan yararlanarak lezzet, besleyicilik ve ürün kalitesini bir araya getiren, günlük yaşamın vazgeçilmezi olabilecek gıdalar geliştirmektir.",
     ],
   },
   en: {
     eyebrow: "Who We Are",
     heading: "A food technology company",
     paragraphs: [
-      "VitaVegantis is a food technology company founded in 2022. We work to develop innovative products that are healthy, nourishing and affordable for everyone.",
-      "We produce under the ISO 22000 Food Safety certification. With the alternative meat products and plant-based deli range developed by our food experts — vegan sausage, vegan sucuk, vegan döner, vegan Swedish meatballs — we rebuild the flavours you know from ingredients that come straight from nature.",
+      "Vita Vegantis Gıda San. ve Tic. Ltd. Şti. is a food company founded in 2022, developing delicious and nutritious plant-based foods through innovative food technologies.",
+      "The plant-based meat alternatives developed by our expert team in food technology are produced at our facility in Ankara, which holds the ISO 22000 Food Safety Management System certification.",
+      "Our portfolio covers plant-based products for a range of tastes: vegan sausage varieties, vegan sucuk, vegan döner, vegan meatballs and nutritional yeast.",
+      "Our aim is to develop foods that draw on plant sources to bring flavour, nourishment and product quality together — foods that can become an everyday essential.",
     ],
   },
 } as const;
