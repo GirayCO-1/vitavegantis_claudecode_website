@@ -232,7 +232,10 @@ export default function StoryHero({ locale = "tr" }: { locale?: Locale }) {
           <div className="absolute inset-0 bg-gradient-to-b from-forest/70 via-forest/40 to-forest/80" />
 
           <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-            <h1 className="story-intro-logo">
+            {/* Logo görseldir; sayfanın h1'i altındaki metindir. Görseli h1
+                içine koymak, arama motoruna metin yerine yalnızca alt
+                bırakıyordu — başlık artık gerçek metin. */}
+            <div className="story-intro-logo">
               <Image
                 src="/brand/logo-cream.webp"
                 alt="VitaVegantis"
@@ -241,10 +244,10 @@ export default function StoryHero({ locale = "tr" }: { locale?: Locale }) {
                 priority
                 className="h-auto w-[82vw] max-w-xl md:max-w-2xl"
               />
-            </h1>
-            <p className="story-intro-tagline font-accent mt-6 text-3xl text-sun sm:text-4xl">
+            </div>
+            <h1 className="story-intro-tagline font-accent mt-6 text-3xl font-normal text-sun sm:text-4xl">
               {t.tagline}
-            </p>
+            </h1>
           </div>
 
           <div className="story-intro-hint pointer-events-none absolute inset-x-0 bottom-10 flex flex-col items-center gap-2 text-cream/60">
