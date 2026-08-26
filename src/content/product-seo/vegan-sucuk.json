@@ -1,0 +1,100 @@
+{
+  "sceneAlt": "Sahanda vegan sucuk ve VitaVegantis bitki bazlı sucuk paketi",
+  "sceneAltEn": "Pan-fried vegan sucuk with the VitaVegantis plant-based sucuk pack",
+  "mapAlt": "Vegan sucuk içindekiler: Meksika fasulyesi, soğan, sarımsak, baharat karışımı",
+  "mapAltEn": "Vegan sucuk ingredients: kidney beans, onion, garlic, spice mix",
+
+  "sections": [
+    {
+      "heading": "Vegan Sucuk: Meksika Fasulyesinin Baharatlı Hâli",
+      "headingEn": "Vegan Sucuk: Kidney Beans, Boldly Spiced",
+      "paragraphs": [
+        "Sucuk denince akla ilk baharat gelir. Bizim vegan sucuğumuzun gövdesini Meksika fasulyesi kurar — doyurucu, yoğun dokulu ve protein açısından güçlü bir temel. Soğan ile sarımsak tabanı derinleştirir, soya sosu umami katar, özel baharat karışımımız da sucuğa beklediğiniz o keskin karakteri verir. 100 gramında 28 g bitkisel protein bulunur; bu, ürün ailemizin en yüksek protein değerlerinden biri."
+      ],
+      "paragraphsEn": [
+        "Sucuk is, above all, about spice. The body of our vegan sucuk is built on kidney beans — a filling, densely textured base that is strong in protein. Onion and garlic deepen the foundation, soy sauce adds umami, and our signature spice mix gives it the sharp character you expect. Each 100 grams contains 28 g of plant protein, one of the highest figures in our range."
+      ]
+    },
+    {
+      "heading": "Vegan Sucuk Nasıl Pişirilir?",
+      "headingEn": "How to Cook Vegan Sucuk",
+      "paragraphs": [
+        "Sucuğu dilimleyip pişirmek yeterli; ayrı bir ön hazırlık gerektirmez."
+      ],
+      "paragraphsEn": [
+        "Slice it and cook — no preparation needed beyond that."
+      ],
+      "bullets": [
+        {
+          "label": "Sahanda",
+          "labelEn": "In the pan",
+          "text": "Yarım santim kalınlığında dilimleyin, orta ateşte az yağla 3-4 dakika çevirerek pişirin. Kenarları kızarınca hazır.",
+          "textEn": "Slice about half a centimetre thick and cook for 3-4 minutes over medium heat with a little oil, turning as you go. Ready once the edges brown."
+        },
+        {
+          "label": "Yemeklerin içinde",
+          "labelEn": "In cooked dishes",
+          "text": "Kuru fasulye, menemen, pizza ve makarna soslarında doğrudan kullanılabilir. Sucuğu önce ayrı kavurup sonra yemeğe eklemek baharat aromasını belirginleştirir.",
+          "textEn": "Use it directly in bean stews, menemen, pizza and pasta sauces. Searing it separately before adding it to the dish brings the spices forward."
+        }
+      ],
+      "closing": "Kahvaltı sofrasından ana yemeğe kadar, sucuğun girdiği her tarifte yerini alır.",
+      "closingEn": "From the breakfast table to a main course, it belongs in any dish that calls for sucuk.",
+      "link": {
+        "before": "Sucuklu kuru fasulye tarifimiz için ",
+        "beforeEn": "For our bean stew recipe, visit the ",
+        "label": "tarifler sayfamıza",
+        "labelEn": "recipes page",
+        "section": "tarifler",
+        "after": " göz atın.",
+        "afterEn": "."
+      }
+    },
+    {
+      "heading": "Protein Değeri ve İçindekiler",
+      "headingEn": "Protein Content and Ingredients",
+      "paragraphs": [
+        "100 gramında 28 g bitkisel protein ve 315 kcal enerji bulunur. Protein büyük ölçüde Meksika fasulyesi ve buğday gluteninden gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda."
+      ],
+      "paragraphsEn": [
+        "Each 100 grams contains 28 g of plant protein and 315 kcal. The protein comes largely from kidney beans and wheat gluten. The full ingredients list and nutrition table are above."
+      ]
+    }
+  ],
+
+  "faqHeading": "Sıkça Sorulan Sorular",
+  "faqHeadingEn": "Frequently Asked Questions",
+  "faq": [
+    {
+      "q": "Vegan sucuk neyden yapılır?",
+      "qEn": "What is vegan sucuk made of?",
+      "a": "VitaVegantis Vegan Sucuk; Meksika fasulyesi, soğan, sarımsak, soya sosu, ayçiçek yağı, buğday gluteni ve özel baharat karışımından üretilir. Hayvansal içerik ve katkı maddesi içermez.",
+      "aEn": "VitaVegantis Vegan Sucuk is made from kidney beans, onion, garlic, soy sauce, sunflower oil, wheat gluten and our signature spice mix. It contains no animal ingredients and no additives."
+    },
+    {
+      "q": "Vegan sucuk glütensiz midir?",
+      "qEn": "Is vegan sucuk gluten-free?",
+      "a": "Hayır — içeriğinde buğday gluteni bulunur. Glüten hassasiyeti olanlar için uygun değildir.",
+      "aEn": "No — it contains wheat gluten. It is not suitable for people with gluten sensitivity."
+    },
+    {
+      "q": "Vegan sucuğun protein değeri nedir?",
+      "qEn": "How much protein does vegan sucuk contain?",
+      "a": "100 gramında 28 g bitkisel protein bulunur. Protein kaynağı Meksika fasulyesi ve buğday glutenidir.",
+      "aEn": "Each 100 grams contains 28 g of plant protein. The protein comes from kidney beans and wheat gluten."
+    },
+    {
+      "q": "Vegan sucuk kaç kalori?",
+      "qEn": "How many calories are in vegan sucuk?",
+      "a": "100 gramında 315 kcal bulunur. Aynı porsiyonda 11 g yağ ve 26 g karbonhidrat yer alır.",
+      "aEn": "There are 315 kcal per 100 grams, along with 11 g of fat and 26 g of carbohydrates."
+    },
+    {
+      "q": "VitaVegantis Vegan Sucuk nereden alınır?",
+      "qEn": "Where can I buy VitaVegantis Vegan Sucuk?",
+      "a": "Türkiye genelindeki anlaşmalı market ve satış noktalarından temin edebilirsiniz. Güncel liste için satış noktaları sayfamıza bakabilirsiniz.",
+      "aEn": "You can find it at partner shops and stockists across Türkiye. See our sales points page for the current list.",
+      "link": { "section": "satisnoktalari", "label": "Satış noktaları", "labelEn": "Where to buy" }
+    }
+  ]
+}
