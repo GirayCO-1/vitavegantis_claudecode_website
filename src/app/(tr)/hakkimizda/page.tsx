@@ -91,6 +91,9 @@ export default function VizyonMisyonPage() {
         </div>
       </section>
 
+      {/* Kurumsal tanıtım — vizyon/misyondan sonra, değerlerden önce */}
+      <WhoWeAre />
+
       <section className="bg-sage/10 px-6 py-20">
         <div className="mx-auto max-w-5xl">
           <h2 className="font-display text-center text-3xl font-semibold text-forest">
@@ -144,8 +147,6 @@ export default function VizyonMisyonPage() {
           </div>
         </div>
       </section>
-      {/* Kurumsal tanıtım */}
-      <WhoWeAre />
     </>
   );
 }

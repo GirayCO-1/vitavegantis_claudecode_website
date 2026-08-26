@@ -102,6 +102,9 @@ export default function AboutPageEn() {
         </div>
       </section>
 
+      {/* Kurumsal tanıtım — vizyon/misyondan sonra, değerlerden önce */}
+      <WhoWeAre locale="en" />
+
       <section className="bg-sage/10 px-6 py-20">
         <div className="mx-auto max-w-5xl">
           <h2 className="font-display text-center text-3xl font-semibold text-forest">
@@ -155,8 +158,6 @@ export default function AboutPageEn() {
           </div>
         </div>
       </section>
-      {/* Kurumsal tanıtım */}
-      <WhoWeAre locale="en" />
     </>
   );
 }
