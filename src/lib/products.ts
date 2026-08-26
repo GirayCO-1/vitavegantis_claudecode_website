@@ -75,7 +75,7 @@ export const products: Product[] = [
   {
     slug: "ispanakli-sosis",
     urlSlug: "vita-vegantis-ispanakli-sosis-tadinda",
-    name: "Ispanaklı Bitki Bazlı Sosis",
+    name: "Ispanaklı Bitki Bazlı Vosis",
     weight: "180g",
     accent: "sage",
     tagline: "Yeşilin en lezzetli hali",
@@ -100,7 +100,7 @@ export const products: Product[] = [
       { label: "Karbonhidrat", value: "10.6 g" },
     ],
     en: {
-      name: "Spinach Plant-Based Sausage",
+      name: "Spinach Plant-Based Vosis",
       tagline: "Green at its most delicious",
       description:
         "A sausage that pairs the freshness of dried spinach with a light smoky aroma, adding colour and nutrition to your meals.",
