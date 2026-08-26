@@ -121,8 +121,8 @@ export default function Testimonials({ locale = "tr" }: { locale?: Locale }) {
         </p>
       </div>
 
-      <Row items={items} direction="left" />
-      <Row items={[...items].reverse()} direction="right" />
+      {/* Tek sıra, soldan sağa akıyor. */}
+      <Row items={items} direction="right" />
     </section>
   );
 }

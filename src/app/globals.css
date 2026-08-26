@@ -214,7 +214,7 @@ body {
 }
 
 .testimonial-marquee--right {
-  animation: testimonial-scroll-right 55s linear infinite;
+  animation: testimonial-scroll-right 48s linear infinite;
 }
 
 /* Fareyle üzerine gelince dursun ki kart okunabilsin. */
