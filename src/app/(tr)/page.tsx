@@ -5,7 +5,9 @@ import { products } from "@/lib/products";
 // import ScrollHero from "@/components/hero/ScrollHero"; ve aşağıda <StoryHero /> yerine <ScrollHero /> kullanın.
 import StoryHero from "@/components/story/StoryHero";
 import LifestyleStrip from "@/components/story/LifestyleStrip";
+import Testimonials from "@/components/story/Testimonials";
 import BlobNav from "@/components/story/BlobNav";
+import WhoWeAre from "@/components/story/WhoWeAre";
 
 export default function Home() {
   return (
@@ -15,6 +17,9 @@ export default function Home() {
 
       {/* Sokakta / evde / restoranda yaşam sahneleri */}
       <LifestyleStrip />
+
+      {/* Sizden gelenler — Instagram gönderileri */}
+      <Testimonials />
 
       {/* Vizyon & Misyon · Tarifler · Neden bitki bazlı */}
       <BlobNav />
@@ -50,6 +55,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Kurumsal tanıtım */}
+      <WhoWeAre />
 
       <section className="px-6 py-24">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 rounded-3xl bg-forest px-8 py-16 text-center text-cream">

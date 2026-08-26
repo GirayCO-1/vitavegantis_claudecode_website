@@ -4,7 +4,9 @@ import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/products";
 import StoryHero from "@/components/story/StoryHero";
 import LifestyleStrip from "@/components/story/LifestyleStrip";
+import Testimonials from "@/components/story/Testimonials";
 import BlobNav from "@/components/story/BlobNav";
+import WhoWeAre from "@/components/story/WhoWeAre";
 import { SITE_DESCRIPTION_EN, SITE_URL, canonical } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -33,6 +35,9 @@ export default function HomeEn() {
 
       {/* Sokakta / evde / restoranda yaşam sahneleri */}
       <LifestyleStrip locale="en" />
+
+      {/* Sizden gelenler */}
+      <Testimonials locale="en" />
 
       {/* Vision & Mission · Recipes · Why plant-based */}
       <BlobNav locale="en" />
@@ -68,6 +73,9 @@ export default function HomeEn() {
           </div>
         </div>
       </section>
+
+      {/* Kurumsal tanıtım */}
+      <WhoWeAre locale="en" />
 
       <section className="px-6 py-24">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 rounded-3xl bg-forest px-8 py-16 text-center text-cream">

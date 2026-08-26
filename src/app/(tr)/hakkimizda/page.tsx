@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema } from "@/lib/structuredData";
 import Link from "next/link";
 import Image from "next/image";
+import WhoWeAre from "@/components/story/WhoWeAre";
 
 export const metadata: Metadata = {
   title: "Hakkımızda",
@@ -143,6 +144,8 @@ export default function VizyonMisyonPage() {
           </div>
         </div>
       </section>
+      {/* Kurumsal tanıtım */}
+      <WhoWeAre />
     </>
   );
 }

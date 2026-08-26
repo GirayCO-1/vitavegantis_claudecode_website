@@ -200,3 +200,67 @@ body {
     background-position: center;
   }
 }
+
+/* --- Sizden Gelenler: yatay akan yorum şeritleri --------------------- */
+.testimonial-marquee {
+  display: flex;
+  gap: 28px;
+  width: max-content;
+  padding: 26px 0;
+}
+
+.testimonial-marquee--left {
+  animation: testimonial-scroll-left 45s linear infinite;
+}
+
+.testimonial-marquee--right {
+  animation: testimonial-scroll-right 55s linear infinite;
+}
+
+/* Fareyle üzerine gelince dursun ki kart okunabilsin. */
+.testimonial-row:hover .testimonial-marquee {
+  animation-play-state: paused;
+}
+
+/* İçerik iki kez basıldığı için %50'de başa sarmak kesintisiz görünür. */
+@keyframes testimonial-scroll-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes testimonial-scroll-right {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+
+/* Kenarlarda yumuşak geçiş — kartlar aniden kesilmesin. */
+.testimonial-row::before,
+.testimonial-row::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.testimonial-row::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--color-cream), transparent);
+}
+
+.testimonial-row::after {
+  right: 0;
+  background: linear-gradient(-90deg, var(--color-cream), transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-marquee--left,
+  .testimonial-marquee--right {
+    animation: none;
+  }
+  .testimonial-row {
+    overflow-x: auto;
+  }
+}

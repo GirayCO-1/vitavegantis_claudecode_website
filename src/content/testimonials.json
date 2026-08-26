@@ -1,0 +1,70 @@
+{
+  "_not": "ÖNEMLİ: Aşağıdakiler YER TUTUCUDUR — gerçek müşteri gönderisi değildir. Yayına çıkmadan önce gerçek Instagram gönderileriyle değiştirin. Uydurma kullanıcı adı ve yorumla yayında kalırsa, ziyaretçiye gerçekmiş gibi görünür.",
+  "placeholder": true,
+  "items": [
+    {
+      "emoji": "🌭",
+      "bg": "#f9e0c8",
+      "caption": "Mangalda VitaVegantis sosis denedik, misafirler farkı anlamadı bile 😅",
+      "captionEn": "We grilled VitaVegantis sausages — our guests couldn't tell the difference 😅",
+      "handle": "@aysegulmutfakta",
+      "likes": "214"
+    },
+    {
+      "emoji": "🍝",
+      "bg": "#e6efdc",
+      "caption": "Ispanaklı Vosis ile akşam makarnası. 15 dakikada bitti, tarifi profilde!",
+      "captionEn": "Evening pasta with Spinach Vosis. Done in 15 minutes, recipe on my profile!",
+      "handle": "@veganankara",
+      "likes": "389"
+    },
+    {
+      "emoji": "🍕",
+      "bg": "#fbe9e2",
+      "caption": "Ev pizzasında vegan sucuk devri başladı 🔥",
+      "captionEn": "Vegan sucuk has taken over our homemade pizza 🔥",
+      "handle": "@mutfaktayasam",
+      "likes": "156"
+    },
+    {
+      "emoji": "🥗",
+      "bg": "#eef1e4",
+      "caption": "Öğle yemeğinde köfte + salata. Sosuna bayıldım.",
+      "captionEn": "Meatballs and salad for lunch. Loved the sauce.",
+      "handle": "@fitogunler",
+      "likes": "97"
+    },
+    {
+      "emoji": "🌯",
+      "bg": "#f6ecd9",
+      "caption": "Döner tadında ile ev dürümü... Sokak lezzeti evde 👌",
+      "captionEn": "Homemade wrap with the döner style... street food at home 👌",
+      "handle": "@denizinmutfagi",
+      "likes": "302"
+    },
+    {
+      "emoji": "🍳",
+      "bg": "#f3e3d1",
+      "caption": "Pazar kahvaltısının yıldızı Vosis oldu. Çocuklar tekrar istedi!",
+      "captionEn": "Vosis was the star of Sunday breakfast. The kids asked for more!",
+      "handle": "@ucocuklusofra",
+      "likes": "441"
+    },
+    {
+      "emoji": "🧆",
+      "bg": "#e9e4d6",
+      "caption": "İsveç köfte + püre = akşam yemeği çözüldü.",
+      "captionEn": "Swedish meatballs and mash — dinner sorted.",
+      "handle": "@pratiktarifci",
+      "likes": "188"
+    },
+    {
+      "emoji": "🥪",
+      "bg": "#fdeee6",
+      "caption": "Sosisli sandviç ama bitkisel. Kimse inanmıyor 😄",
+      "captionEn": "A hot dog, but plant-based. Nobody believes it 😄",
+      "handle": "@kampusyemekleri",
+      "likes": "263"
+    }
+  ]
+}
