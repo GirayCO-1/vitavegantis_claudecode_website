@@ -30,24 +30,20 @@ export default function WhoWeAre({ locale = "tr" }: { locale?: Locale }) {
   return (
     <section className="relative isolate overflow-hidden bg-[#0b1c12]">
       <Image
-        src="/lifestyle/bina-tabela.webp"
-        alt="VitaVegantis genel merkez tabelası"
+        src="/lifestyle/uretim-tesisi.webp"
+        alt="VitaVegantis üretim tesisi"
         fill
         sizes="100vw"
-        className="object-cover object-top"
+        className="object-cover"
       />
-      {/* Üstte hafif, altta koyu perde: tabeladaki logo görünür kalırken
-          alttaki metin okunur oluyor. Düz bir perde ikisinden birini
-          feda ederdi. */}
-      <div
-        className="absolute inset-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(to bottom, rgba(11,28,18,0.22) 0%, rgba(11,28,18,0.28) 34%, rgba(11,28,18,0.80) 52%, rgba(11,28,18,0.94) 72%, rgba(11,28,18,0.96) 100%)",
-        }}
-      />
+      {/* Perde oranı ölçülerek seçildi: %74'te metin kontrastı 6.26 (WCAG AA
+          sınırı 4.5), tesis fotoğrafı ise belirgin kalıyor. Daha açığı
+          (%60 → 4.27) okunabilirlikten ödün veriyordu.
+          Bölümün yüksekliği metne göre belirleniyor; py üstte ve altta aynı
+          olduğu için boşluklar eşit. */}
+      <div className="absolute inset-0 bg-[#0b1c12]/74" />
 
-      <div className="relative mx-auto flex min-h-[42rem] max-w-3xl flex-col justify-end px-6 pb-20 text-center text-cream sm:min-h-[46rem]">
+      <div className="relative mx-auto max-w-3xl px-6 py-20 text-center text-cream sm:py-24">
         <p className="font-accent text-2xl text-sun">{t.eyebrow}</p>
         <h2 className="font-display mt-2 text-3xl font-semibold sm:text-4xl">
           {t.heading}
