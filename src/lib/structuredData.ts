@@ -45,6 +45,28 @@ export function websiteSchema() {
   };
 }
 
+/**
+ * Ürün sayfasındaki SSS bölümü için FAQPage şeması.
+ * Google'ın zengin sonuçlarında soru-cevap olarak görünebilmesini sağlar;
+ * sorular sayfada görünür metin olmalı (öyle, <details> içinde açık HTML).
+ */
+export function faqSchema(
+  faq: { q: string; a: string }[],
+  pagePath: string,
+) {
+  const url = canonical(pagePath);
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+}
+
 /** Blog yazıları için BlogPosting şeması. */
 export function articleSchema(
   article: {

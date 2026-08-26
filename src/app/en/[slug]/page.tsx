@@ -8,9 +8,11 @@ import { articlesFor, getArticleByUrl } from "@/lib/blogArticles";
 import { getProductByUrl, products } from "@/lib/products";
 import { getRecipeByUrl, recipes } from "@/lib/recipes";
 import { SITE_URL, canonical } from "@/lib/site";
+import { productSeoFor } from "@/lib/productSeo";
 import {
   articleSchema,
   breadcrumbSchema,
+  faqSchema,
   productSchema,
   recipeSchema,
 } from "@/lib/structuredData";
@@ -106,9 +108,13 @@ export default async function SlugPageEn({
 
   const product = getProductByUrl(slug);
   if (product) {
+    const productSeo = productSeoFor(product.slug, "en");
     return (
       <>
         <JsonLd data={productSchema(product, "en")} />
+        {productSeo?.faq.length ? (
+          <JsonLd data={faqSchema(productSeo.faq, `en/${product.urlSlug}`)} />
+        ) : null}
         <JsonLd
           data={breadcrumbSchema([
             { name: "Home", path: "en" },

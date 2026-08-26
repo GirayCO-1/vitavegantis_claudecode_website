@@ -4,7 +4,9 @@ import StaticIngredientRing from "@/components/StaticIngredientRing";
 import IngredientsMap from "@/components/IngredientsMap";
 import SalesPointsCta from "@/components/SalesPointsCta";
 import ProductCard from "@/components/ProductCard";
+import ProductSeoBlock from "@/components/detail/ProductSeoBlock";
 import { ingredientMaps } from "@/lib/ingredientMaps";
+import { productSeoFor } from "@/lib/productSeo";
 import { products, type Product } from "@/lib/products";
 import {
   href,
@@ -42,6 +44,7 @@ export default function ProductDetail({
   locale?: Locale;
 }) {
   const t = TEXT[locale];
+  const seo = productSeoFor(product.slug, locale);
   const others = products.filter((p) => p.slug !== product.slug).slice(0, 3);
   const ingredientMap = ingredientMaps[product.slug];
   // Değeri girilmemiş ürünlerde tabloyu hiç göstermiyoruz
@@ -61,7 +64,7 @@ export default function ProductDetail({
           <div className="relative aspect-[4/5] w-full max-w-md overflow-hidden rounded-[32px] shadow-xl shadow-forest/15">
             <Image
               src={product.sceneImage}
-              alt={name}
+              alt={seo?.sceneAlt ?? name}
               fill
               priority
               sizes="(min-width: 768px) 40vw, 90vw"
@@ -141,7 +144,7 @@ export default function ProductDetail({
                     ...h,
                     name: translateIngredient(h.name, locale),
                   }))}
-                  alt={t.mapAlt(name)}
+                  alt={seo?.mapAlt ?? t.mapAlt(name)}
                 />
               </div>
             ) : (
@@ -153,6 +156,9 @@ export default function ProductDetail({
           </div>
         </div>
       </section>
+
+      {/* SEO içerik bloğu — içeriği olan ürünlerde görünür. */}
+      {seo && <ProductSeoBlock seo={seo} locale={locale} />}
 
       <section className="bg-sage/10 px-6 py-20">
         <div className="mx-auto max-w-6xl">
