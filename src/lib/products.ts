@@ -28,7 +28,7 @@ export const products: Product[] = [
   {
     slug: "vegan-sosis",
     urlSlug: "vita-vegantis-vegan-sosis-tadinda",
-    name: "Vegan Sosis Tadında",
+    name: "Vegan Vosis",
     weight: "200g",
     accent: "coral",
     tagline: "Klasik sofraların yeni hali",
@@ -54,7 +54,8 @@ export const products: Product[] = [
       { label: "Karbonhidrat", value: "29 g" },
     ],
     en: {
-      name: "Vegan Sausage Style",
+      // "Vosis" markanın kendi ürettiği bir ad; Hot Dog Vosis gibi iki dilde de aynı.
+      name: "Vegan Vosis",
       tagline: "A new take on a classic",
       description:
         "The beloved classic sausage flavour, built from the power of tofu and chickpea flour combined with dried vegetables — plant-based, additive-free, pure.",
