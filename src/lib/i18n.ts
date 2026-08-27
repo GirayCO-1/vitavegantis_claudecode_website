@@ -19,10 +19,6 @@ const sectionMapReverse: Record<string, string> = Object.fromEntries(
   Object.entries(sectionMap).map(([tr, en]) => [en, tr]),
 );
 
-export function localeFromPath(pathname: string): Locale {
-  return pathname === "/en" || pathname.startsWith("/en/") ? "en" : "tr";
-}
-
 /** Verilen yolun diğer dildeki karşılığı (sondaki eğik çizgi korunur). */
 export function switchLocalePath(pathname: string, target: Locale): string {
   const clean = pathname.replace(/^\/+|\/+$/g, "");

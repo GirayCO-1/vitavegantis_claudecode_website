@@ -30,8 +30,6 @@ type File = {
 
 const data = JSON.parse(fs.readFileSync(FILE, "utf8")) as File;
 
-export const testimonialsArePlaceholder = data.placeholder === true;
-
 export function testimonialsFor(locale: Locale): Testimonial[] {
   return data.items.map((t) => ({
     ...(t.image ? { image: t.image } : {}),

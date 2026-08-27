@@ -61,5 +61,3 @@ export function blogPostsFor(locale: Locale): BlogPost[] {
     .map((slug) => bySlug.get(slug))
     .filter((post): post is BlogPost => Boolean(post));
 }
-
-export const blogPosts: BlogPost[] = blogPostsFor("tr");

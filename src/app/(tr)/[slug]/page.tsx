@@ -4,7 +4,7 @@ import ArticleDetail from "@/components/detail/ArticleDetail";
 import ProductDetail from "@/components/detail/ProductDetail";
 import RecipeDetail from "@/components/detail/RecipeDetail";
 import JsonLd from "@/components/JsonLd";
-import { blogArticles, getArticleByUrl } from "@/lib/blogArticles";
+import { articlesFor, getArticleByUrl } from "@/lib/blogArticles";
 import { getProductByUrl, products } from "@/lib/products";
 import { getRecipeByUrl, recipes } from "@/lib/recipes";
 import { SITE_URL, canonical } from "@/lib/site";
@@ -24,7 +24,7 @@ export function generateStaticParams() {
   return [
     ...products.map((p) => ({ slug: p.urlSlug })),
     ...recipes.map((r) => ({ slug: r.urlSlug })),
-    ...blogArticles.map((a) => ({ slug: a.urlSlug })),
+    ...articlesFor("tr").map((a) => ({ slug: a.urlSlug })),
   ];
 }
 

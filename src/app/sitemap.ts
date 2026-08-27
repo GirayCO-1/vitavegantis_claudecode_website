@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { blogArticles } from "@/lib/blogArticles";
+import { articlesFor } from "@/lib/blogArticles";
 import { products } from "@/lib/products";
 import { recipes } from "@/lib/recipes";
 import { canonical } from "@/lib/site";
@@ -38,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
       changeFrequency: "monthly" as const,
     })),
-    ...blogArticles.map((a) => ({
+    ...articlesFor("tr").map((a) => ({
       tr: a.urlSlug,
       en: `en/${a.urlSlug}`,
       priority: 0.6,

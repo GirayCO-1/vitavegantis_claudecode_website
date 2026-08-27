@@ -1,8 +1,6 @@
 import Link from "next/link";
 import ProductCard from "@/components/ProductCard";
 import { products } from "@/lib/products";
-// Önceki hero (tencere/sepet animasyonu) geri alınmak istenirse:
-// import ScrollHero from "@/components/hero/ScrollHero"; ve aşağıda <StoryHero /> yerine <ScrollHero /> kullanın.
 import StoryHero from "@/components/story/StoryHero";
 import LifestyleStrip from "@/components/story/LifestyleStrip";
 import Testimonials from "@/components/story/Testimonials";

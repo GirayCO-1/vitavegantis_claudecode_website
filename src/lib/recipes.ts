@@ -1,6 +1,5 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { Accent } from "@/lib/products";
 
 /** İngilizce site için çevrilen alanlar; kaynak veri Türkçedir. */
 export type RecipeEn = {
@@ -20,7 +19,6 @@ export type Recipe = {
   teaser: string;
   time: string;
   servings: string;
-  accent: Accent;
   image: string;
   ingredients: string[];
   steps: string[];
@@ -37,7 +35,6 @@ const DIR = path.join(process.cwd(), "src", "content", "recipes");
 type RecipeFile = {
   order?: number;
   urlSlug: string;
-  accent: Accent;
   image: string;
   title: string;
   teaser: string;
@@ -68,7 +65,6 @@ function load(): Recipe[] {
         teaser: data.teaser,
         time: data.time,
         servings: data.servings,
-        accent: data.accent,
         image: data.image,
         ingredients: data.ingredients,
         steps: data.steps,
@@ -84,7 +80,8 @@ function load(): Recipe[] {
       };
     })
     .sort((a, b) => a.order - b.order)
-    .map(({ order: _order, ...recipe }) => recipe);
+    // order yalnızca sıralama için okunur; Recipe tipinde yer almaz.
+    .map(({ order, ...recipe }) => (void order, recipe));
 }
 
 export const recipes: Recipe[] = load();

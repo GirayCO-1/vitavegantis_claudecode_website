@@ -59,11 +59,13 @@ function load(dir: string): BlogArticle[] {
     });
 }
 
-export const blogArticles: BlogArticle[] = load(CONTENT_DIR);
-export const blogArticlesEn: BlogArticle[] = load(path.join(CONTENT_DIR, "en"));
+const byLocale: Record<Locale, BlogArticle[]> = {
+  tr: load(CONTENT_DIR),
+  en: load(path.join(CONTENT_DIR, "en")),
+};
 
 export function articlesFor(locale: Locale): BlogArticle[] {
-  return locale === "en" ? blogArticlesEn : blogArticles;
+  return byLocale[locale];
 }
 
 export function getArticleByUrl(urlSlug: string, locale: Locale = "tr") {

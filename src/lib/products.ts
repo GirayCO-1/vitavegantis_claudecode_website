@@ -1,5 +1,3 @@
-export type Accent = "sun" | "coral" | "plum" | "sage";
-
 /** İngilizce site için çevrilen alanlar; kaynak veri Türkçedir. */
 export type ProductEn = {
   name: string;
@@ -14,7 +12,6 @@ export type Product = {
   urlSlug: string;
   name: string;
   weight: string;
-  accent: Accent;
   tagline: string;
   description: string;
   image: string;
@@ -30,7 +27,6 @@ export const products: Product[] = [
     urlSlug: "vita-vegantis-vegan-sosis-tadinda",
     name: "Vegan Vosis",
     weight: "200g",
-    accent: "coral",
     tagline: "Klasik sofraların yeni hali",
     description:
       "Tofu ve nohut ununun gücünü kurutulmuş sebzelerle birleştirdiğimiz, ailece sevilen klasik sosis lezzeti — bitkisel, katkısız, saf.",
@@ -77,7 +73,6 @@ export const products: Product[] = [
     urlSlug: "vita-vegantis-ispanakli-sosis-tadinda",
     name: "Ispanaklı Bitki Bazlı Vosis",
     weight: "180g",
-    accent: "sage",
     tagline: "Yeşilin en lezzetli hali",
     description:
       "Kurutulmuş ıspanağın tazeliğini hafif tütsü aromasıyla buluşturduğumuz, yemeklerinize renk ve besin değeri katan bir sosis.",
@@ -121,7 +116,6 @@ export const products: Product[] = [
     urlSlug: "vita-vegantis-vegan-sucuk",
     name: "Vegan Sucuk",
     weight: "150g",
-    accent: "plum",
     tagline: "Baharatlı, iddialı, bitkisel",
     description:
       "Meksika fasulyesinin gücünü özel baharat karışımımızla harmanladık — sofralarınıza cesur bir lezzet getiriyor.",
@@ -163,7 +157,6 @@ export const products: Product[] = [
     urlSlug: "vita-vegantis-tavuk-doner-tadinda",
     name: "Tavuk Döner Tadında",
     weight: "150g",
-    accent: "sun",
     tagline: "Sokak lezzeti, bitkisel imza",
     description:
       "Döner severlerin bitki bazlı beslenmeden vazgeçmesine gerek yok — besin mayası ve baharat karışımımızla tanıdık lezzeti yeniden yarattık.",
@@ -209,7 +202,6 @@ export const products: Product[] = [
     urlSlug: "vita-vegantis-vegan-isvec-kofte",
     name: "Bitki Bazlı İsveç Köfte",
     weight: "180g",
-    accent: "sun",
     tagline: "Kuzey mutfağının bitkisel yorumu",
     description:
       "Bezelye proteininin gücünü İsveç mutfağının klasik köfte lezzetiyle buluşturduk — yüksek proteinli, bitkisel ve katkısız.",
@@ -249,7 +241,6 @@ export const products: Product[] = [
     urlSlug: "vita-vegantis-besin-mayasi",
     name: "Besin Mayası",
     weight: "100g",
-    accent: "sun",
     tagline: "Mutfağınızın süperfood dostu",
     description:
       "B12 vitamini ile zenginleştirilmiş, glutensiz besin mayamız; yemeklerinize peynirimsi bir lezzet ve yüksek protein katar.",
@@ -275,7 +266,6 @@ export const products: Product[] = [
     urlSlug: "vita-vegantis-hot-dog-vosis",
     name: "Hot Dog Vosis",
     weight: "180g",
-    accent: "coral",
     tagline: "Tütsü aromalı, sokak lezzeti",
     description:
       "Tütsü aromasıyla zenginleştirdiğimiz bitki bazlı sosisimiz, klasik hot dog keyfini katkısız ve yüksek proteinli bir sofraya taşıyor.",
@@ -316,17 +306,6 @@ export const products: Product[] = [
   },
 ];
 
-export function getProduct(slug: string) {
-  return products.find((p) => p.slug === slug);
-}
-
 export function getProductByUrl(urlSlug: string) {
   return products.find((p) => p.urlSlug === urlSlug);
 }
-
-export const accentHex: Record<Accent, string> = {
-  sun: "#F2B705",
-  coral: "#FF6B4A",
-  plum: "#6B2D5C",
-  sage: "#8B9A6F",
-};

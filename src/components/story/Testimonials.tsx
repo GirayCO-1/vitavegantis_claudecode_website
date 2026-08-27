@@ -70,23 +70,11 @@ function Card({ item, tilt }: { item: Testimonial; tilt: number }) {
 }
 
 /** Sonsuz akış için içerik iki kez basılır; animasyon %50'de başa sarar. */
-function Row({
-  items,
-  direction,
-}: {
-  items: Testimonial[];
-  direction: "left" | "right";
-}) {
+function Row({ items }: { items: Testimonial[] }) {
   const doubled = [...items, ...items];
   return (
     <div className="testimonial-row relative overflow-hidden">
-      <div
-        className={
-          direction === "left"
-            ? "testimonial-marquee testimonial-marquee--left"
-            : "testimonial-marquee testimonial-marquee--right"
-        }
-      >
+      <div className="testimonial-marquee">
         {doubled.map((item, i) => (
           <Card key={i} item={item} tilt={TILTS[i % TILTS.length]} />
         ))}
@@ -122,7 +110,7 @@ export default function Testimonials({ locale = "tr" }: { locale?: Locale }) {
       </div>
 
       {/* Tek sıra, soldan sağa akıyor. */}
-      <Row items={items} direction="right" />
+      <Row items={items} />
     </section>
   );
 }

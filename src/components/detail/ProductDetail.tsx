@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import StaticIngredientRing from "@/components/StaticIngredientRing";
 import IngredientsMap from "@/components/IngredientsMap";
 import SalesPointsCta from "@/components/SalesPointsCta";
 import ProductCard from "@/components/ProductCard";
@@ -135,8 +134,10 @@ export default function ProductDetail({
             )}
           </div>
 
-          <div className="flex justify-center">
-            {ingredientMap ? (
+          {/* Her ürünün ingredientMaps.ts'te bir haritası var; olmayan bir
+              ürün eklenirse bu sütun boş kalır, sayfa bozulmaz. */}
+          {ingredientMap && (
+            <div className="flex justify-center">
               <div className="w-full max-w-[460px]">
                 <IngredientsMap
                   image={ingredientMap.image}
@@ -147,13 +148,8 @@ export default function ProductDetail({
                   alt={seo?.mapAlt ?? t.mapAlt(name)}
                 />
               </div>
-            ) : (
-              <StaticIngredientRing
-                ingredients={ingredients}
-                accent={product.accent}
-              />
-            )}
-          </div>
+            </div>
+          )}
         </div>
       </section>
 

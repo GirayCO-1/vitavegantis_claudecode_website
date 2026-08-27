@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, itemListSchema } from "@/lib/structuredData";
 import Image from "next/image";
 import Link from "next/link";
-import { blogPosts } from "@/lib/blog";
+import { blogPostsFor } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -20,6 +20,8 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  const blogPosts = blogPostsFor("tr");
+
   return (
     <>
       <JsonLd

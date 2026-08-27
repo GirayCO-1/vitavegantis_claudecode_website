@@ -116,15 +116,6 @@ collections:
         widget: string
         pattern: ['^[a-z0-9-]+$', 'Yalnızca küçük harf, rakam ve tire kullanın']
         hint: "Örnek: vegan-iskender-tarifi → vitavegantis.com/vegan-iskender-tarifi/"
-      - name: accent
-        label: Renk vurgusu
-        widget: select
-        options:
-          - { label: Mercan, value: coral }
-          - { label: Erik, value: plum }
-          - { label: Günebakan, value: sun }
-          - { label: Adaçayı, value: sage }
-        default: coral
       - { name: image, label: Tarif fotoğrafı, widget: image }
 
       - { name: title, label: Başlık, widget: string }
