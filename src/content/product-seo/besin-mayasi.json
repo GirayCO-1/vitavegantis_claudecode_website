@@ -1,0 +1,111 @@
+{
+  "sceneAlt": "Ahşap kaşıkta besin mayası pulları ve 100 g'lık VitaVegantis Besin Mayası paketi",
+  "sceneAltEn": "Nutritional yeast flakes on a wooden spoon beside the 100 g VitaVegantis pack",
+  "mapAlt": "VitaVegantis Besin Mayası — B12 vitamini ile zenginleştirilmiş inaktif besin mayası",
+  "mapAltEn": "VitaVegantis Nutritional Yeast — inactive yeast fortified with vitamin B12",
+
+  "sections": [
+    {
+      "heading": "Besin Mayası Nedir?",
+      "headingEn": "What Is Nutritional Yeast?",
+      "paragraphs": [
+        "Besin mayası, kültürlenip kurutulduktan sonra ısıyla inaktif hâle getirilmiş bir maya türüdür. \"İnaktif\" olması önemli: maya artık canlı değildir, yani hamur kabartmaz, mayalanma yapmaz. Geriye kalan şey saf lezzettir — sarı pullar ya da ince toz hâlinde, kendi başına yenebilen bir çeşni.",
+        "Tadı en çok olgun peynire benzetilir: tuzlu, hafif fındıksı, umami yönü güçlü. Vegan mutfakta bu yüzden peynirin yerini tutan malzeme olarak bilinir. VitaVegantis Besin Mayası B12 vitamini ile zenginleştirilmiştir ve glüten içermez."
+      ],
+      "paragraphsEn": [
+        "Nutritional yeast is a yeast that has been cultured, dried and then deactivated with heat. That \"inactive\" part matters: the yeast is no longer alive, so it will not raise dough or ferment anything. What is left is pure flavour — golden flakes or a fine powder, a seasoning you can eat straight from the spoon.",
+        "The taste is most often compared to aged cheese: salty, slightly nutty, strongly umami. That is why it is known in plant-based cooking as the ingredient that stands in for cheese. VitaVegantis Nutritional Yeast is fortified with vitamin B12 and contains no gluten."
+      ]
+    },
+    {
+      "heading": "Besin Mayası Nasıl Kullanılır?",
+      "headingEn": "How to Use Nutritional Yeast",
+      "paragraphs": [
+        "Pişirmek gerekmez; çoğu zaman en iyi sonucu yemek tabağa geldikten sonra serpince verir."
+      ],
+      "paragraphsEn": [
+        "It does not need cooking — most of the time it works best sprinkled on after the food reaches the plate."
+      ],
+      "bullets": [
+        {
+          "label": "Makarna ve risotto üzerine",
+          "labelEn": "Over pasta and risotto",
+          "text": "Rendelenmiş peynir yerine bir-iki yemek kaşığı serpin. Sıcak yemeğin üzerinde aroması hemen açılır.",
+          "textEn": "Sprinkle a tablespoon or two in place of grated cheese. The aroma opens up straight away on a hot dish."
+        },
+        {
+          "label": "Vegan peynir sosunda",
+          "labelEn": "In a vegan cheese sauce",
+          "text": "Bitkisel süt, un ve yağla yaptığınız beşamele ekleyin; sos peynirimsi bir tada ve renge kavuşur.",
+          "textEn": "Add it to a béchamel made with plant milk, flour and oil; the sauce takes on a cheesy taste and colour."
+        },
+        {
+          "label": "Patlamış mısır ve salatada",
+          "labelEn": "On popcorn and salads",
+          "text": "Sıcak mısıra biraz zeytinyağıyla birlikte serpin. Salatalarda ve avokadolu tostta da doğrudan kullanılabilir.",
+          "textEn": "Sprinkle it on hot popcorn with a little olive oil. It also goes straight onto salads and avocado toast."
+        },
+        {
+          "label": "Çorba ve soslarda",
+          "labelEn": "In soups and sauces",
+          "text": "Mercimek çorbasına, sebze sotesine veya salata sosuna bir kaşık eklemek yemeğin tuzlu derinliğini belirginleştirir.",
+          "textEn": "A spoonful in lentil soup, a vegetable sauté or a salad dressing brings out the savoury depth of the dish."
+        }
+      ],
+      "closing": "Bir çeşni olduğu için ölçüsü size kalmış — bir kaşıkla başlayıp damak tadınıza göre artırabilirsiniz.",
+      "closingEn": "It is a seasoning, so the amount is up to you — start with a spoonful and build from there."
+    },
+    {
+      "heading": "İçindekiler: Tek Malzeme",
+      "headingEn": "Ingredients: A Single Item",
+      "paragraphs": [
+        "İçindekiler listesi tek satırdır: B12 vitamini ile zenginleştirilmiş inaktif besin mayası. Başka bir katkı, tuz, aroma veya dolgu maddesi yoktur. Ürün vegandır ve glüten içermez."
+      ],
+      "paragraphsEn": [
+        "The ingredients list is a single line: inactive nutritional yeast fortified with vitamin B12. There are no other additives, salt, flavourings or fillers. The product is vegan and contains no gluten."
+      ]
+    }
+  ],
+
+  "faqHeading": "Sıkça Sorulan Sorular",
+  "faqHeadingEn": "Frequently Asked Questions",
+  "faq": [
+    {
+      "q": "Besin mayası nedir?",
+      "qEn": "What is nutritional yeast?",
+      "a": "Kültürlenip kurutulduktan sonra ısıyla inaktif hâle getirilmiş bir maya türüdür. Sarı pullar veya ince toz hâlinde satılır ve doğrudan yemeklerin üzerine serpilerek kullanılır. Tadı olgun peyniri andırır: tuzlu, hafif fındıksı ve umami.",
+      "aEn": "It is a yeast that has been cultured, dried and then deactivated with heat. It is sold as golden flakes or a fine powder and is sprinkled directly onto food. The taste resembles aged cheese: salty, slightly nutty and umami."
+    },
+    {
+      "q": "Besin mayası ile ekmek mayası aynı şey mi?",
+      "qEn": "Is nutritional yeast the same as baker's yeast?",
+      "a": "Hayır. Ekmek mayası canlıdır ve hamuru kabartmak için kullanılır. Besin mayası ise inaktiftir; hamur kabartmaz, mayalanma yapmaz. Bir çeşnidir, bir kabartma malzemesi değildir — ekmek tarifinde ekmek mayasının yerine kullanılamaz.",
+      "aEn": "No. Baker's yeast is alive and is used to raise dough. Nutritional yeast is inactive: it will not raise dough or ferment anything. It is a seasoning, not a leavening agent — it cannot replace baker's yeast in a bread recipe."
+    },
+    {
+      "q": "Besin mayasının tadı nasıldır?",
+      "qEn": "What does nutritional yeast taste like?",
+      "a": "Tuzlu, hafif fındıksı ve umami yönü güçlü bir tadı vardır; en çok olgun peynire benzetilir. Bu yüzden bitki bazlı mutfakta rendelenmiş peynirin yerine sıkça kullanılır.",
+      "aEn": "It is salty, slightly nutty and strongly umami — most often compared to aged cheese. That is why it is so often used in place of grated cheese in plant-based cooking."
+    },
+    {
+      "q": "Besin mayası glütensiz midir?",
+      "qEn": "Is nutritional yeast gluten-free?",
+      "a": "VitaVegantis Besin Mayası glüten içermez. İçindekiler tek satırdır: B12 vitamini ile zenginleştirilmiş inaktif besin mayası.",
+      "aEn": "VitaVegantis Nutritional Yeast contains no gluten. Its ingredients list is a single line: inactive nutritional yeast fortified with vitamin B12."
+    },
+    {
+      "q": "Besin mayası nasıl kullanılır?",
+      "qEn": "How do you use nutritional yeast?",
+      "a": "Pişirmeye gerek yoktur. Makarna, risotto, çorba, sebze sotesi, salata ve patlamış mısırın üzerine doğrudan serpebilir; bitkisel sütle yaptığınız beşamele ekleyerek vegan peynir sosu hazırlayabilirsiniz. Bir kaşıkla başlayıp damak tadınıza göre artırmak en pratik yol.",
+      "aEn": "No cooking needed. Sprinkle it straight onto pasta, risotto, soup, sautéed vegetables, salads and popcorn, or stir it into a plant-milk béchamel to make a vegan cheese sauce. The simplest approach is to start with a spoonful and adjust to taste."
+    },
+    {
+      "q": "VitaVegantis Besin Mayası nereden alınır?",
+      "qEn": "Where can I buy VitaVegantis Nutritional Yeast?",
+      "a": "Türkiye genelindeki anlaşmalı market ve satış noktalarından temin edebilirsiniz. Güncel liste için satış noktaları sayfamıza bakabilirsiniz.",
+      "aEn": "You can find it at partner shops and stockists across Türkiye. See our sales points page for the current list.",
+      "link": { "section": "satisnoktalari", "label": "Satış noktaları", "labelEn": "Where to buy" }
+    }
+  ]
+}

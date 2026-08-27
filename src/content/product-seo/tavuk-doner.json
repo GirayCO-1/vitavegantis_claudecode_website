@@ -1,0 +1,115 @@
+{
+  "sceneAlt": "Tavada pişmiş bitki bazlı tavuk döner ve 150 g'lık VitaVegantis Tavuk Döner Tadında paketi",
+  "sceneAltEn": "Pan-cooked plant-based chicken döner with the 150 g VitaVegantis Chicken Döner Style pack",
+  "mapAlt": "Tavuk Döner Tadında içindekiler: buğday gluteni, besin mayası, nohut unu, baharat karışımı",
+  "mapAltEn": "Chicken Döner Style ingredients: wheat gluten, nutritional yeast, chickpea flour, spice mix",
+
+  "sections": [
+    {
+      "heading": "Bitki Bazlı Tavuk Döner: Sokak Lezzetinin Vegan Hâli",
+      "headingEn": "Plant-Based Chicken Döner: A Vegan Take on a Street Classic",
+      "paragraphs": [
+        "Dönerde her şey dokuyla başlar: liflenerek ayrılan, ısırınca direnç gösteren bir doku. Bunu buğday gluteni sağlıyor. Nohut unu ile patates nişastası dokuyu dengeliyor, besin mayası o tanıdık tuzlu-etli derinliği getiriyor, domates salçası ve baharat karışımı da dönerin rengini ve kokusunu tamamlıyor. Hindistan cevizi yağı ise tavada kızarırken kenarların gevremesini sağlıyor.",
+        "100 gramında 29.7 g bitkisel protein bulunur — bu, ürün ailemizin en yüksek protein değeridir. Enerji değeri 232 kcal."
+      ],
+      "paragraphsEn": [
+        "With döner, everything starts with texture: strands that pull apart and push back a little when you bite. Wheat gluten does that work. Chickpea flour and potato starch balance the texture, nutritional yeast brings the familiar savoury depth, and tomato paste and the spice mix complete the colour and aroma. Coconut oil is what lets the edges crisp up in the pan.",
+        "Each 100 grams contains 29.7 g of plant protein — the highest figure in our range — and 232 kcal."
+      ]
+    },
+    {
+      "heading": "Vegan Döner Nasıl Pişirilir?",
+      "headingEn": "How to Cook Vegan Döner",
+      "paragraphs": [
+        "Ürün pişmeye hazır gelir; tek yapmanız gereken kenarları kızartmak."
+      ],
+      "paragraphsEn": [
+        "The product arrives ready to cook — all you need to do is crisp up the edges."
+      ],
+      "bullets": [
+        {
+          "label": "Tavada",
+          "labelEn": "In the pan",
+          "text": "Tavayı iyice ısıtın, az yağla 3-4 dakika yüksek ateşte kavurun. Sık karıştırmayın; kenarların kızarması için temas gerekiyor.",
+          "textEn": "Heat the pan well and sear for 3-4 minutes over high heat with a little oil. Don't stir too often — the edges need contact to brown."
+        },
+        {
+          "label": "Dürüm ve pidede",
+          "labelEn": "In wraps and on pide",
+          "text": "Lavaşa domates, soğan, marul ve bitkisel sosla sarın; ya da pide üzerinde İskender olarak, domates sosu ve bitkisel yoğurtla servis edin.",
+          "textEn": "Roll it into lavash with tomato, onion, lettuce and a plant-based sauce — or serve it İskender style over pide with tomato sauce and plant-based yoghurt."
+        },
+        {
+          "label": "Tabakta",
+          "labelEn": "On the plate",
+          "text": "Pilav, patates kızartması veya mevsim salatasıyla ana yemek olarak da çalışır.",
+          "textEn": "It also works as a main course with rice, fries or a seasonal salad."
+        }
+      ],
+      "closing": "Sofrada döner olan her tarifte, dönerin yerini birebir alır.",
+      "closingEn": "In any recipe that calls for döner, it takes döner's place exactly.",
+      "link": {
+        "before": "Vegan İskender tarifimiz için ",
+        "beforeEn": "For our Vegan İskender recipe, visit the ",
+        "label": "tarifler sayfamıza",
+        "labelEn": "recipes page",
+        "section": "tarifler",
+        "after": " göz atın.",
+        "afterEn": "."
+      }
+    },
+    {
+      "heading": "Protein Değeri ve İçindekiler",
+      "headingEn": "Protein Content and Ingredients",
+      "paragraphs": [
+        "100 gramında 29.7 g protein, 232 kcal, 8.1 g yağ ve 13.7 g karbonhidrat bulunur. Protein ağırlıkla buğday gluteni ve nohut unundan gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda."
+      ],
+      "paragraphsEn": [
+        "Each 100 grams contains 29.7 g of protein, 232 kcal, 8.1 g of fat and 13.7 g of carbohydrates. The protein comes largely from wheat gluten and chickpea flour. The full ingredients list and nutrition table are above."
+      ]
+    }
+  ],
+
+  "faqHeading": "Sıkça Sorulan Sorular",
+  "faqHeadingEn": "Frequently Asked Questions",
+  "faq": [
+    {
+      "q": "Vegan döner neyden yapılır?",
+      "qEn": "What is vegan döner made of?",
+      "a": "VitaVegantis Tavuk Döner Tadında; buğday gluteni, besin mayası, nohut unu, patates nişastası, ayçiçek yağı, hindistan cevizi yağı, soya sosu, domates salçası ve baharat karışımından üretilir. Hayvansal içerik ve katkı maddesi içermez.",
+      "aEn": "VitaVegantis Chicken Döner Style is made from wheat gluten, nutritional yeast, chickpea flour, potato starch, sunflower oil, coconut oil, soy sauce, tomato paste and a spice mix. It contains no animal ingredients and no additives."
+    },
+    {
+      "q": "Bitki bazlı döner glütensiz midir?",
+      "qEn": "Is plant-based döner gluten-free?",
+      "a": "Hayır — dokusunu buğday gluteninden alır. Glüten hassasiyeti olanlar için uygun değildir.",
+      "aEn": "No — its texture comes from wheat gluten. It is not suitable for people with gluten sensitivity."
+    },
+    {
+      "q": "Vegan dönerin protein değeri nedir?",
+      "qEn": "How much protein does vegan döner contain?",
+      "a": "100 gramında 29.7 g bitkisel protein bulunur; bu, VitaVegantis ürünleri arasındaki en yüksek değerdir. Protein kaynağı buğday gluteni ve nohut unudur.",
+      "aEn": "Each 100 grams contains 29.7 g of plant protein — the highest figure across the VitaVegantis range. The protein comes from wheat gluten and chickpea flour."
+    },
+    {
+      "q": "Vegan döner kaç kalori?",
+      "qEn": "How many calories are in vegan döner?",
+      "a": "100 gramında 232 kcal bulunur. Aynı porsiyonda 8.1 g yağ ve 13.7 g karbonhidrat yer alır.",
+      "aEn": "There are 232 kcal per 100 grams, along with 8.1 g of fat and 13.7 g of carbohydrates."
+    },
+    {
+      "q": "Vegan İskender yapılabilir mi?",
+      "qEn": "Can I make Vegan İskender with it?",
+      "a": "Evet. Tavada kavurduğunuz döneri kızarmış pide parçalarının üzerine yerleştirip domates sosu, bitkisel tereyağı ve bitkisel yoğurtla servis edebilirsiniz. Adım adım tarifi tarifler sayfamızda bulabilirsiniz.",
+      "aEn": "Yes. Sear it in the pan, lay it over toasted pide, then serve with tomato sauce, plant-based butter and plant-based yoghurt. You can find the step-by-step recipe on our recipes page.",
+      "link": { "section": "tarifler", "label": "Tarifler", "labelEn": "Recipes" }
+    },
+    {
+      "q": "VitaVegantis Tavuk Döner Tadında nereden alınır?",
+      "qEn": "Where can I buy VitaVegantis Chicken Döner Style?",
+      "a": "Türkiye genelindeki anlaşmalı market ve satış noktalarından temin edebilirsiniz. Güncel liste için satış noktaları sayfamıza bakabilirsiniz.",
+      "aEn": "You can find it at partner shops and stockists across Türkiye. See our sales points page for the current list.",
+      "link": { "section": "satisnoktalari", "label": "Satış noktaları", "labelEn": "Where to buy" }
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "sceneAlt": "Izgarada pişmiş Ispanaklı Bitki Bazlı Vosis dilimleri, taze ıspanak yaprakları ve 180 g'lık VitaVegantis paketi",
+  "sceneAltEn": "Grilled slices of Spinach Plant-Based Vosis with fresh spinach leaves and the 180 g VitaVegantis pack",
+  "mapAlt": "Ispanaklı Vosis içindekiler: tofu, kurutulmuş ıspanak, nohut unu, besin mayası",
+  "mapAltEn": "Spinach Vosis ingredients: tofu, dried spinach, chickpea flour, nutritional yeast",
+
+  "sections": [
+    {
+      "heading": "Ispanaklı Bitki Bazlı Vosis: Yeşilin Tütsülü Hâli",
+      "headingEn": "Spinach Plant-Based Vosis: Green, With a Touch of Smoke",
+      "paragraphs": [
+        "Kestiğinizde göreceğiniz o yeşil benekler boya değil, kurutulmuş ıspanağın kendisi. Tofu yumuşak gövdeyi kurar, nohut ve yulaf unu dolgunluk verir, buğday gluteni ısırıldığında hissedilen o diri dokuyu getirir. Besin mayası arka planda tuzlu-umami bir derinlik bırakır; hafif tütsü aroması da her şeyi mangaldan yeni inmiş gibi gösterir.",
+        "100 gramında 24.1 g bitkisel protein ve 217 kcal enerji bulunur. Bir sosisten hem lezzet hem doyurucu bir protein bekliyorsanız, ıspanaklı vosis tam da bu ikisini bir arada tutmak için geliştirildi."
+      ],
+      "paragraphsEn": [
+        "Those green flecks you see when you slice it are not colouring — they are the dried spinach itself. Tofu builds the soft body, chickpea and oat flour add fullness, and wheat gluten brings the firm bite you feel when you take one. Nutritional yeast leaves a savoury, umami depth in the background, and a light smoke aroma makes it all taste as if it just came off the grill.",
+        "Each 100 grams contains 24.1 g of plant protein and 217 kcal. If you want a sausage to deliver both flavour and filling protein, this is exactly the balance the Spinach Vosis was built for."
+      ]
+    },
+    {
+      "heading": "Ispanaklı Sosis Nasıl Pişirilir?",
+      "headingEn": "How to Cook Spinach Sausage",
+      "paragraphs": [
+        "Pişirmesi kolay; ön hazırlık ya da haşlama gerektirmez."
+      ],
+      "paragraphsEn": [
+        "It cooks easily and needs no preparation or pre-boiling."
+      ],
+      "bullets": [
+        {
+          "label": "Tavada",
+          "labelEn": "In the pan",
+          "text": "Bütün ya da uzunlamasına ikiye bölerek, az ayçiçek yağıyla orta ateşte 4-5 dakika çevirin. Kabuk hafif kızarınca alın.",
+          "textEn": "Whole or halved lengthways, cook for 4-5 minutes over medium heat with a little sunflower oil, turning as you go. Take it off once the skin lightly browns."
+        },
+        {
+          "label": "Mangalda",
+          "labelEn": "On the grill",
+          "text": "Közün harlı olmadığı bölümde, sık çevirerek pişirin. Izgara izleri belirginleştiğinde tütsü aroması iyice öne çıkar.",
+          "textEn": "Cook over the cooler part of the coals, turning often. Once the grill marks show, the smoky aroma really comes forward."
+        },
+        {
+          "label": "Yemeklerin içinde",
+          "labelEn": "In cooked dishes",
+          "text": "Dilimleyip makarna soslarına, pizzaya, sebzeli tavaya ya da kahvaltı tabağına ekleyin. Ispanağın yeşili tabakta da güzel duruyor.",
+          "textEn": "Slice it into pasta sauces, onto pizza, into a vegetable sauté or onto a breakfast plate. The green of the spinach looks good on the plate too."
+        }
+      ],
+      "closing": "Klasik sosis kullandığınız her tarifte doğrudan yerini alır; ekstra bir şey yapmanız gerekmez.",
+      "closingEn": "It steps straight into any recipe where you would use a classic sausage — nothing extra required.",
+      "link": {
+        "before": "İlham için ",
+        "beforeEn": "For inspiration, take a look at our ",
+        "label": "tarifler sayfamıza",
+        "labelEn": "recipes page",
+        "section": "tarifler",
+        "after": " göz atın.",
+        "afterEn": "."
+      }
+    },
+    {
+      "heading": "Protein Değeri ve İçindekiler",
+      "headingEn": "Protein Content and Ingredients",
+      "paragraphs": [
+        "100 gramında 24.1 g protein, 217 kcal, 8.6 g yağ ve 10.6 g karbonhidrat bulunur. Protein tofu, buğday gluteni ve nohut unundan gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda."
+      ],
+      "paragraphsEn": [
+        "Each 100 grams contains 24.1 g of protein, 217 kcal, 8.6 g of fat and 10.6 g of carbohydrates. The protein comes from tofu, wheat gluten and chickpea flour. The full ingredients list and nutrition table are above."
+      ]
+    }
+  ],
+
+  "faqHeading": "Sıkça Sorulan Sorular",
+  "faqHeadingEn": "Frequently Asked Questions",
+  "faq": [
+    {
+      "q": "Ispanaklı bitki bazlı sosis neyden yapılır?",
+      "qEn": "What is spinach plant-based sausage made of?",
+      "a": "VitaVegantis Ispanaklı Bitki Bazlı Vosis; tofu, buğday gluteni, nohut unu, yulaf unu, besin mayası, kurutulmuş ıspanak, tütsü aroması ve baharat karışımından üretilir. Hayvansal içerik ve katkı maddesi içermez.",
+      "aEn": "VitaVegantis Spinach Plant-Based Vosis is made from tofu, wheat gluten, chickpea flour, oat flour, nutritional yeast, dried spinach, smoke flavouring and a spice mix. It contains no animal ingredients and no additives."
+    },
+    {
+      "q": "Ispanaklı sosis glütensiz midir?",
+      "qEn": "Is spinach sausage gluten-free?",
+      "a": "Hayır — içeriğinde buğday gluteni bulunur. Glüten hassasiyeti olanlar için uygun değildir.",
+      "aEn": "No — it contains wheat gluten. It is not suitable for people with gluten sensitivity."
+    },
+    {
+      "q": "Ispanaklı sosisin protein değeri nedir?",
+      "qEn": "How much protein does spinach sausage contain?",
+      "a": "100 gramında 24.1 g bitkisel protein bulunur. Protein kaynağı tofu, buğday gluteni ve nohut unudur.",
+      "aEn": "Each 100 grams contains 24.1 g of plant protein. The protein comes from tofu, wheat gluten and chickpea flour."
+    },
+    {
+      "q": "Ispanaklı sosis kaç kalori?",
+      "qEn": "How many calories are in spinach sausage?",
+      "a": "100 gramında 217 kcal bulunur. Aynı porsiyonda 8.6 g yağ ve 10.6 g karbonhidrat yer alır.",
+      "aEn": "There are 217 kcal per 100 grams, along with 8.6 g of fat and 10.6 g of carbohydrates."
+    },
+    {
+      "q": "Ispanaklı Vosis ile Vegan Vosis arasındaki fark nedir?",
+      "qEn": "What is the difference between the Spinach Vosis and the Vegan Vosis?",
+      "a": "İkisi de tofu ve nohut unu temelli. Ispanaklı olanda kurutulmuş ıspanak ve tütsü aroması var; daha yeşil, daha tütsülü ve 100 gramda 24.1 g ile daha yüksek proteinli. Vegan Vosis ise kurutulmuş sebze karışımıyla klasik sosis tadına daha yakın.",
+      "aEn": "Both are built on tofu and chickpea flour. The spinach version adds dried spinach and smoke flavouring: greener, smokier and higher in protein at 24.1 g per 100 grams. The Vegan Vosis, with its dried vegetable mix, sits closer to the classic sausage taste."
+    },
+    {
+      "q": "VitaVegantis Ispanaklı Vosis nereden alınır?",
+      "qEn": "Where can I buy the VitaVegantis Spinach Vosis?",
+      "a": "Türkiye genelindeki anlaşmalı market ve satış noktalarından temin edebilirsiniz. Güncel liste için satış noktaları sayfamıza bakabilirsiniz.",
+      "aEn": "You can find it at partner shops and stockists across Türkiye. See our sales points page for the current list.",
+      "link": { "section": "satisnoktalari", "label": "Satış noktaları", "labelEn": "Where to buy" }
+    }
+  ]
+}

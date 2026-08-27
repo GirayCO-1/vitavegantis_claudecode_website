@@ -1,0 +1,114 @@
+{
+  "sceneAlt": "Soslu bitki bazlı İsveç köftesi, patates püresi ve VitaVegantis İsveç Köfte paketi",
+  "sceneAltEn": "Plant-based Swedish meatballs in gravy with mashed potato and the VitaVegantis pack",
+  "mapAlt": "Bitki Bazlı İsveç Köfte içindekiler: bezelye proteini, hindistan cevizi yağı, besin mayası",
+  "mapAltEn": "Plant-Based Swedish Meatball ingredients: pea protein, coconut oil, nutritional yeast",
+
+  "sections": [
+    {
+      "heading": "Bitki Bazlı İsveç Köfte: Bezelye Proteininin Kuzeyli Yorumu",
+      "headingEn": "Plant-Based Swedish Meatballs: A Nordic Take on Pea Protein",
+      "paragraphs": [
+        "Ürün ailemizin çoğu buğday gluteni üzerine kuruluyken, İsveç köftemizin temeli bezelye proteini. Bu, dokuyu tamamen değiştiriyor: liflenen değil, ısırıldığında dağılan, klasik köfteye çok yakın bir yapı çıkıyor ortaya. Baharat karışımı Kuzey mutfağının o hafif yenibaharlı, muskatlı karakterini veriyor; besin mayası da arka planda derinliği tamamlıyor.",
+        "Ayçiçek ve hindistan cevizi yağı ise köftenin sululuğunu sağlıyor. Hindistan cevizi yağı oda sıcaklığında katı kaldığı için pişerken yavaş eriyor ve köfteyi içeriden nemli tutuyor — klasik köftedeki yağın yaptığı işi bitkisel yoldan yapıyor. 100 gramda 26 g yağ ve 356 kcal değerinin sebebi de bu."
+      ],
+      "paragraphsEn": [
+        "While most of our range is built on wheat gluten, these Swedish meatballs start from pea protein. That changes the texture completely: instead of pulling into strands, it breaks apart under the bite, very close to a classic meatball. The spice mix brings that gently allspiced, nutmeg-tinged Nordic character, and nutritional yeast fills in the depth behind it.",
+        "Sunflower and coconut oil are what keep the meatball juicy. Coconut oil stays solid at room temperature, so it melts slowly as the meatball cooks and keeps it moist from the inside — doing by plant means what the fat does in a classic meatball. That is also where the 26 g of fat and 356 kcal per 100 grams come from."
+      ]
+    },
+    {
+      "heading": "Vegan Köfte Nasıl Pişirilir?",
+      "headingEn": "How to Cook Vegan Meatballs",
+      "paragraphs": [
+        "Köfteler pişmeye hazır gelir; çözülmeyi beklemenize veya harç hazırlamanıza gerek yok."
+      ],
+      "paragraphsEn": [
+        "The meatballs arrive ready to cook — no thawing time, no mixture to prepare."
+      ],
+      "bullets": [
+        {
+          "label": "Tavada",
+          "labelEn": "In the pan",
+          "text": "Az yağla orta ateşte 6-8 dakika, arada tavayı sallayarak her yüzünün kızarmasını sağlayın. Çatalla bastırmayın, sululuğunu kaybeder.",
+          "textEn": "6-8 minutes over medium heat with a little oil, shaking the pan now and then so every side browns. Don't press them with a fork — they lose their juices."
+        },
+        {
+          "label": "Fırında",
+          "labelEn": "In the oven",
+          "text": "200°C'de, kağıt serili tepside 15-18 dakika. Kalabalık sofra için en pratik yöntem.",
+          "textEn": "15-18 minutes at 200°C on a lined tray. The most practical method for a crowded table."
+        },
+        {
+          "label": "Sosun içinde",
+          "labelEn": "In sauce",
+          "text": "Önce tavada kızartın, sonra bitkisel kremalı sosa alıp 2-3 dakika kaynatın. Klasik İsveç servisi için patates püresi ve kızılcık reçeliyle tabaklayın.",
+          "textEn": "Brown them in the pan first, then move them into a plant-based cream sauce and simmer for 2-3 minutes. Plate with mashed potato and lingonberry jam for the classic Swedish serve."
+        }
+      ],
+      "closing": "Domates soslu makarnadan sandviçe, mezeden ana yemeğe kadar köftenin girdiği her tarifte kullanılabilir.",
+      "closingEn": "From tomato-sauced pasta to sandwiches, meze to main course — it works anywhere meatballs belong.",
+      "link": {
+        "before": "Diğer fikirler için ",
+        "beforeEn": "For more ideas, take a look at our ",
+        "label": "tarifler sayfamıza",
+        "labelEn": "recipes page",
+        "section": "tarifler",
+        "after": " göz atın.",
+        "afterEn": "."
+      }
+    },
+    {
+      "heading": "Protein Değeri ve İçindekiler",
+      "headingEn": "Protein Content and Ingredients",
+      "paragraphs": [
+        "100 gramında 21.4 g protein, 356 kcal, 26 g yağ ve 9 g karbonhidrat bulunur. Proteinin tamamına yakını bezelye proteininden gelir. İçindekiler listesindeki metil selüloz, bitkisel selülozdan elde edilen bir bağlayıcıdır; köftenin pişerken dağılmadan formunu korumasını sağlar. Tam liste ve besin değerleri tablosu yukarıda."
+      ],
+      "paragraphsEn": [
+        "Each 100 grams contains 21.4 g of protein, 356 kcal, 26 g of fat and 9 g of carbohydrates. Almost all of the protein comes from pea protein. The methylcellulose in the ingredients list is a binder derived from plant cellulose; it is what holds the meatball together as it cooks. The full list and nutrition table are above."
+      ]
+    }
+  ],
+
+  "faqHeading": "Sıkça Sorulan Sorular",
+  "faqHeadingEn": "Frequently Asked Questions",
+  "faq": [
+    {
+      "q": "Vegan İsveç köftesi neyden yapılır?",
+      "qEn": "What are vegan Swedish meatballs made of?",
+      "a": "VitaVegantis Bitki Bazlı İsveç Köfte; bezelye proteini, ayçiçek yağı, baharat karışımı, hindistan cevizi yağı, metil selüloz ve besin mayasından üretilir. Hayvansal içerik içermez.",
+      "aEn": "VitaVegantis Plant-Based Swedish Meatballs are made from pea protein, sunflower oil, a spice mix, coconut oil, methylcellulose and nutritional yeast. They contain no animal ingredients."
+    },
+    {
+      "q": "Bitki bazlı İsveç köftesi glüten içerir mi?",
+      "qEn": "Do the plant-based Swedish meatballs contain gluten?",
+      "a": "İçindekiler listesinde buğday, arpa veya çavdar gibi bir glüten kaynağı yer almaz; ürün bezelye proteini üzerine kuruludur. Glüten hassasiyetiniz varsa satın almadan önce ambalaj üzerindeki güncel etiket bilgisini kontrol etmenizi öneririz.",
+      "aEn": "The ingredients list contains no source of gluten such as wheat, barley or rye — the product is built on pea protein. If you have a gluten sensitivity, we recommend checking the current label on the pack before buying."
+    },
+    {
+      "q": "Vegan köftenin protein değeri nedir?",
+      "qEn": "How much protein do the vegan meatballs contain?",
+      "a": "100 gramında 21.4 g bitkisel protein bulunur. Protein kaynağı bezelye proteinidir.",
+      "aEn": "Each 100 grams contains 21.4 g of plant protein, coming from pea protein."
+    },
+    {
+      "q": "Vegan İsveç köftesi kaç kalori?",
+      "qEn": "How many calories are in the vegan Swedish meatballs?",
+      "a": "100 gramında 356 kcal bulunur. Aynı porsiyonda 26 g yağ ve 9 g karbonhidrat yer alır. Yağ değerinin yüksek olması, köftenin sululuğunu sağlayan ayçiçek ve hindistan cevizi yağından kaynaklanır.",
+      "aEn": "There are 356 kcal per 100 grams, along with 26 g of fat and 9 g of carbohydrates. The higher fat figure comes from the sunflower and coconut oil that keep the meatballs juicy."
+    },
+    {
+      "q": "Metil selüloz nedir?",
+      "qEn": "What is methylcellulose?",
+      "a": "Bitkilerin hücre duvarını oluşturan selülozdan elde edilen bitkisel bir bağlayıcıdır. Köftenin harcını bir arada tutar ve pişerken dağılmasını önler — et köftesinde bu işi yağ ve bağ dokusu yapar.",
+      "aEn": "It is a plant-derived binder made from cellulose, the material that forms plant cell walls. It holds the mixture together and stops the meatball falling apart as it cooks — the job that fat and connective tissue do in a meat meatball."
+    },
+    {
+      "q": "VitaVegantis İsveç Köfte nereden alınır?",
+      "qEn": "Where can I buy VitaVegantis Swedish Meatballs?",
+      "a": "Türkiye genelindeki anlaşmalı market ve satış noktalarından temin edebilirsiniz. Güncel liste için satış noktaları sayfamıza bakabilirsiniz.",
+      "aEn": "You can find them at partner shops and stockists across Türkiye. See our sales points page for the current list.",
+      "link": { "section": "satisnoktalari", "label": "Satış noktaları", "labelEn": "Where to buy" }
+    }
+  ]
+}
