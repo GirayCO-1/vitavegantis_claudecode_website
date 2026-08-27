@@ -59,10 +59,12 @@
       "heading": "İçindekiler: Tek Malzeme",
       "headingEn": "Ingredients: A Single Item",
       "paragraphs": [
-        "İçindekiler listesi tek satırdır: B12 vitamini ile zenginleştirilmiş inaktif besin mayası. Başka bir katkı, tuz, aroma veya dolgu maddesi yoktur. Ürün vegandır ve glüten içermez."
+        "İçindekiler listesi tek satırdır: B12 vitamini ile zenginleştirilmiş inaktif besin mayası. Başka bir katkı, tuz, aroma veya dolgu maddesi yoktur. Ürün vegandır ve glüten içermez.",
+        "Saklama koşulu: kuru ve güneş görmeyen bir yerde saklanmalıdır."
       ],
       "paragraphsEn": [
-        "The ingredients list is a single line: inactive nutritional yeast fortified with vitamin B12. There are no other additives, salt, flavourings or fillers. The product is vegan and contains no gluten."
+        "The ingredients list is a single line: inactive nutritional yeast fortified with vitamin B12. There are no other additives, salt, flavourings or fillers. The product is vegan and contains no gluten.",
+        "Storage: keep it in a dry place, away from sunlight."
       ]
     }
   ],
@@ -99,6 +101,12 @@
       "qEn": "How do you use nutritional yeast?",
       "a": "Pişirmeye gerek yoktur. Makarna, risotto, çorba, sebze sotesi, salata ve patlamış mısırın üzerine doğrudan serpebilir; bitkisel sütle yaptığınız beşamele ekleyerek vegan peynir sosu hazırlayabilirsiniz. Bir kaşıkla başlayıp damak tadınıza göre artırmak en pratik yol.",
       "aEn": "No cooking needed. Sprinkle it straight onto pasta, risotto, soup, sautéed vegetables, salads and popcorn, or stir it into a plant-milk béchamel to make a vegan cheese sauce. The simplest approach is to start with a spoonful and adjust to taste."
+    },
+    {
+      "q": "Besin mayası nasıl saklanır?",
+      "qEn": "How should nutritional yeast be stored?",
+      "a": "VitaVegantis Besin Mayası kuru ve güneş görmeyen bir yerde saklanmalıdır.",
+      "aEn": "VitaVegantis Nutritional Yeast should be stored in a dry place, away from sunlight."
     },
     {
       "q": "VitaVegantis Besin Mayası nereden alınır?",

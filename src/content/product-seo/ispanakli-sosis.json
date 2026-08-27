@@ -62,10 +62,12 @@
       "heading": "Protein Değeri ve İçindekiler",
       "headingEn": "Protein Content and Ingredients",
       "paragraphs": [
-        "100 gramında 24.1 g protein, 217 kcal, 8.6 g yağ ve 10.6 g karbonhidrat bulunur. Protein tofu, buğday gluteni ve nohut unundan gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda."
+        "100 gramında 24.1 g protein, 217 kcal, 8.6 g yağ ve 10.6 g karbonhidrat bulunur. Protein tofu, buğday gluteni ve nohut unundan gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda.",
+        "Saklama koşulu: ürün +4 °C'de, buzdolabında saklanmalıdır."
       ],
       "paragraphsEn": [
-        "Each 100 grams contains 24.1 g of protein, 217 kcal, 8.6 g of fat and 10.6 g of carbohydrates. The protein comes from tofu, wheat gluten and chickpea flour. The full ingredients list and nutrition table are above."
+        "Each 100 grams contains 24.1 g of protein, 217 kcal, 8.6 g of fat and 10.6 g of carbohydrates. The protein comes from tofu, wheat gluten and chickpea flour. The full ingredients list and nutrition table are above.",
+        "Storage: the product should be kept at +4 °C, in the fridge."
       ]
     }
   ],
@@ -102,6 +104,12 @@
       "qEn": "What is the difference between the Spinach Vosis and the Vegan Vosis?",
       "a": "İkisi de tofu ve nohut unu temelli. Ispanaklı olanda kurutulmuş ıspanak ve tütsü aroması var; daha yeşil, daha tütsülü ve 100 gramda 24.1 g ile daha yüksek proteinli. Vegan Vosis ise kurutulmuş sebze karışımıyla klasik sosis tadına daha yakın.",
       "aEn": "Both are built on tofu and chickpea flour. The spinach version adds dried spinach and smoke flavouring: greener, smokier and higher in protein at 24.1 g per 100 grams. The Vegan Vosis, with its dried vegetable mix, sits closer to the classic sausage taste."
+    },
+    {
+      "q": "Ispanaklı sosis nasıl saklanır?",
+      "qEn": "How should spinach sausage be stored?",
+      "a": "VitaVegantis Ispanaklı Bitki Bazlı Vosis +4 °C'de, buzdolabında saklanmalıdır.",
+      "aEn": "VitaVegantis Spinach Plant-Based Vosis should be stored at +4 °C, in the fridge."
     },
     {
       "q": "VitaVegantis Ispanaklı Vosis nereden alınır?",

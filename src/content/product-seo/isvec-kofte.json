@@ -62,10 +62,12 @@
       "heading": "Protein Değeri ve İçindekiler",
       "headingEn": "Protein Content and Ingredients",
       "paragraphs": [
-        "100 gramında 21.4 g protein, 356 kcal, 26 g yağ ve 9 g karbonhidrat bulunur. Proteinin tamamına yakını bezelye proteininden gelir. İçindekiler listesindeki metil selüloz, bitkisel selülozdan elde edilen bir bağlayıcıdır; köftenin pişerken dağılmadan formunu korumasını sağlar. Tam liste ve besin değerleri tablosu yukarıda."
+        "100 gramında 21.4 g protein, 356 kcal, 26 g yağ ve 9 g karbonhidrat bulunur. Proteinin tamamına yakını bezelye proteininden gelir. İçindekiler listesindeki metil selüloz, bitkisel selülozdan elde edilen bir bağlayıcıdır; köftenin pişerken dağılmadan formunu korumasını sağlar. Tam liste ve besin değerleri tablosu yukarıda.",
+        "Saklama koşulu: ürün +4 °C'de, buzdolabında saklanmalıdır."
       ],
       "paragraphsEn": [
-        "Each 100 grams contains 21.4 g of protein, 356 kcal, 26 g of fat and 9 g of carbohydrates. Almost all of the protein comes from pea protein. The methylcellulose in the ingredients list is a binder derived from plant cellulose; it is what holds the meatball together as it cooks. The full list and nutrition table are above."
+        "Each 100 grams contains 21.4 g of protein, 356 kcal, 26 g of fat and 9 g of carbohydrates. Almost all of the protein comes from pea protein. The methylcellulose in the ingredients list is a binder derived from plant cellulose; it is what holds the meatball together as it cooks. The full list and nutrition table are above.",
+        "Storage: the product should be kept at +4 °C, in the fridge."
       ]
     }
   ],
@@ -102,6 +104,12 @@
       "qEn": "What is methylcellulose?",
       "a": "Bitkilerin hücre duvarını oluşturan selülozdan elde edilen bitkisel bir bağlayıcıdır. Köftenin harcını bir arada tutar ve pişerken dağılmasını önler — et köftesinde bu işi yağ ve bağ dokusu yapar.",
       "aEn": "It is a plant-derived binder made from cellulose, the material that forms plant cell walls. It holds the mixture together and stops the meatball falling apart as it cooks — the job that fat and connective tissue do in a meat meatball."
+    },
+    {
+      "q": "Vegan İsveç köftesi nasıl saklanır?",
+      "qEn": "How should the vegan Swedish meatballs be stored?",
+      "a": "VitaVegantis Bitki Bazlı İsveç Köfte +4 °C'de, buzdolabında saklanmalıdır.",
+      "aEn": "VitaVegantis Plant-Based Swedish Meatballs should be stored at +4 °C, in the fridge."
     },
     {
       "q": "VitaVegantis İsveç Köfte nereden alınır?",

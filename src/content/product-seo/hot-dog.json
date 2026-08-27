@@ -62,10 +62,12 @@
       "heading": "İçindekiler",
       "headingEn": "Ingredients",
       "paragraphs": [
-        "Tofu, nohut unu, yulaf unu, besin mayası, buğday gluteni, tütsü aroması, ayçiçek yağı ve baharat karışımı. Protein tofu, nohut unu ve buğday gluteninden gelir. Tam liste yukarıda; 180 gramlık pakette birden fazla sosis bulunur."
+        "Tofu, nohut unu, yulaf unu, besin mayası, buğday gluteni, tütsü aroması, ayçiçek yağı ve baharat karışımı. Protein tofu, nohut unu ve buğday gluteninden gelir. Tam liste yukarıda; 180 gramlık pakette birden fazla sosis bulunur.",
+        "Saklama koşulu: ürün +4 °C'de, buzdolabında saklanmalıdır."
       ],
       "paragraphsEn": [
-        "Tofu, chickpea flour, oat flour, nutritional yeast, wheat gluten, smoke flavouring, sunflower oil and a spice mix. The protein comes from tofu, chickpea flour and wheat gluten. The full list is above; the 180 gram pack holds several sausages."
+        "Tofu, chickpea flour, oat flour, nutritional yeast, wheat gluten, smoke flavouring, sunflower oil and a spice mix. The protein comes from tofu, chickpea flour and wheat gluten. The full list is above; the 180 gram pack holds several sausages.",
+        "Storage: the product should be kept at +4 °C, in the fridge."
       ]
     }
   ],
@@ -96,6 +98,12 @@
       "qEn": "What is the difference between the Hot Dog Vosis and the Vegan Vosis?",
       "a": "İkisinin de temeli tofu, nohut unu ve yulaf unu. Hot Dog Vosis'te tütsü aroması var ve sosisler hot dog ekmeğine girecek uzunlukta. Vegan Vosis ise kurutulmuş sebze karışımı içerir ve daha klasik bir sofra sosisidir.",
       "aEn": "Both are built on tofu, chickpea flour and oat flour. The Hot Dog Vosis adds smoke flavouring and comes in sausages long enough for a hot dog bun. The Vegan Vosis contains a dried vegetable mix and is more of a classic table sausage."
+    },
+    {
+      "q": "Vegan hot dog sosisi nasıl saklanır?",
+      "qEn": "How should the vegan hot dog sausage be stored?",
+      "a": "VitaVegantis Hot Dog Vosis +4 °C'de, buzdolabında saklanmalıdır.",
+      "aEn": "VitaVegantis Hot Dog Vosis should be stored at +4 °C, in the fridge."
     },
     {
       "q": "VitaVegantis Hot Dog Vosis nereden alınır?",

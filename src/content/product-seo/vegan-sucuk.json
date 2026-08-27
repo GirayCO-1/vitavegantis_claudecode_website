@@ -54,10 +54,12 @@
       "heading": "Protein Değeri ve İçindekiler",
       "headingEn": "Protein Content and Ingredients",
       "paragraphs": [
-        "100 gramında 28 g bitkisel protein ve 315 kcal enerji bulunur. Protein büyük ölçüde Meksika fasulyesi ve buğday gluteninden gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda."
+        "100 gramında 28 g bitkisel protein ve 315 kcal enerji bulunur. Protein büyük ölçüde Meksika fasulyesi ve buğday gluteninden gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda.",
+        "Saklama koşulu: ürün +4 °C'de, buzdolabında saklanmalıdır."
       ],
       "paragraphsEn": [
-        "Each 100 grams contains 28 g of plant protein and 315 kcal. The protein comes largely from kidney beans and wheat gluten. The full ingredients list and nutrition table are above."
+        "Each 100 grams contains 28 g of plant protein and 315 kcal. The protein comes largely from kidney beans and wheat gluten. The full ingredients list and nutrition table are above.",
+        "Storage: the product should be kept at +4 °C, in the fridge."
       ]
     }
   ],
@@ -88,6 +90,12 @@
       "qEn": "How many calories are in vegan sucuk?",
       "a": "100 gramında 315 kcal bulunur. Aynı porsiyonda 11 g yağ ve 26 g karbonhidrat yer alır.",
       "aEn": "There are 315 kcal per 100 grams, along with 11 g of fat and 26 g of carbohydrates."
+    },
+    {
+      "q": "Vegan sucuk nasıl saklanır?",
+      "qEn": "How should vegan sucuk be stored?",
+      "a": "VitaVegantis Vegan Sucuk +4 °C'de, buzdolabında saklanmalıdır.",
+      "aEn": "VitaVegantis Vegan Sucuk should be stored at +4 °C, in the fridge."
     },
     {
       "q": "VitaVegantis Vegan Sucuk nereden alınır?",

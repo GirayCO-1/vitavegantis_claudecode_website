@@ -54,10 +54,12 @@
       "heading": "Protein Değeri ve İçindekiler",
       "headingEn": "Protein Content and Ingredients",
       "paragraphs": [
-        "100 gramında 10.8 g bitkisel protein bulunur; enerji değeri 218 kcal'dir. Tam liste ve besin değerleri tablosu yukarıda — çünkü içindekiler listesi kısa olan ürünün anlatacak çok şeyi vardır."
+        "100 gramında 10.8 g bitkisel protein bulunur; enerji değeri 218 kcal'dir. Tam liste ve besin değerleri tablosu yukarıda — çünkü içindekiler listesi kısa olan ürünün anlatacak çok şeyi vardır.",
+        "Saklama koşulu: ürün +4 °C'de, buzdolabında saklanmalıdır."
       ],
       "paragraphsEn": [
-        "Each 100 grams contains 10.8 g of plant protein and 218 kcal. The full list and nutrition table are above — because a product with a short ingredients list has plenty to say."
+        "Each 100 grams contains 10.8 g of plant protein and 218 kcal. The full list and nutrition table are above — because a product with a short ingredients list has plenty to say.",
+        "Storage: the product should be kept at +4 °C, in the fridge."
       ]
     }
   ],
@@ -82,6 +84,12 @@
       "qEn": "How much protein does vegan sausage contain?",
       "a": "100 gramında 10.8 g bitkisel protein bulunur. Protein kaynağı tofu, nohut unu ve buğday glutenidir.",
       "aEn": "Each 100 grams contains 10.8 g of plant protein. The protein comes from tofu, chickpea flour and wheat gluten."
+    },
+    {
+      "q": "Vegan sosis nasıl saklanır?",
+      "qEn": "How should vegan sausage be stored?",
+      "a": "VitaVegantis Vegan Vosis +4 °C'de, buzdolabında saklanmalıdır.",
+      "aEn": "VitaVegantis Vegan Vosis should be stored at +4 °C, in the fridge."
     },
     {
       "q": "VitaVegantis Vegan Vosis nereden alınır?",

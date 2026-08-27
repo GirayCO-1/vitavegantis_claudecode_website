@@ -62,10 +62,12 @@
       "heading": "Protein Değeri ve İçindekiler",
       "headingEn": "Protein Content and Ingredients",
       "paragraphs": [
-        "100 gramında 29.7 g protein, 232 kcal, 8.1 g yağ ve 13.7 g karbonhidrat bulunur. Protein ağırlıkla buğday gluteni ve nohut unundan gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda."
+        "100 gramında 29.7 g protein, 232 kcal, 8.1 g yağ ve 13.7 g karbonhidrat bulunur. Protein ağırlıkla buğday gluteni ve nohut unundan gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda.",
+        "Saklama koşulu: ürün +4 °C'de, buzdolabında saklanmalıdır."
       ],
       "paragraphsEn": [
-        "Each 100 grams contains 29.7 g of protein, 232 kcal, 8.1 g of fat and 13.7 g of carbohydrates. The protein comes largely from wheat gluten and chickpea flour. The full ingredients list and nutrition table are above."
+        "Each 100 grams contains 29.7 g of protein, 232 kcal, 8.1 g of fat and 13.7 g of carbohydrates. The protein comes largely from wheat gluten and chickpea flour. The full ingredients list and nutrition table are above.",
+        "Storage: the product should be kept at +4 °C, in the fridge."
       ]
     }
   ],
@@ -103,6 +105,12 @@
       "a": "Evet. Tavada kavurduğunuz döneri kızarmış pide parçalarının üzerine yerleştirip domates sosu, bitkisel tereyağı ve bitkisel yoğurtla servis edebilirsiniz. Adım adım tarifi tarifler sayfamızda bulabilirsiniz.",
       "aEn": "Yes. Sear it in the pan, lay it over toasted pide, then serve with tomato sauce, plant-based butter and plant-based yoghurt. You can find the step-by-step recipe on our recipes page.",
       "link": { "section": "tarifler", "label": "Tarifler", "labelEn": "Recipes" }
+    },
+    {
+      "q": "Vegan döner nasıl saklanır?",
+      "qEn": "How should vegan döner be stored?",
+      "a": "VitaVegantis Tavuk Döner Tadında +4 °C'de, buzdolabında saklanmalıdır.",
+      "aEn": "VitaVegantis Chicken Döner Style should be stored at +4 °C, in the fridge."
     },
     {
       "q": "VitaVegantis Tavuk Döner Tadında nereden alınır?",
