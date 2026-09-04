@@ -1,78 +1,114 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useSyncExternalStore } from "react";
 import type { Locale } from "@/lib/i18n";
 
+/**
+ * İletişim formu.
+ *
+ * Düz bir HTML form POST'u yapar; sunucudaki /iletisim-gonder.php mesajı
+ * info@vitavegantis.com adresine yollar ve ziyaretçiyi ?durum= ile bu
+ * sayfaya geri gönderir. JavaScript kapalıyken de çalışır.
+ *
+ * PHP yalnızca IHS'de çalışır. Vercel önizlemesinde gönderim 404 verir;
+ * canlı site IHS'de olduğu için bu kabul edilmiş bir sınırlama.
+ */
 const TEXT = {
   tr: {
     name: "Ad Soyad",
     email: "E-posta",
     message: "Mesajınız",
     send: "Mesajı Gönder",
-    note: "Gönder butonuna bastığınızda, mesajınızla birlikte e-posta uygulamanız açılır.",
-    subject: (name: string) => `Web sitesi mesajı — ${name}`,
+    note: "Mesajınız doğrudan info@vitavegantis.com adresine iletilir.",
+    ok: "Mesajınız bize ulaştı. En kısa sürede size döneceğiz.",
+    eksik: "Mesaj gönderilemedi: lütfen ad, e-posta ve mesaj alanlarını kontrol edin.",
+    hata: "Mesaj gönderilemedi. Doğrudan info@vitavegantis.com adresine yazabilirsiniz.",
   },
   en: {
     name: "Full Name",
     email: "Email",
     message: "Your Message",
     send: "Send Message",
-    note: "When you press send, your email app opens with the message ready to go.",
-    subject: (name: string) => `Website message — ${name}`,
+    note: "Your message goes straight to info@vitavegantis.com.",
+    ok: "Your message reached us. We'll get back to you shortly.",
+    eksik: "Message not sent: please check the name, email and message fields.",
+    hata: "Message could not be sent. You can email info@vitavegantis.com directly.",
   },
 } as const;
 
+type Durum = "ok" | "eksik" | "hata";
+
+/** Adres çubuğundaki ?durum= değeri; sayfa açıldıktan sonra değişmiyor. */
+const abone = () => () => {};
+const istemciDegeri = () => new URLSearchParams(window.location.search).get("durum");
+const sunucuDegeri = () => null;
+
 export default function ContactForm({ locale = "tr" }: { locale?: Locale }) {
   const t = TEXT[locale];
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  // PHP, gönderim sonrası ?durum=... ile bu sayfaya geri döndürüyor.
+  // Sunucuda null, istemcide gerçek değer — hidrasyon uyuşmazlığı olmuyor.
+  const ham = useSyncExternalStore(abone, istemciDegeri, sunucuDegeri);
+  const durum: Durum | null =
+    ham === "ok" || ham === "eksik" || ham === "hata" ? ham : null;
 
-  function handleSubmit(e: FormEvent) {
-    e.preventDefault();
-    const subject = encodeURIComponent(t.subject(name));
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:info@vitavegantis.com?subject=${subject}&body=${body}`;
-  }
+  const inputClass =
+    "mt-1 w-full rounded-xl border border-forest/20 bg-white/70 px-4 py-3 text-sm text-forest outline-none focus:border-coral";
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5">
+    <form action="/iletisim-gonder.php" method="post" className="space-y-5">
+      {durum && (
+        <p
+          role="status"
+          className={
+            durum === "ok"
+              ? "rounded-xl border border-forest/20 bg-mint/60 px-4 py-3 text-sm text-forest"
+              : "rounded-xl border border-coral/40 bg-coral/10 px-4 py-3 text-sm text-forest"
+          }
+        >
+          {t[durum]}
+        </p>
+      )}
+
+      {/* Bal küpü — ekranda görünmez, yalnızca botlar doldurur. */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+      />
+
       <div>
-        <label htmlFor="name" className="text-sm font-medium text-forest">
+        <label htmlFor="ad" className="text-sm font-medium text-forest">
           {t.name}
         </label>
-        <input
-          id="name"
-          required
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          className="mt-1 w-full rounded-xl border border-forest/20 bg-white/70 px-4 py-3 text-sm text-forest outline-none focus:border-coral"
-        />
+        <input id="ad" name="ad" required maxLength={100} className={inputClass} />
       </div>
       <div>
-        <label htmlFor="email" className="text-sm font-medium text-forest">
+        <label htmlFor="eposta" className="text-sm font-medium text-forest">
           {t.email}
         </label>
         <input
-          id="email"
+          id="eposta"
+          name="eposta"
           type="email"
           required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          className="mt-1 w-full rounded-xl border border-forest/20 bg-white/70 px-4 py-3 text-sm text-forest outline-none focus:border-coral"
+          maxLength={200}
+          className={inputClass}
         />
       </div>
       <div>
-        <label htmlFor="message" className="text-sm font-medium text-forest">
+        <label htmlFor="mesaj" className="text-sm font-medium text-forest">
           {t.message}
         </label>
         <textarea
-          id="message"
+          id="mesaj"
+          name="mesaj"
           required
           rows={5}
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="mt-1 w-full rounded-xl border border-forest/20 bg-white/70 px-4 py-3 text-sm text-forest outline-none focus:border-coral"
+          maxLength={5000}
+          className={inputClass}
         />
       </div>
       <button
