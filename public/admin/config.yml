@@ -154,35 +154,21 @@ collections:
         media_folder: /public/testimonials
         public_folder: /testimonials
         description: >-
-          Ana sayfada akan yorum kartları. Buradakiler şu an YER TUTUCUDUR —
-          uydurma kullanıcı adı ve yorum içerir. Yayına çıkmadan önce gerçek
-          gönderilerle değiştirin ve "Yer tutucu" kutusunun işaretini kaldırın.
+          Ana sayfada soldan sağa akan gönderi kartları. Kartta yalnızca
+          fotoğraf görünür; yorum, kullanıcı adı ve beğeni sayısı gösterilmez.
+          Sıralamayı sürükleyerek değiştirebilirsiniz.
         fields:
-          - name: placeholder
-            label: Yer tutucu (gerçek içerik değil)
-            widget: boolean
-            default: true
-            hint: Gerçek gönderileri girdikten sonra kapatın.
           - name: items
             label: Gönderiler
             widget: list
-            summary: "{{fields.handle}} — {{fields.caption}}"
+            summary: "{{fields.image}}"
             fields:
               - name: image
                 label: Gönderi görseli
                 widget: image
-                required: false
-                hint: Boş bırakılırsa aşağıdaki emoji ve renk gösterilir.
-              - { name: emoji, label: Emoji, widget: string, required: false }
-              - name: bg
-                label: Arka plan rengi
-                widget: string
-                required: false
-                hint: "Örnek: #f9e0c8"
-              - { name: caption, label: Yorum, widget: text }
-              - { name: captionEn, label: Yorum (EN), widget: text, required: false }
-              - { name: handle, label: Kullanıcı adı, widget: string, hint: "@ ile başlayın" }
-              - { name: likes, label: Beğeni sayısı, widget: string }
+                hint: >-
+                  Dikey (4:5) kırpılır. En az 500x625 piksel yükleyin ki
+                  kartta net görünsün.
 
   # ----------------------------------------------------------- Satış Noktaları
   - name: sales_points

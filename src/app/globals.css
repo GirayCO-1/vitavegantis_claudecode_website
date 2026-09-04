@@ -170,12 +170,15 @@ body {
 }
 
 /* --- Sizden Gelenler: yatay akan yorum şeritleri --------------------- */
+/* Süre kart sayısına göre seçildi: 28 kart x 278px = ~7784px, %50'lik
+   kaydırma 170 saniyede tamamlanıyor — yani ~46px/sn. Kart sayısı
+   değişirse aynı hızı korumak için süreyi de orantılı güncelleyin. */
 .testimonial-marquee {
   display: flex;
   gap: 28px;
   width: max-content;
   padding: 26px 0;
-  animation: testimonial-scroll-right 48s linear infinite;
+  animation: testimonial-scroll-right 170s linear infinite;
 }
 
 /* Fareyle üzerine gelince dursun ki kart okunabilsin. */

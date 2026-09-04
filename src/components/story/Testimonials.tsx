@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { testimonialsFor, type Testimonial } from "@/lib/testimonials";
+import { testimonials, type Testimonial } from "@/lib/testimonials";
 import type { Locale } from "@/lib/i18n";
 
 const TEXT = {
@@ -29,7 +29,7 @@ function Card({ item, tilt }: { item: Testimonial; tilt: number }) {
       target="_blank"
       rel="noopener noreferrer"
       style={{ transform: `rotate(${tilt}deg)` }}
-      className="testimonial-card relative block w-[250px] shrink-0 rounded-2xl bg-white/95 p-3 pb-4 shadow-lg shadow-forest/15 transition-transform duration-300 ease-out hover:z-10 hover:scale-105 hover:rotate-0 hover:shadow-xl hover:shadow-forest/25"
+      className="testimonial-card relative block w-[250px] shrink-0 rounded-2xl bg-white/95 p-3 pb-7 shadow-lg shadow-forest/15 transition-transform duration-300 ease-out hover:z-10 hover:scale-105 hover:rotate-0 hover:shadow-xl hover:shadow-forest/25"
     >
       {/* Üstteki bant şeridi */}
       <span
@@ -37,33 +37,16 @@ function Card({ item, tilt }: { item: Testimonial; tilt: number }) {
         className="absolute -top-2.5 left-1/2 h-[22px] w-[78px] -translate-x-1/2 -rotate-2 border-x border-dashed border-white/60 bg-coral/35"
       />
 
-      <div
-        className="relative mb-3 flex aspect-square w-full items-center justify-center overflow-hidden rounded-lg text-[3.4rem]"
-        style={item.image ? undefined : { background: item.bg ?? "#eef1e4" }}
-      >
-        {item.image ? (
-          <Image
-            src={item.image}
-            alt=""
-            fill
-            sizes="250px"
-            className="object-cover"
-          />
-        ) : (
-          <span aria-hidden>{item.emoji}</span>
-        )}
-      </div>
-
-      <p className="min-h-[2.4em] text-[0.82rem] leading-relaxed text-forest/80">
-        {item.caption}
-      </p>
-
-      <div className="mt-3 flex items-center gap-2 text-[0.78rem] text-forest">
-        <svg viewBox="0 0 24 24" aria-hidden className="h-[15px] w-[15px] fill-coral">
-          <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2m0 3.6a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4m0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6.4-10.4a1.4 1.4 0 1 1-2.8 0 1.4 1.4 0 0 1 2.8 0" />
-        </svg>
-        <span className="font-semibold">{item.handle}</span>
-        <span className="ml-auto text-forest/45">♥ {item.likes}</span>
+      {/* Kartta yalnızca fotoğraf var; yorum ve kullanıcı adı gösterilmiyor.
+          Alttaki fazladan boşluk polaroid çenesini veriyor. */}
+      <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-sage/10">
+        <Image
+          src={item.image}
+          alt=""
+          fill
+          sizes="250px"
+          className="object-cover"
+        />
       </div>
     </a>
   );
@@ -85,8 +68,7 @@ function Row({ items }: { items: Testimonial[] }) {
 
 export default function Testimonials({ locale = "tr" }: { locale?: Locale }) {
   const t = TEXT[locale];
-  const items = testimonialsFor(locale);
-  if (items.length === 0) return null;
+  if (testimonials.length === 0) return null;
 
   return (
     <section className="bg-cream py-20">
@@ -110,7 +92,7 @@ export default function Testimonials({ locale = "tr" }: { locale?: Locale }) {
       </div>
 
       {/* Tek sıra, soldan sağa akıyor. */}
-      <Row items={items} />
+      <Row items={testimonials} />
     </section>
   );
 }

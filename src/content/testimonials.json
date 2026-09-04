@@ -1,70 +1,88 @@
 {
-  "_not": "ÖNEMLİ: Aşağıdakiler YER TUTUCUDUR — gerçek müşteri gönderisi değildir. Yayına çıkmadan önce gerçek Instagram gönderileriyle değiştirin. Uydurma kullanıcı adı ve yorumla yayında kalırsa, ziyaretçiye gerçekmiş gibi görünür.",
-  "placeholder": true,
   "items": [
     {
-      "emoji": "🌭",
-      "bg": "#f9e0c8",
-      "caption": "Mangalda VitaVegantis sosis denedik, misafirler farkı anlamadı bile 😅",
-      "captionEn": "We grilled VitaVegantis sausages — our guests couldn't tell the difference 😅",
-      "handle": "@aysegulmutfakta",
-      "likes": "214"
+      "image": "/testimonials/1-7-2024-veganistasyon.webp"
     },
     {
-      "emoji": "🍝",
-      "bg": "#e6efdc",
-      "caption": "Ispanaklı Vosis ile akşam makarnası. 15 dakikada bitti, tarifi profilde!",
-      "captionEn": "Evening pasta with Spinach Vosis. Done in 15 minutes, recipe on my profile!",
-      "handle": "@veganankara",
-      "likes": "389"
+      "image": "/testimonials/12-8-2026-foodiestme.webp"
     },
     {
-      "emoji": "🍕",
-      "bg": "#fbe9e2",
-      "caption": "Ev pizzasında vegan sucuk devri başladı 🔥",
-      "captionEn": "Vegan sucuk has taken over our homemade pizza 🔥",
-      "handle": "@mutfaktayasam",
-      "likes": "156"
+      "image": "/testimonials/18-8-2026-foodiestme.webp"
     },
     {
-      "emoji": "🥗",
-      "bg": "#eef1e4",
-      "caption": "Öğle yemeğinde köfte + salata. Sosuna bayıldım.",
-      "captionEn": "Meatballs and salad for lunch. Loved the sauce.",
-      "handle": "@fitogunler",
-      "likes": "97"
+      "image": "/testimonials/21-4-26-vitavegntis.webp"
     },
     {
-      "emoji": "🌯",
-      "bg": "#f6ecd9",
-      "caption": "Döner tadında ile ev dürümü... Sokak lezzeti evde 👌",
-      "captionEn": "Homemade wrap with the döner style... street food at home 👌",
-      "handle": "@denizinmutfagi",
-      "likes": "302"
+      "image": "/testimonials/23-7-2024-veganistasyon.webp"
     },
     {
-      "emoji": "🍳",
-      "bg": "#f3e3d1",
-      "caption": "Pazar kahvaltısının yıldızı Vosis oldu. Çocuklar tekrar istedi!",
-      "captionEn": "Vosis was the star of Sunday breakfast. The kids asked for more!",
-      "handle": "@ucocuklusofra",
-      "likes": "441"
+      "image": "/testimonials/3-3-205-vitavegantis.webp"
     },
     {
-      "emoji": "🧆",
-      "bg": "#e9e4d6",
-      "caption": "İsveç köfte + püre = akşam yemeği çözüldü.",
-      "captionEn": "Swedish meatballs and mash — dinner sorted.",
-      "handle": "@pratiktarifci",
-      "likes": "188"
+      "image": "/testimonials/3-5-2023-vitavegantis.webp"
     },
     {
-      "emoji": "🥪",
-      "bg": "#fdeee6",
-      "caption": "Sosisli sandviç ama bitkisel. Kimse inanmıyor 😄",
-      "captionEn": "A hot dog, but plant-based. Nobody believes it 😄",
-      "handle": "@kampusyemekleri",
-      "likes": "263"
+      "image": "/testimonials/5-10-2024-veganistasyooyn.webp"
+    },
+    {
+      "image": "/testimonials/besin-mayasi.webp"
+    },
+    {
+      "image": "/testimonials/besinmayasi.webp"
+    },
+    {
+      "image": "/testimonials/doner.webp"
+    },
+    {
+      "image": "/testimonials/doner4.webp"
+    },
+    {
+      "image": "/testimonials/gizem-kalak.webp"
+    },
+    {
+      "image": "/testimonials/hotdog.webp"
+    },
+    {
+      "image": "/testimonials/ispanak8.webp"
+    },
+    {
+      "image": "/testimonials/isvec-kofte.webp"
+    },
+    {
+      "image": "/testimonials/isvoc.webp"
+    },
+    {
+      "image": "/testimonials/sosis.webp"
+    },
+    {
+      "image": "/testimonials/sosis2.webp"
+    },
+    {
+      "image": "/testimonials/sosis5.webp"
+    },
+    {
+      "image": "/testimonials/sosis6.webp"
+    },
+    {
+      "image": "/testimonials/sosis7.webp"
+    },
+    {
+      "image": "/testimonials/soss4.webp"
+    },
+    {
+      "image": "/testimonials/veganduukan-susuk.webp"
+    },
+    {
+      "image": "/testimonials/veganolurken-isveckofte.webp"
+    },
+    {
+      "image": "/testimonials/veganqull.webp"
+    },
+    {
+      "image": "/testimonials/vitasosis.webp"
+    },
+    {
+      "image": "/testimonials/ispanaksos.webp"
     }
   ]
 }
