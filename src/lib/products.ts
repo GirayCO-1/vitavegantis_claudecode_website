@@ -161,7 +161,7 @@ export const products: Product[] = [
     description:
       "Döner severlerin bitki bazlı beslenmeden vazgeçmesine gerek yok — besin mayası ve baharat karışımımızla tanıdık lezzeti yeniden yarattık.",
     image: "/products/tavuk-doner.webp",
-    sceneImage: "/products/scenes/tavuk-doner-scene.webp",
+    sceneImage: "/products/scenes/tavuk-doner-scene-2.webp",
     ingredients: [
       "Buğday Gluteni",
       "Besin Mayası",
