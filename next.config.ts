@@ -19,6 +19,11 @@ const nextConfig: NextConfig = {
   // Adreslerin birebir aynı kalması için aynı biçimi sürdürüyoruz.
   trailingSlash: true,
 
+  // İletişim formunun POST edeceği adres. Derleme anında forma gömülür.
+  env: {
+    ILETISIM_ACTION: isStatic ? "/iletisim-gonder.php" : "/api/iletisim/",
+  },
+
   ...(isStatic
     ? {
         output: "export" as const,
@@ -26,6 +31,12 @@ const nextConfig: NextConfig = {
         images: { unoptimized: true },
       }
     : {
+        // İletişim formunun sunucu rotası src/app/api/iletisim/route.node.ts
+        // dosyasında. "node.ts" uzantısı yalnızca burada tanındığı için rota
+        // sadece Vercel derlemesine giriyor; statik çıktı onu görmüyor —
+        // "output: export" sunucu rotası derleyemediğinden bu şart.
+        pageExtensions: ["tsx", "ts", "jsx", "js", "node.ts"],
+
         // İçerik paneli public/admin altında düz bir HTML dosyası; Next.js
         // klasör adresini kendiliğinden index.html'e bağlamadığı için elle
         // eşliyoruz. Statik çıktıda bunu Apache'nin DirectoryIndex'i yapar.

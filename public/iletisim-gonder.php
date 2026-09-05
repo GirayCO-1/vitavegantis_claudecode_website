@@ -15,12 +15,19 @@
  */
 
 $ALICI = 'info@vitavegantis.com';
-$SAYFA = '/iletisim/';
+
+/**
+ * Formun döneceği sayfa. Açık yönlendirme (open redirect) olmaması için
+ * serbest metin kabul edilmiyor; yalnızca bu iki sayfa geçerli.
+ */
+$DONUS_SAYFALARI = array('/iletisim/', '/en/contact/');
 
 function geri_don($durum)
 {
-    global $SAYFA;
-    header('Location: ' . $SAYFA . '?durum=' . $durum, true, 303);
+    global $DONUS_SAYFALARI;
+    $istenen = isset($_POST['donus']) ? $_POST['donus'] : '';
+    $sayfa = in_array($istenen, $DONUS_SAYFALARI, true) ? $istenen : '/iletisim/';
+    header('Location: ' . $sayfa . '?durum=' . $durum, true, 303);
     exit;
 }
 

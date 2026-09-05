@@ -6,13 +6,17 @@ import type { Locale } from "@/lib/i18n";
 /**
  * İletişim formu.
  *
- * Düz bir HTML form POST'u yapar; sunucudaki /iletisim-gonder.php mesajı
- * info@vitavegantis.com adresine yollar ve ziyaretçiyi ?durum= ile bu
- * sayfaya geri gönderir. JavaScript kapalıyken de çalışır.
+ * Düz bir HTML form POST'u yapar; sunucu mesajı info@vitavegantis.com
+ * adresine yollar ve ziyaretçiyi ?durum= ile bu sayfaya geri gönderir.
+ * JavaScript kapalıyken de çalışır.
  *
- * PHP yalnızca IHS'de çalışır. Vercel önizlemesinde gönderim 404 verir;
- * canlı site IHS'de olduğu için bu kabul edilmiş bir sınırlama.
+ * Gönderim adresi yayın hedefine göre değişir ve derleme anında forma
+ * gömülür (bkz. next.config.ts → env.ILETISIM_ACTION):
+ *   - Vercel: /api/iletisim/   (src/app/api/iletisim/route.node.ts)
+ *   - IHS   : /iletisim-gonder.php
+ * İkisi de aynı alanları bekler ve aynı ?durum= değerlerini döndürür.
  */
+const ACTION = process.env.ILETISIM_ACTION ?? "/api/iletisim/";
 const TEXT = {
   tr: {
     name: "Ad Soyad",
@@ -55,7 +59,13 @@ export default function ContactForm({ locale = "tr" }: { locale?: Locale }) {
     "mt-1 w-full rounded-xl border border-forest/20 bg-white/70 px-4 py-3 text-sm text-forest outline-none focus:border-coral";
 
   return (
-    <form action="/iletisim-gonder.php" method="post" className="space-y-5">
+    <form action={ACTION} method="post" className="space-y-5">
+      {/* Gönderimden sonra dönülecek sayfa; İngilizce form /en/contact/'a döner. */}
+      <input
+        type="hidden"
+        name="donus"
+        value={locale === "en" ? "/en/contact/" : "/iletisim/"}
+      />
       {durum && (
         <p
           role="status"
