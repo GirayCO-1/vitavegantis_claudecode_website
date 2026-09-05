@@ -20,6 +20,10 @@ import nodemailer from "nodemailer";
 export const runtime = "nodejs";
 // Form her istekte çalışmalı; önbelleğe alınmamalı.
 export const dynamic = "force-dynamic";
+// SMTP el sıkışması yavaş olabilir; varsayılan süre dolarsa ziyaretçi 504
+// hata sayfası görürdü. Aşağıdaki nodemailer zaman aşımları bundan kısa,
+// yani hata durumunda ziyaretçi düzgün bir uyarı mesajı görüyor.
+export const maxDuration = 30;
 
 const ALICI = process.env.CONTACT_TO ?? "info@vitavegantis.com";
 const GONDEREN = process.env.SMTP_USER ?? ALICI;
@@ -85,7 +89,15 @@ export async function POST(request: Request) {
       port,
       // 465 doğrudan SSL; 587 önce düz bağlanıp STARTTLS'e geçer.
       secure: port === 465,
+      // 587'de TLS zorunlu: sunucu STARTTLS vermezse bağlantı kurulmasın.
+      // Aksi hâlde parola düz metin olarak gidebilirdi.
+      requireTLS: port !== 465,
       auth: { user: SMTP_USER, pass: SMTP_PASS },
+      // Sunucu yanıt vermezse fonksiyon süresi dolmadan vazgeç; ziyaretçi
+      // 504 yerine "gönderilemedi" uyarısını görsün.
+      connectionTimeout: 10_000,
+      greetingTimeout: 10_000,
+      socketTimeout: 15_000,
     });
 
     const tarih = new Date().toLocaleString("tr-TR", {
