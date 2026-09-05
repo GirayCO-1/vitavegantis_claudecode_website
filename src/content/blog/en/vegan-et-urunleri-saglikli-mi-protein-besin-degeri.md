@@ -1,6 +1,6 @@
 ---
 title: Are Vegan Meat Products Healthy? Protein, Nutrition and Uses
-seoTitle: Are Vegan Meat Products Healthy?
+seoTitle: Are Vegan Meat Products Healthy? Protein and Nutrition Guide
 description: Are vegan sucuk, sausage, döner and meatballs healthy? A full guide to protein levels, nutritional content and how to use them well.
 image: /blog/vegan-et-urunleri-saglikli-mi.webp
 date: 2026-09-05
@@ -50,10 +50,10 @@ When you pick a good vegan meat product, we'd suggest checking these points:
 
 1. **Protein content** — check how many grams of protein there are per 100 grams.
 2. **A simple ingredient list** — it's a plus when the main component is a recognisable plant protein source (soy, pea, wheat and the like).
-3. **Level of processing** — the shorter and more familiar the ingredient list, the better; go for the least processed option you can.
-4. **Label transparency** — it inspires confidence when the pack states clearly that the product is vegan and the producer is open about its food safety standards.
+3. **Additive density** — go for products that are as lightly processed and additive-free as possible.
+4. **Certifications** — a vegan certification, and a gluten-free one if you need it, gives extra reassurance about a product's credibility.
 
-At Vita Vegantis these are exactly the principles behind our [vegan sucuk](/en/vita-vegantis-vegan-sucuk/), [vegan sausage](/en/vita-vegantis-vegan-sosis-tadinda/), [spinach vosis](/en/vita-vegantis-ispanakli-sosis-tadinda/), [chicken döner style product](/en/vita-vegantis-tavuk-doner-tadinda/), [plant-based Swedish meatballs](/en/vita-vegantis-vegan-isvec-kofte/) and [hot dog vosis](/en/vita-vegantis-hot-dog-vosis/): high in protein, 100% plant-based. Production takes place at our own facility in Ankara, which holds the ISO 22000 Food Safety Management System certification.
+At Vita Vegantis these are exactly the principles behind our [vegan sucuk](/en/vita-vegantis-vegan-sucuk/), [vegan sausage](/en/vita-vegantis-vegan-sosis-tadinda/), [spinach vosis](/en/vita-vegantis-ispanakli-sosis-tadinda/), [chicken döner style product](/en/vita-vegantis-tavuk-doner-tadinda/), [plant-based Swedish meatballs](/en/vita-vegantis-vegan-isvec-kofte/) and [hot dog vosis](/en/vita-vegantis-hot-dog-vosis/): high in protein, additive-free and certified plant-based content.
 
 ## Frequently Asked Questions
 
@@ -71,6 +71,6 @@ No. Because they are plant-derived, by their nature they contain no cholesterol.
 
 ## In Short
 
-Chosen well, vegan meat products are a practical alternative that can meet your protein needs and offer some advantages on saturated fat and cholesterol. What matters is reading the ingredient list and the nutrition table, and going for products that are good quality, transparently labelled and lightly processed.
+Chosen well, vegan meat products are a practical alternative that can meet your protein needs and offer some advantages on saturated fat and cholesterol. What matters is reading the ingredient list and the nutrition table, and going for products that are good quality, certified and lightly processed.
 
-To get to know the Vita Vegantis range, take a look at [our products](/en/products/) or find your nearest [stockist](/en/sales-points/).
+To get to know Vita Vegantis products and find your nearest [stockists](/en/sales-points/), take a look around our site.
