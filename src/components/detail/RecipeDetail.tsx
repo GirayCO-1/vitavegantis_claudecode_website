@@ -63,6 +63,9 @@ export default function RecipeDetail({
   const variants = locale === "en" ? recipe.en.variants : recipe.variants;
   const intro = locale === "en" ? recipe.en.intro : recipe.intro;
   const closing = locale === "en" ? recipe.en.closing : recipe.closing;
+  const ingredientGroups =
+    locale === "en" ? recipe.en.ingredientGroups : recipe.ingredientGroups;
+  const extras = locale === "en" ? recipe.en.extras : recipe.extras;
 
   return (
     <>
@@ -192,14 +195,36 @@ export default function RecipeDetail({
                 <h2 className="font-display text-xl font-semibold text-forest">
                   {t.ingredients}
                 </h2>
-                <ul className="mt-4 space-y-2">
-                  {ingredients.map((ing) => (
-                    <li key={ing} className="flex items-start gap-2 text-sm text-forest/80">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
-                      {ing}
-                    </li>
-                  ))}
-                </ul>
+                {/* Malzemeler gruplanmışsa her grup kendi ara başlığıyla. */}
+                {ingredientGroups ? (
+                  ingredientGroups.map((group) => (
+                    <div key={group.label} className="mt-5 first:mt-4">
+                      <h3 className="text-xs font-semibold tracking-wide text-forest/60 uppercase">
+                        {group.label}
+                      </h3>
+                      <ul className="mt-2 space-y-2">
+                        {group.items.map((ing) => (
+                          <li
+                            key={ing}
+                            className="flex items-start gap-2 text-sm text-forest/80"
+                          >
+                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
+                            {ing}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))
+                ) : (
+                  <ul className="mt-4 space-y-2">
+                    {ingredients.map((ing) => (
+                      <li key={ing} className="flex items-start gap-2 text-sm text-forest/80">
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
+                        {ing}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
               <div>
                 <h2 className="font-display text-xl font-semibold text-forest">
@@ -216,6 +241,26 @@ export default function RecipeDetail({
               </div>
             </div>
           )}
+
+          {/* Püf noktaları, kullanım alanları gibi ek bölümler. */}
+          {extras?.map((section) => (
+            <section key={section.heading} className="mt-12">
+              <h2 className="font-display text-xl font-semibold text-forest">
+                {section.heading}
+              </h2>
+              <ul className="mt-4 space-y-3">
+                {section.items.map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-start gap-3 text-sm leading-relaxed text-forest/80"
+                  >
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-plum" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
 
           {closing && (
             <p className="mt-14 rounded-3xl bg-white/70 px-8 py-7 text-center text-base leading-relaxed text-forest/80">

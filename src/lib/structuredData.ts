@@ -199,8 +199,11 @@ export function recipeSchema(recipe: Recipe, locale: "tr" | "en" = "tr") {
       (en
         ? "vegan, plant-based, VitaVegantis"
         : "vegan, bitki bazlı, VitaVegantis"),
-    totalTime: isoDuration(recipe.time),
-    recipeYield: servingCount(recipe.servings),
+    // "20 dk hazırlık + 3-4 saat soğutma" gibi metinler sayıya çevrilemiyor;
+    // böyle tariflerde ISO süre ve porsiyon dosyada açıkça veriliyor.
+    ...(recipe.prepTimeIso && { prepTime: recipe.prepTimeIso }),
+    totalTime: recipe.totalTimeIso ?? isoDuration(recipe.time),
+    recipeYield: recipe.yieldCount ?? servingCount(recipe.servings),
     recipeIngredient: ingredients,
     // Sayfada birden fazla tarif varsa her biri ayrı bir HowToSection olur;
     // Google adımları böyle gruplu okuyor. Tek tarifte düz HowToStep listesi.

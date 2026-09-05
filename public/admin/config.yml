@@ -144,6 +144,47 @@ collections:
         widget: list
         field: { name: item, label: Step, widget: string }
 
+      # --- Gruplu malzeme listesi -----------------------------------------
+      # Doldurulursa yukarıdaki düz "Malzemeler" listeleri yerine bu kullanılır.
+      - name: ingredientGroups
+        label: Malzeme grupları
+        widget: list
+        required: false
+        summary: "{{fields.label}}"
+        hint: >-
+          Malzemeleri ara başlıklara ayırmak için (ör. "Sos için" / "Hamur
+          için"). Boş bırakırsanız düz liste kullanılır.
+        fields:
+          - { name: label, label: Grup başlığı, widget: string }
+          - { name: labelEn, label: Grup başlığı (EN), widget: string }
+          - name: items
+            label: Malzemeler
+            widget: list
+            field: { name: item, label: Malzeme, widget: string }
+          - name: itemsEn
+            label: Malzemeler (EN)
+            widget: list
+            field: { name: item, label: Ingredient, widget: string }
+
+      # --- Ek bölümler (püf noktaları, kullanım alanları) -------------------
+      - name: extras
+        label: Ek bölümler
+        widget: list
+        required: false
+        summary: "{{fields.heading}}"
+        hint: 'Hazırlanışın altına eklenir. Örnek: Püf Noktaları.'
+        fields:
+          - { name: heading, label: Bölüm başlığı, widget: string }
+          - { name: headingEn, label: Bölüm başlığı (EN), widget: string }
+          - name: items
+            label: Maddeler
+            widget: list
+            field: { name: item, label: Madde, widget: text }
+          - name: itemsEn
+            label: Maddeler (EN)
+            widget: list
+            field: { name: item, label: Item, widget: text }
+
       # --- Çok tarifli sayfalar (ör. "3 farklı hot dog") ------------------
       # Alt tarif eklendiğinde yukarıdaki Malzemeler/Hazırlanışı listeleri
       # BOŞ bırakılır; sayfa alt tariflerin listelerini kullanır.
@@ -204,6 +245,27 @@ collections:
         widget: string
         required: false
         hint: Virgülle ayırın. Tarif şemasına işlenir.
+      - name: prepTimeIso
+        label: Hazırlık süresi (şema)
+        widget: string
+        required: false
+        pattern: ['^PT([0-9]+H)?([0-9]+M)?$', 'Örnek: PT20M ya da PT1H30M']
+        hint: >-
+          Yalnızca "Süre" alanı düz bir sayı değilse doldurun (ör. "20 dk +
+          3 saat soğutma"). ISO biçimi: PT20M, PT1H30M.
+      - name: totalTimeIso
+        label: Toplam süre (şema)
+        widget: string
+        required: false
+        pattern: ['^PT([0-9]+H)?([0-9]+M)?$', 'Örnek: PT3H20M']
+        hint: Bekleme/soğutma dahil toplam süre. Boşsa "Süre" alanından okunur.
+      - name: yieldCount
+        label: Porsiyon sayısı (şema)
+        widget: string
+        required: false
+        hint: >-
+          Yalnızca "Porsiyon" alanı düz bir sayıyla başlamıyorsa doldurun
+          (ör. "~600 g (20 dilim)" → 20).
 
   # --------------------------------------------------------- Sizden Gelenler
   - name: testimonials

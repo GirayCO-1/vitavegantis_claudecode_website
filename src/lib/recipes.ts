@@ -13,7 +13,15 @@ export type RecipeEn = {
   variants?: RecipeVariant[];
   closing?: string;
   metaDescription?: string;
+  ingredientGroups?: IngredientGroup[];
+  extras?: RecipeExtra[];
 };
+
+/** Gruplu malzeme listesi (ör. "Peynir kreması için" / "Kıvam için"). */
+export type IngredientGroup = { label: string; items: string[] };
+
+/** Malzeme ve adımlardan SONRA basılan ek bölümler (püf noktaları, kullanım alanları). */
+export type RecipeExtra = { heading: string; items: string[] };
 
 /**
  * Aynı sayfada birden fazla tarif anlatan sayfalar için (ör. "3 farklı hot
@@ -48,6 +56,13 @@ export type Recipe = {
   metaDescription?: string;
   /** Recipe şemasındaki keywords alanı. */
   keywords?: string;
+  ingredientGroups?: IngredientGroup[];
+  extras?: RecipeExtra[];
+  /** Şemaya yazılacak ISO süreler; "20 dk + 3 saat" gibi metinler ayrıştırılamıyor. */
+  prepTimeIso?: string;
+  totalTimeIso?: string;
+  /** Şemadaki porsiyon sayısı; serbest metinden çıkarılamadığında. */
+  yieldCount?: string;
   en: RecipeEn;
 };
 
@@ -94,6 +109,11 @@ type RecipeFile = {
   metaDescription?: string;
   metaDescriptionEn?: string;
   keywords?: string;
+  ingredientGroups?: { label: string; labelEn: string; items: string[]; itemsEn: string[] }[];
+  extras?: { heading: string; headingEn: string; items: string[]; itemsEn: string[] }[];
+  prepTimeIso?: string;
+  totalTimeIso?: string;
+  yieldCount?: string;
 };
 
 /** Varyantlı tarifte üstteki tek liste, tüm varyantların birleşimi olur. */
@@ -113,6 +133,9 @@ function load(): Recipe[] {
       // bırakılır; hepsini varyantlardan topluyoruz. Recipe şeması ve arama
       // motoru bu birleşik listeyi okuyor.
       const cok = Boolean(data.variants?.length);
+      // Gruplu malzeme listesi varsa duz liste ondan turetilir; Recipe semasi
+      // ve arama motoru duz listeyi okuyor.
+      const grup = data.ingredientGroups;
       return {
         slug: file.replace(/\.json$/, ""),
         urlSlug: data.urlSlug,
@@ -121,12 +144,23 @@ function load(): Recipe[] {
         time: data.time,
         servings: data.servings,
         image: data.image,
-        ingredients: cok ? birlestir(data.variants, "ingredients") : data.ingredients,
+        ingredients: cok
+          ? birlestir(data.variants, "ingredients")
+          : (grup?.flatMap((g) => g.items) ?? data.ingredients),
         steps: cok ? birlestir(data.variants, "steps") : data.steps,
         ...(data.intro && { intro: data.intro }),
         ...(data.closing && { closing: data.closing }),
         ...(data.metaDescription && { metaDescription: data.metaDescription }),
         ...(data.keywords && { keywords: data.keywords }),
+        ...(data.prepTimeIso && { prepTimeIso: data.prepTimeIso }),
+        ...(data.totalTimeIso && { totalTimeIso: data.totalTimeIso }),
+        ...(data.yieldCount && { yieldCount: data.yieldCount }),
+        ...(grup && {
+          ingredientGroups: grup.map((g) => ({ label: g.label, items: g.items })),
+        }),
+        ...(data.extras && {
+          extras: data.extras.map((e) => ({ heading: e.heading, items: e.items })),
+        }),
         ...(data.variants && {
           variants: data.variants.map((v) => ({
             title: v.title,
@@ -142,11 +176,19 @@ function load(): Recipe[] {
           teaser: data.teaserEn,
           time: data.timeEn,
           servings: data.servingsEn,
-          ingredients: cok ? birlestir(data.variants, "ingredientsEn") : data.ingredientsEn,
+          ingredients: cok
+            ? birlestir(data.variants, "ingredientsEn")
+            : (grup?.flatMap((g) => g.itemsEn) ?? data.ingredientsEn),
           steps: cok ? birlestir(data.variants, "stepsEn") : data.stepsEn,
           ...(data.introEn && { intro: data.introEn }),
           ...(data.closingEn && { closing: data.closingEn }),
           ...(data.metaDescriptionEn && { metaDescription: data.metaDescriptionEn }),
+          ...(grup && {
+            ingredientGroups: grup.map((g) => ({ label: g.labelEn, items: g.itemsEn })),
+          }),
+          ...(data.extras && {
+            extras: data.extras.map((e) => ({ heading: e.headingEn, items: e.itemsEn })),
+          }),
           ...(data.variants && {
             variants: data.variants.map((v) => ({
               title: v.titleEn,
