@@ -27,8 +27,6 @@ export const metadata: Metadata = {
   },
 };
 
-const rotations = [-1.5, 1.2, -0.8];
-
 export default function RecipesPageEn() {
   return (
     <>
@@ -62,11 +60,10 @@ export default function RecipesPageEn() {
           </div>
 
           <div className="mt-14 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {recipes.map((recipe, i) => (
+            {recipes.map((recipe) => (
               <RecipeCard
                 key={recipe.slug}
                 recipe={recipe}
-                rotate={rotations[i % rotations.length]}
                 locale="en"
               />
             ))}

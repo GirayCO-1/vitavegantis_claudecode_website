@@ -25,11 +25,9 @@ const TEXT = {
 
 export default function RecipeCard({
   recipe,
-  rotate = 0,
   locale = "tr",
 }: {
   recipe: Recipe;
-  rotate?: number;
   locale?: Locale;
 }) {
   const t = TEXT[locale];
@@ -45,10 +43,7 @@ export default function RecipeCard({
       <RecipePhoto src={recipe.image} alt={title} />
 
       <div className="flex flex-1 flex-col items-center px-6 pt-6 pb-8 text-center">
-        <h3
-          className="font-playful text-2xl leading-snug font-bold text-forest"
-          style={{ transform: `rotate(${rotate}deg)` }}
-        >
+        <h3 className="font-playful text-2xl leading-snug font-bold text-forest">
           {title}
         </h3>
 
