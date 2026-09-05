@@ -1,0 +1,116 @@
+{
+  "order": 0,
+  "urlSlug": "vegan-kofteli-sandvic-meatball-sub-tarifi",
+  "image": "/recipes/vegan-meatball-sub.webp",
+  "title": "Vegan Köfteli Sandviç (Meatball Sub)",
+  "teaser": "New York'un ikonik meatball sub'ı, VitaVegantis İsveç Köfte, ev yapımı marinara sos ve eriyen vegan mozzarella ile tamamen bitkisel.",
+  "time": "35 dk",
+  "servings": "2 kişilik",
+  "metaDescription": "VitaVegantis İsveç Köfte ile hazırlanan, ev yapımı marinara sos ve eriyen vegan mozzarella ile fırınlanmış İtalyan-Amerikan usulü vegan meatball sub tarifi.",
+  "keywords": "vegan meatball sub, vegan köfteli sandviç, vegan köfte, bitki bazlı köfte, vegan sandviç tarifi, marinara sos tarifi, VitaVegantis İsveç Köfte, VitaVegantis",
+  "intro": "Meatball sub, İtalyan-Amerikan mutfağının en sevilen sokak sandviçlerinden: çıtır ekmek, sosun içinde pişmiş köfteler ve üzerini örten eriyen peynir. Bu versiyonda köfteler VitaVegantis İsveç Köfte, peynir vegan mozzarella. Marinara sosunu ayrıca tarif ettik; bir kez yapın, hem sandviçe hem makarnaya yeter.",
+  "closing": "Sosu bir gün önceden hazırlarsanız sandviç 15 dakikada masada. VitaVegantis İsveç Köfte'yi en yakın satış noktasından bulabilirsiniz:",
+  "ingredients": [],
+  "steps": [],
+
+  "titleEn": "Vegan Meatball Sub",
+  "teaserEn": "New York's iconic meatball sub, made entirely plant-based with VitaVegantis Swedish Meatballs, homemade marinara and melting vegan mozzarella.",
+  "timeEn": "35 min",
+  "servingsEn": "Serves 2",
+  "metaDescriptionEn": "An Italian-American style vegan meatball sub made with VitaVegantis Plant-Based Swedish Meatballs, homemade marinara sauce and melting vegan mozzarella, finished in the oven.",
+  "introEn": "The meatball sub is one of the best-loved street sandwiches of Italian-American cooking: crisp bread, meatballs simmered in sauce and a blanket of melting cheese. In this version the meatballs are VitaVegantis Plant-Based Swedish Meatballs and the cheese is vegan mozzarella. We've written the marinara out separately; make it once and it will cover both the sandwich and a bowl of pasta.",
+  "closingEn": "Make the sauce a day ahead and the sandwich is on the table in 15 minutes. You can find VitaVegantis Plant-Based Swedish Meatballs at your nearest stockist:",
+  "ingredientsEn": [],
+  "stepsEn": [],
+
+  "variants": [
+    {
+      "title": "Marinara Sos",
+      "titleEn": "Marinara Sauce",
+      "teaser": "Sandviçin içine giren sos ve yanında servis edilen küçük kase için yaklaşık 2 su bardağı sos çıkar.",
+      "teaserEn": "Makes about 2 cups — enough for the sandwiches and the little bowl served alongside.",
+      "image": "/recipes/vegan-meatball-sub-marinara.webp",
+      "ingredients": [
+        "2 yemek kaşığı zeytinyağı",
+        "1 küçük soğan, çok ince doğranmış",
+        "3 diş sarımsak, ezilmiş",
+        "1 yemek kaşığı domates salçası",
+        "400 g konserve doğranmış domates (ya da 4 olgun domates, rendelenmiş)",
+        "1 tatlı kaşığı kuru kekik (oregano)",
+        "1 tatlı kaşığı şeker",
+        "1 avuç taze fesleğen, kıyılmış (yoksa 1 tatlı kaşığı kuru fesleğen)",
+        "½ tatlı kaşığı pul biber",
+        "Tuz, karabiber"
+      ],
+      "ingredientsEn": [
+        "2 tbsp olive oil",
+        "1 small onion, very finely chopped",
+        "3 garlic cloves, crushed",
+        "1 tbsp tomato paste",
+        "400 g tinned chopped tomatoes (or 4 ripe tomatoes, grated)",
+        "1 tsp dried oregano",
+        "1 tsp sugar",
+        "A handful of fresh basil, chopped (or 1 tsp dried basil)",
+        "½ tsp chilli flakes",
+        "Salt and black pepper"
+      ],
+      "steps": [
+        "Zeytinyağını orta ateşte ısıtın, soğanı 4-5 dakika yumuşayana kadar kavurun. Sarımsağı ekleyip 1 dakika daha kavurun.",
+        "Salçayı ekleyin, 1 dakika kavurup kokusunu açın.",
+        "Domatesi, kekiği, şekeri ve pul biberi ekleyin. Kaynayınca ateşi kısın, kapağı aralık bırakarak 15 dakika koyulaşana kadar pişirin.",
+        "Ocaktan alıp fesleğeni karıştırın, tuz ve karabiberle tatlandırın. Pürüzsüz sos isterseniz el blenderıyla kısa süre çekin."
+      ],
+      "stepsEn": [
+        "Heat the olive oil over medium heat and soften the onion for 4-5 minutes. Add the garlic and cook for 1 minute more.",
+        "Stir in the tomato paste and cook for 1 minute to open up its aroma.",
+        "Add the tomatoes, oregano, sugar and chilli flakes. Once it comes to the boil, lower the heat and simmer with the lid ajar for 15 minutes, until thickened.",
+        "Take off the heat, stir through the basil and season with salt and pepper. For a smooth sauce, blitz briefly with a stick blender."
+      ]
+    },
+    {
+      "title": "Vegan Köfteli Sandviç",
+      "titleEn": "The Sandwich",
+      "teaser": "Köfteler sosun içinde pişiyor, sarımsaklı yağla fırınlanan ekmeğin kenarları çıtırlıyor, üstünü vegan mozzarella örtüyor.",
+      "teaserEn": "The meatballs finish in the sauce, the garlic-oiled bread crisps in the oven and vegan mozzarella melts over the top.",
+      "image": "/recipes/vegan-meatball-sub-sandvic.webp",
+      "ingredients": [
+        "8 adet VitaVegantis İsveç Köfte",
+        "2 adet sandviç ekmeği (baget usulü, 20-25 cm)",
+        "1½ su bardağı marinara sos (yukarıdaki tarif)",
+        "1 su bardağı vegan mozzarella, rendelenmiş",
+        "2 yemek kaşığı zeytinyağı",
+        "1 diş sarımsak, rendelenmiş",
+        "1 avuç taze maydanoz, kıyılmış",
+        "Tuz, karabiber"
+      ],
+      "ingredientsEn": [
+        "8 VitaVegantis Plant-Based Swedish Meatballs",
+        "2 sub rolls (baguette style, 20-25 cm)",
+        "1½ cups marinara sauce (from the recipe above)",
+        "1 cup vegan mozzarella, grated",
+        "2 tbsp olive oil",
+        "1 garlic clove, grated",
+        "A handful of fresh parsley, chopped",
+        "Salt and black pepper"
+      ],
+      "steps": [
+        "Fırını 220°C'ye (ızgara/grill ayarı varsa açık) ısıtın.",
+        "VitaVegantis İsveç Köfteleri 1 yemek kaşığı zeytinyağıyla tavada, döndürerek her tarafı kızarana kadar 5-6 dakika pişirin.",
+        "Üzerine 1 su bardağı marinara sosu dökün, kısık ateşte 5 dakika köfteler sosu çekene kadar bekletin.",
+        "Ekmekleri üstten, sonuna kadar kesmeden yarın. Kalan zeytinyağını rendelenmiş sarımsakla karıştırıp ekmeğin iç yüzeyine sürün. Fırında 3-4 dakika, kenarları altın rengi olana kadar kızartın.",
+        "Her ekmeğe 4 adet VitaVegantis İsveç Köfte'yi soslarıyla birlikte yerleştirin, üzerine kalan sostan gezdirin.",
+        "Vegan mozzarellayı bolca serpin. Fırının üst rafında 4-5 dakika, peynir eriyip hafif kabarana kadar pişirin. Peynir çabuk yanabilir, gözünüzü ayırmayın.",
+        "Fırından çıkarır çıkarmaz taze maydanoz serpin. Yanında küçük bir kasede ekstra marinara sosla, sıcak servis edin."
+      ],
+      "stepsEn": [
+        "Heat the oven to 220°C (with the grill on if you have one).",
+        "Cook the VitaVegantis Plant-Based Swedish Meatballs in a pan with 1 tbsp of olive oil for 5-6 minutes, turning until browned all over.",
+        "Pour over 1 cup of the marinara sauce and leave on low heat for 5 minutes, until the meatballs take up the sauce.",
+        "Split the rolls along the top without cutting all the way through. Mix the remaining olive oil with the grated garlic and brush it over the cut surfaces. Toast in the oven for 3-4 minutes, until the edges turn golden.",
+        "Place 4 meatballs with their sauce into each roll, then spoon over the remaining sauce.",
+        "Scatter the vegan mozzarella generously on top. Bake on the oven's top shelf for 4-5 minutes, until the cheese melts and puffs slightly. It can catch quickly, so keep an eye on it.",
+        "Scatter the fresh parsley over as soon as it comes out. Serve hot, with a small bowl of extra marinara alongside."
+      ]
+    }
+  ]
+}
