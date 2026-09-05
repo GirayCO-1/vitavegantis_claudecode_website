@@ -71,7 +71,7 @@ export default function BlobNav({ locale = "tr" }: { locale?: Locale }) {
             style={{ borderRadius: BLOB_B }}
           >
             <Image
-              src="/recipes/vegan-iskender.webp"
+              src="/recipes/vegan-iskender-2.webp"
               alt=""
               fill
               sizes="(min-width: 768px) 33vw, 90vw"

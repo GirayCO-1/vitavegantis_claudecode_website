@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     title: "Recipes — VitaVegantis",
     description:
       "Plant-based recipes and cooking ideas made with VitaVegantis products.",
-    images: [`${SITE_URL}/recipes/vegan-iskender.webp`],
+    images: [`${SITE_URL}/recipes/vegan-iskender-2.webp`],
   },
 };
 
