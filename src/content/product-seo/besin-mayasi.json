@@ -3,7 +3,6 @@
   "sceneAltEn": "Nutritional yeast flakes on a wooden spoon beside the 100 g VitaVegantis pack",
   "mapAlt": "VitaVegantis Besin Mayası — B12 vitamini ile zenginleştirilmiş inaktif besin mayası",
   "mapAltEn": "VitaVegantis Nutritional Yeast — inactive yeast fortified with vitamin B12",
-
   "sections": [
     {
       "heading": "Besin Mayası Nedir?",
@@ -56,19 +55,20 @@
       "closingEn": "It is a seasoning, so the amount is up to you — start with a spoonful and build from there."
     },
     {
-      "heading": "İçindekiler: Tek Malzeme",
-      "headingEn": "Ingredients: A Single Item",
+      "heading": "Besin Değerleri ve İçindekiler",
+      "headingEn": "Nutrition and Ingredients",
       "paragraphs": [
+        "100 gramında 45 g protein, 365 kcal, 5 g yağ ve 24 g karbonhidrat bulunur; ayrıca 22 g lif içerir. Ürün B12 vitamini ile zenginleştirilmiştir; 100 gramında 46 µg B12 yer alır. Değerler 100 gram üzerindendir — besin mayası bir çeşni olduğu için tek seferde genelde bir-iki yemek kaşığı kullanılır.",
         "İçindekiler listesi tek satırdır: B12 vitamini ile zenginleştirilmiş inaktif besin mayası. Başka bir katkı, tuz, aroma veya dolgu maddesi yoktur. Ürün vegandır ve glüten içermez.",
         "Saklama koşulu: kuru ve güneş görmeyen bir yerde saklanmalıdır."
       ],
       "paragraphsEn": [
+        "Each 100 grams contains 45 g of protein, 365 kcal, 5 g of fat and 24 g of carbohydrates, plus 22 g of fibre. The product is fortified with vitamin B12, at 46 µg per 100 grams. These figures are per 100 grams — nutritional yeast is a seasoning, so a serving is usually a tablespoon or two.",
         "The ingredients list is a single line: inactive nutritional yeast fortified with vitamin B12. There are no other additives, salt, flavourings or fillers. The product is vegan and contains no gluten.",
         "Storage: keep it in a dry place, away from sunlight."
       ]
     }
   ],
-
   "faqHeading": "Sıkça Sorulan Sorular",
   "faqHeadingEn": "Frequently Asked Questions",
   "faq": [
@@ -103,6 +103,18 @@
       "aEn": "No cooking needed. Sprinkle it straight onto pasta, risotto, soup, sautéed vegetables, salads and popcorn, or stir it into a plant-milk béchamel to make a vegan cheese sauce. The simplest approach is to start with a spoonful and adjust to taste."
     },
     {
+      "q": "Besin mayasının protein değeri nedir?",
+      "qEn": "How much protein does nutritional yeast contain?",
+      "a": "100 gramında 45 g protein bulunur. Besin mayası bir çeşni olduğu için tek seferde genelde bir-iki yemek kaşığı kullanılır.",
+      "aEn": "Each 100 grams contains 45 g of protein. Nutritional yeast is a seasoning, so a serving is usually a tablespoon or two."
+    },
+    {
+      "q": "Besin mayası kaç kalori?",
+      "qEn": "How many calories are in nutritional yeast?",
+      "a": "100 gramında 365 kcal bulunur. Aynı porsiyonda 5 g yağ, 24 g karbonhidrat ve 22 g lif yer alır.",
+      "aEn": "There are 365 kcal per 100 grams, along with 5 g of fat, 24 g of carbohydrates and 22 g of fibre."
+    },
+    {
       "q": "Besin mayası nasıl saklanır?",
       "qEn": "How should nutritional yeast be stored?",
       "a": "VitaVegantis Besin Mayası kuru ve güneş görmeyen bir yerde saklanmalıdır.",
@@ -113,7 +125,11 @@
       "qEn": "Where can I buy VitaVegantis Nutritional Yeast?",
       "a": "Türkiye genelindeki anlaşmalı market ve satış noktalarından temin edebilirsiniz. Güncel liste için satış noktaları sayfamıza bakabilirsiniz.",
       "aEn": "You can find it at partner shops and stockists across Türkiye. See our sales points page for the current list.",
-      "link": { "section": "satisnoktalari", "label": "Satış noktaları", "labelEn": "Where to buy" }
+      "link": {
+        "section": "satisnoktalari",
+        "label": "Satış noktaları",
+        "labelEn": "Where to buy"
+      }
     }
   ]
 }

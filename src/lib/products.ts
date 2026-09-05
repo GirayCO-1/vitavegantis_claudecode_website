@@ -248,10 +248,10 @@ export const products: Product[] = [
     sceneImage: "/products/scenes/besin-mayasi-scene.webp",
     ingredients: ["İnaktif Besin Mayası (B12 Vitamini ile Zenginleştirilmiş)"],
     nutrition: [
-      { label: "Enerji", value: "—" },
-      { label: "Protein", value: "—" },
-      { label: "Yağ", value: "—" },
-      { label: "Karbonhidrat", value: "—" },
+      { label: "Enerji", value: "365 kcal" },
+      { label: "Protein", value: "45 g" },
+      { label: "Yağ", value: "5 g" },
+      { label: "Karbonhidrat", value: "24 g" },
     ],
     en: {
       name: "Nutritional Yeast",
