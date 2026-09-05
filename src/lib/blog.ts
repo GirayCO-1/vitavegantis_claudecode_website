@@ -1,5 +1,4 @@
 import { articlesFor } from "@/lib/blogArticles";
-import { recipes } from "@/lib/recipes";
 import { itemHref, type Locale } from "@/lib/i18n";
 
 export type BlogPost = {
@@ -11,13 +10,14 @@ export type BlogPost = {
 };
 
 /**
- * Eski sitedeki blog sıralaması. Bu listede yer almayan yazılar (panelden
- * eklenen yeniler) listenin başında, tarihe göre yeniden eskiye sıralanır.
+ * Blog listesi yalnızca yazılardan oluşur. Tarifler buraya girmiyor; onların
+ * kendi sayfası var (/tarifler/). Eski sitede ikisi bir aradaydı.
+ *
+ * Aşağıdaki dizi eski sitedeki yazı sıralamasıdır. Bu listede yer almayan
+ * yazılar (panelden eklenen yeniler) listenin başında, tarihe göre yeniden
+ * eskiye sıralanır.
  */
 const legacyOrder = [
-  "vegan-iskender-tarifi",
-  "bitki-bazli-sucuklu-kuru-fasulye-tarifi",
-  "bitki-bazli-salcali-sosis-tarifi",
   "vegan-urun-tuketimi-ve-bitki-bazli-beslenmede-turkiye-ve-avrupa-yukseliste",
   "vegan-beslenmeye-baslamaniza-yardimci-olacak-7-saglikli-ipucu",
   "vejetaryenler-ne-yemez",
@@ -32,15 +32,6 @@ const legacyOrder = [
 export function blogPostsFor(locale: Locale): BlogPost[] {
   const bySlug = new Map<string, BlogPost>();
   const dates = new Map<string, string>();
-
-  for (const recipe of recipes) {
-    bySlug.set(recipe.urlSlug, {
-      title: locale === "en" ? recipe.en.title : recipe.title,
-      excerpt: locale === "en" ? recipe.en.teaser : recipe.teaser,
-      image: recipe.image,
-      href: itemHref(recipe.urlSlug, locale),
-    });
-  }
 
   for (const article of articlesFor(locale)) {
     bySlug.set(article.urlSlug, {
