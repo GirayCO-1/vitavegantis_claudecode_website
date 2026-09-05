@@ -20,7 +20,6 @@ const TEXT = {
     scrubHeading: "Özü doğadan, formülü bizden",
     scenes: [
       {
-        kicker: "Kimiz",
         heading: "Doğaya Bir Söz",
         body: "VitaVegantis'te bitkisel ürünleri sadece bir alternatif değil, bedenimizi beslemenin ve gezegeni korumanın bir yolu olarak görüyoruz. Her ürünümüz, sofralarınıza yalnızca lezzet değil; daha temiz bir gelecek, daha sağlıklı bir yaşam biçimi getirme sözüyle çıkıyor.",
       },
@@ -34,7 +33,6 @@ const TEXT = {
     scrubHeading: "Rooted in nature, crafted by us",
     scenes: [
       {
-        kicker: "Who We Are",
         heading: "A Promise to Nature",
         body: "At VitaVegantis, we see plant-based foods not merely as an alternative, but as a way to nourish our bodies and protect the planet. Every product we make comes to your table with a promise: not just flavour, but a cleaner future and a healthier way of living.",
       },
@@ -310,10 +308,9 @@ export default function StoryHero({ locale = "tr" }: { locale?: Locale }) {
             className="relative flex flex-col items-center"
             style={{ textShadow: "0 2px 18px rgba(0,0,0,0.65), 0 1px 4px rgba(0,0,0,0.5)" }}
           >
-            <p className="story-scene-fade font-accent text-2xl text-sun">
-              {scene.kicker}
-            </p>
-            <h2 className="story-scene-heading font-display mt-3 max-w-3xl text-4xl font-semibold text-cream sm:text-5xl md:text-6xl">
+            {/* Üstbaşlık kaldırıldı; başlık artık bölümün ilk öğesi,
+                bu yüzden üst boşluğu da yok. */}
+            <h2 className="story-scene-heading font-display max-w-3xl text-4xl font-semibold text-cream sm:text-5xl md:text-6xl">
               {scene.heading}
             </h2>
             <p className="story-scene-fade mt-6 max-w-xl text-base leading-relaxed text-cream/85 sm:text-lg">

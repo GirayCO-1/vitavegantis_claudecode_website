@@ -10,7 +10,7 @@ import WhoWeAre from "@/components/story/WhoWeAre";
 export default function Home() {
   return (
     <>
-      {/* Giriş videosu → scroll ile ilerleyen video → "Kimiz" anlatısı */}
+      {/* Giriş videosu → scroll ile ilerleyen video → "Manifestomuz" anlatısı */}
       <StoryHero />
 
       {/* Sokakta / evde / restoranda yaşam sahneleri */}
