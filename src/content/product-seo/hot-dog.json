@@ -3,7 +3,6 @@
   "sceneAltEn": "A vegan hot dog in a sesame bun with mustard, pickles and red onion, beside the 180 g VitaVegantis Hot Dog Vosis pack",
   "mapAlt": "Hot Dog Vosis içindekiler: tofu, nohut unu, tütsü aroması, besin mayası",
   "mapAltEn": "Hot Dog Vosis ingredients: tofu, chickpea flour, smoke flavouring, nutritional yeast",
-
   "sections": [
     {
       "heading": "Hot Dog Vosis: Tütsü Aromalı Bitki Bazlı Sosis",
@@ -28,10 +27,10 @@
       ],
       "bullets": [
         {
-          "label": "Sosisi pişirin",
-          "labelEn": "Cook the sausage",
-          "text": "Tavada az yağla orta ateşte 4-5 dakika çevirerek; ya da mangalda közün harlı olmadığı bölümde ızgara izleri belirginleşene kadar. Mangal, tütsü aromasını iyice öne çıkarır.",
-          "textEn": "In the pan for 4-5 minutes over medium heat with a little oil, turning as you go — or over the cooler part of the coals until the grill marks show. The grill really brings the smoky aroma forward."
+          "label": "Zarını soyup pişirin",
+          "labelEn": "Peel the casing, then cook",
+          "text": "Ürün ön pişirilmiştir. Üzerindeki zarı soyun, tavaya sıvı yağ ekleyip kısık ateşte çevirerek pişirin. Mangalda pişirecekseniz közün harlı olmadığı bölümü kullanın; mangal tütsü aromasını iyice öne çıkarır.",
+          "textEn": "The product is pre-cooked. Peel off the casing, add a little oil to the pan and cook over low heat, turning as you go. On a barbecue, use the cooler part of the coals — the grill really brings the smoky aroma forward."
         },
         {
           "label": "Ekmeği ısıtın",
@@ -59,27 +58,26 @@
       }
     },
     {
-      "heading": "İçindekiler",
-      "headingEn": "Ingredients",
+      "heading": "Protein Değeri ve İçindekiler",
+      "headingEn": "Protein Content and Ingredients",
       "paragraphs": [
-        "Tofu, nohut unu, yulaf unu, besin mayası, buğday gluteni, tütsü aroması, ayçiçek yağı ve baharat karışımı. Protein tofu, nohut unu ve buğday gluteninden gelir. Tam liste yukarıda; 180 gramlık pakette birden fazla sosis bulunur.",
-        "Saklama koşulu: ürün +4 °C'de, buzdolabında saklanmalıdır."
+        "100 gramında 29 g protein, 218 kcal, 6.5 g yağ ve 10.8 g karbonhidrat bulunur. Protein büyük ölçüde buğday gluteni, tofu ve nohut unundan gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda; 180 gramlık pakette birden fazla sosis bulunur.",
+        "Saklama koşulu: ürün +4 °C'de, buzdolabında saklanmalıdır. Ambalaj açıldıktan sonra 3 gün içinde tüketin."
       ],
       "paragraphsEn": [
-        "Tofu, chickpea flour, oat flour, nutritional yeast, wheat gluten, smoke flavouring, sunflower oil and a spice mix. The protein comes from tofu, chickpea flour and wheat gluten. The full list is above; the 180 gram pack holds several sausages.",
-        "Storage: the product should be kept at +4 °C, in the fridge."
+        "Each 100 grams contains 29 g of protein, 218 kcal, 6.5 g of fat and 10.8 g of carbohydrates. The protein comes largely from wheat gluten, tofu and chickpea flour. The full ingredients list and nutrition table are above; the 180 gram pack holds several sausages.",
+        "Storage: keep the product at +4 °C, in the fridge. Once opened, consume within 3 days."
       ]
     }
   ],
-
   "faqHeading": "Sıkça Sorulan Sorular",
   "faqHeadingEn": "Frequently Asked Questions",
   "faq": [
     {
       "q": "Vegan hot dog sosisi neyden yapılır?",
       "qEn": "What is a vegan hot dog sausage made of?",
-      "a": "VitaVegantis Hot Dog Vosis; tofu, nohut unu, yulaf unu, besin mayası, buğday gluteni, tütsü aroması, ayçiçek yağı ve baharat karışımından üretilir. Ürünlerimiz hayvansal içerik içermez, %100 bitki bazlıdır.",
-      "aEn": "VitaVegantis Hot Dog Vosis is made from tofu, chickpea flour, oat flour, nutritional yeast, wheat gluten, smoke flavouring, sunflower oil and a spice mix. Our products contain no animal ingredients and are 100% plant-based."
+      "a": "VitaVegantis Hot Dog Vosis; tofu, nohut unu, yulaf unu, besin mayası, buğday gluteni, kurutulmuş sebzeler (havuç, kereviz, soğan, pırasa, maydanoz, pancar), ayçiçek yağı, soya sosu, baharat karışımı ve tütsü aromasından üretilir. Ürünlerimiz hayvansal içerik içermez, %100 bitki bazlıdır.",
+      "aEn": "VitaVegantis Hot Dog Vosis is made from tofu, chickpea flour, oat flour, nutritional yeast, wheat gluten, dried vegetables (carrot, celery, onion, leek, parsley, beetroot), sunflower oil, soy sauce, a spice mix and smoke flavouring. Our products contain no animal ingredients and are 100% plant-based."
     },
     {
       "q": "Vegan hot dog glütensiz midir?",
@@ -90,27 +88,43 @@
     {
       "q": "Vegan hot dog nasıl hazırlanır?",
       "qEn": "How do you prepare a vegan hot dog?",
-      "a": "Sosisi tavada az yağla 4-5 dakika ya da mangalda ızgara izleri belirginleşene kadar pişirin. Susamlı ekmeği ortadan yarıp iç yüzünü kuru tavada kızartın, sosisi yerleştirin ve üzerine hardal, ketçap, kırmızı soğan ve turşu ekleyin.",
-      "aEn": "Cook the sausage in the pan for 4-5 minutes with a little oil, or on the grill until the marks show. Split a sesame bun, toast the cut side in a dry pan, add the sausage, then top with mustard, ketchup, red onion and pickles."
+      "a": "Ürün ön pişirilmiştir. Sosisin üzerindeki zarı soyun, tavaya sıvı yağ ekleyip kısık ateşte çevirerek pişirin. Susamlı ekmeği ortadan yarıp iç yüzünü kuru tavada kızartın, sosisi yerleştirin ve üzerine hardal, ketçap, kırmızı soğan ve turşu ekleyin.",
+      "aEn": "The product is pre-cooked. Peel the casing off the sausage, add a little oil to the pan and cook over low heat, turning as you go. Split a sesame bun, toast the cut side in a dry pan, add the sausage, then top with mustard, ketchup, red onion and pickles."
     },
     {
       "q": "Hot Dog Vosis ile Vegan Vosis arasındaki fark nedir?",
       "qEn": "What is the difference between the Hot Dog Vosis and the Vegan Vosis?",
-      "a": "İkisinin de temeli tofu, nohut unu ve yulaf unu. Hot Dog Vosis'te tütsü aroması var ve sosisler hot dog ekmeğine girecek uzunlukta. Vegan Vosis ise kurutulmuş sebze karışımı içerir ve daha klasik bir sofra sosisidir.",
-      "aEn": "Both are built on tofu, chickpea flour and oat flour. The Hot Dog Vosis adds smoke flavouring and comes in sausages long enough for a hot dog bun. The Vegan Vosis contains a dried vegetable mix and is more of a classic table sausage."
+      "a": "İçindekiler listeleri neredeyse aynı: ikisi de tofu, nohut unu, yulaf unu ve kurutulmuş sebze karışımı üzerine kurulu. Hot Dog Vosis'i ayıran, listeye eklenen tütsü aroması ve sosislerin hot dog ekmeğine girecek uzunlukta olması.",
+      "aEn": "Their ingredients lists are nearly identical: both are built on tofu, chickpea flour, oat flour and a dried vegetable mix. What sets the Hot Dog Vosis apart is the smoke flavouring and sausages long enough for a hot dog bun."
+    },
+    {
+      "q": "Vegan hot dog sosisinin protein değeri nedir?",
+      "qEn": "How much protein does the vegan hot dog sausage contain?",
+      "a": "100 gramında 29 g bitkisel protein bulunur. Protein büyük ölçüde buğday gluteni, tofu ve nohut unundan gelir.",
+      "aEn": "Each 100 grams contains 29 g of plant protein, coming largely from wheat gluten, tofu and chickpea flour."
+    },
+    {
+      "q": "Vegan hot dog sosisi kaç kalori?",
+      "qEn": "How many calories are in the vegan hot dog sausage?",
+      "a": "100 gramında 218 kcal bulunur. Aynı porsiyonda 6.5 g yağ ve 10.8 g karbonhidrat yer alır.",
+      "aEn": "There are 218 kcal per 100 grams, along with 6.5 g of fat and 10.8 g of carbohydrates."
     },
     {
       "q": "Vegan hot dog sosisi nasıl saklanır?",
       "qEn": "How should the vegan hot dog sausage be stored?",
-      "a": "VitaVegantis Hot Dog Vosis +4 °C'de, buzdolabında saklanmalıdır.",
-      "aEn": "VitaVegantis Hot Dog Vosis should be stored at +4 °C, in the fridge."
+      "a": "VitaVegantis Hot Dog Vosis +4 °C'de, buzdolabında saklanmalıdır. Ambalaj açıldıktan sonra 3 gün içinde tüketilmelidir.",
+      "aEn": "VitaVegantis Hot Dog Vosis should be stored at +4 °C, in the fridge. Once opened, it should be consumed within 3 days."
     },
     {
       "q": "VitaVegantis Hot Dog Vosis nereden alınır?",
       "qEn": "Where can I buy VitaVegantis Hot Dog Vosis?",
       "a": "Türkiye genelindeki anlaşmalı market ve satış noktalarından temin edebilirsiniz. Güncel liste için satış noktaları sayfamıza bakabilirsiniz.",
       "aEn": "You can find it at partner shops and stockists across Türkiye. See our sales points page for the current list.",
-      "link": { "section": "satisnoktalari", "label": "Satış noktaları", "labelEn": "Where to buy" }
+      "link": {
+        "section": "satisnoktalari",
+        "label": "Satış noktaları",
+        "labelEn": "Where to buy"
+      }
     }
   ]
 }
