@@ -26,10 +26,10 @@ export const products: Product[] = [
     slug: "vegan-sosis",
     urlSlug: "vita-vegantis-vegan-sosis-tadinda",
     name: "Vegan Vosis",
-    weight: "200g",
+    weight: "180g",
     tagline: "Klasik sofraların yeni hali",
     description:
-      "Tofu ve nohut ununun gücünü kurutulmuş sebzelerle birleştirdiğimiz, ailece sevilen klasik sosis lezzeti — bitkisel, katkısız, saf.",
+      "Tofu ve nohut ununun gücünü kurutulmuş sebzelerle birleştirdiğimiz, ailece sevilen klasik sosis lezzeti — bitkisel, yüksek proteinli, saf.",
     image: "/products/vegan-sosis.webp",
     sceneImage: "/products/scenes/vegan-sosis-pizza-scene-v2.webp",
     ingredients: [
@@ -54,7 +54,7 @@ export const products: Product[] = [
       name: "Vegan Vosis",
       tagline: "A new take on a classic",
       description:
-        "The beloved classic sausage flavour, built from the power of tofu and chickpea flour combined with dried vegetables — plant-based, additive-free, pure.",
+        "The beloved classic sausage flavour, built from the power of tofu and chickpea flour combined with dried vegetables — plant-based, high in protein, pure.",
       ingredients: [
         "Tofu",
         "Chickpea Flour",
@@ -204,7 +204,7 @@ export const products: Product[] = [
     weight: "180g",
     tagline: "Kuzey mutfağının bitkisel yorumu",
     description:
-      "Bezelye proteininin gücünü İsveç mutfağının klasik köfte lezzetiyle buluşturduk — yüksek proteinli, bitkisel ve katkısız.",
+      "Bezelye proteininin gücünü İsveç mutfağının klasik köfte lezzetiyle buluşturduk — yüksek proteinli ve tamamen bitkisel.",
     image: "/products/isvec-kofte.webp",
     sceneImage: "/products/scenes/isvec-kofte-scene.webp",
     ingredients: [
@@ -225,7 +225,7 @@ export const products: Product[] = [
       name: "Plant-Based Swedish Meatballs",
       tagline: "A plant-based take on Nordic cooking",
       description:
-        "We brought the power of pea protein together with the classic meatball flavour of Swedish cuisine — high in protein, plant-based and additive-free.",
+        "We brought the power of pea protein together with the classic meatball flavour of Swedish cuisine — high in protein and entirely plant-based.",
       ingredients: [
         "Pea Protein",
         "Sunflower Oil",
@@ -268,7 +268,7 @@ export const products: Product[] = [
     weight: "180g",
     tagline: "Tütsü aromalı, sokak lezzeti",
     description:
-      "Tütsü aromasıyla zenginleştirdiğimiz bitki bazlı sosisimiz, klasik hot dog keyfini katkısız ve yüksek proteinli bir sofraya taşıyor.",
+      "Tütsü aromasıyla zenginleştirdiğimiz bitki bazlı sosisimiz, klasik hot dog keyfini yüksek proteinli bir sofraya taşıyor.",
     image: "/products/hot-dog.webp",
     sceneImage: "/products/scenes/hot-dog-scene.webp",
     ingredients: [
@@ -291,7 +291,7 @@ export const products: Product[] = [
       name: "Hot Dog Vosis",
       tagline: "Smoky street-food flavour",
       description:
-        "Our smoke-flavoured plant-based sausage brings the classic hot dog experience to an additive-free, high-protein table.",
+        "Our smoke-flavoured plant-based sausage brings the classic hot dog experience to a high-protein table.",
       ingredients: [
         "Tofu",
         "Chickpea Flour",

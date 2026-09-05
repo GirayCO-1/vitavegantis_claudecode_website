@@ -6,10 +6,10 @@ export const SITE_URL = (
 export const SITE_NAME = "VitaVegantis";
 
 export const SITE_DESCRIPTION =
-  "Doğadan sofranıza — tek bir katkı maddesi olmadan. Yüksek proteinli, bitki bazlı, katkısız gıda ürünleri.";
+  "Doğadan sofranıza — en lezzetli haliyle. Yüksek proteinli, bitki bazlı vegan gıda ürünleri: vegan sosis, sucuk, döner, köfte ve besin mayası.";
 
 export const SITE_DESCRIPTION_EN =
-  "From nature to your table — plant-based, high-protein vegan foods without a single additive. Vegan sausage, sucuk, döner, meatballs and nutritional yeast.";
+  "From nature to your table — at its most delicious. High-protein, plant-based vegan foods: vegan sausage, sucuk, döner, meatballs and nutritional yeast.";
 
 /** Eski site trailing slash kullanıyordu; kanonik adresler de öyle. */
 export function canonical(path: string) {
