@@ -17,7 +17,7 @@ const TEXT = {
       { section: "satisnoktalari", label: "Satış Noktaları" },
     ],
     legal: "Vita Vegantis Gıda Sanayi ve Ticaret Limited Şirketi",
-    tagline: "Doğadan sofranıza — tek bir katkı maddesi olmadan.",
+    tagline: "Doğadan sofranıza — en lezzetli haliyle",
   },
   en: {
     motto: "Plant Protein at Its Most Delicious",
@@ -33,7 +33,7 @@ const TEXT = {
       { section: "satisnoktalari", label: "Where to Buy" },
     ],
     legal: "Vita Vegantis Gıda Sanayi ve Ticaret Limited Şirketi",
-    tagline: "From nature to your table — without a single additive.",
+    tagline: "From nature to your table — at its most delicious",
   },
 } as const;
 
