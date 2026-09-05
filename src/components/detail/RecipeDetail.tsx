@@ -76,9 +76,13 @@ export default function RecipeDetail({
           </Link>
 
           <div className="mt-6 overflow-hidden rounded-[32px] bg-white shadow-lg shadow-forest/10">
-            <div className="max-h-80 overflow-hidden">
-              <RecipePhoto src={recipe.image} alt={title} priority />
-            </div>
+            <RecipePhoto
+              src={recipe.image}
+              alt={title}
+              priority
+              ratio="16/9"
+              sizes="(min-width: 896px) 896px, 100vw"
+            />
 
             <div className="flex flex-col items-center px-8 pt-8 pb-10 text-center">
               <h1 className="font-playful text-3xl font-bold text-forest sm:text-4xl">
@@ -138,9 +142,12 @@ export default function RecipeDetail({
                   </p>
 
                   <div className="mt-6 overflow-hidden rounded-[24px] bg-white shadow-lg shadow-forest/10">
-                    <div className="max-h-72 overflow-hidden">
-                      <RecipePhoto src={variant.image} alt={variant.title} />
-                    </div>
+                    <RecipePhoto
+                      src={variant.image}
+                      alt={variant.title}
+                      ratio="16/9"
+                      sizes="(min-width: 896px) 896px, 100vw"
+                    />
                   </div>
 
                   <div className="mt-8 grid gap-10 sm:grid-cols-2">
