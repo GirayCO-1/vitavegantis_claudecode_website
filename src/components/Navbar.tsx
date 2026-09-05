@@ -79,7 +79,6 @@ function LocaleSwitch({
 
 export default function Navbar({ locale = "tr" }: { locale?: Locale }) {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
   const nav = NAV[locale];
 
   return (
@@ -96,25 +95,19 @@ export default function Navbar({ locale = "tr" }: { locale?: Locale }) {
           />
         </Link>
 
+        {/* Bulunulan sayfanın bağlantısı ayrıca renklendirilmiyor; tüm
+            başlıklar aynı yeşilde duruyor. */}
         <ul className="hidden items-center gap-7 md:flex">
-          {nav.links.map((link) => {
-            const active =
-              link.href === nav.home
-                ? pathname === nav.home || pathname === `${nav.home}/`
-                : pathname?.startsWith(link.href);
-            return (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={`text-sm font-medium transition-colors hover:text-coral ${
-                    active ? "text-coral" : "text-forest"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            );
-          })}
+          {nav.links.map((link) => (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className="text-sm font-medium text-forest transition-colors hover:text-coral"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
         </ul>
 
         <div className="hidden items-center gap-3 md:flex">
