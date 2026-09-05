@@ -21,7 +21,10 @@ const TEXT = {
     scenes: [
       {
         heading: "Doğaya Bir Söz",
-        body: "VitaVegantis'te bitkisel ürünleri sadece bir alternatif değil, bedenimizi beslemenin ve gezegeni korumanın bir yolu olarak görüyoruz. Her ürünümüz, sofralarınıza yalnızca lezzet değil; daha temiz bir gelecek, daha sağlıklı bir yaşam biçimi getirme sözüyle çıkıyor.",
+        body: [
+          "VitaVegantis'te bitkisel beslenmeyi sadece bir alternatif değil, daha iyi bir geleceğe atılan lezzetli bir adım olarak görüyoruz.",
+          "Her ürünümüzü; bitkisel içeriklere, temiz içeriğe ve gerçek lezzete önem vererek hazırlıyoruz. Çünkü inanıyoruz ki soframızdaki seçimler hem kendimiz hem de gezegenimiz için fark yaratabilir.",
+        ],
       },
     ],
   },
@@ -34,7 +37,10 @@ const TEXT = {
     scenes: [
       {
         heading: "A Promise to Nature",
-        body: "At VitaVegantis, we see plant-based foods not merely as an alternative, but as a way to nourish our bodies and protect the planet. Every product we make comes to your table with a promise: not just flavour, but a cleaner future and a healthier way of living.",
+        body: [
+          "At VitaVegantis, we see plant-based eating not as a mere alternative, but as a delicious step towards a better future.",
+          "We make every one of our products with care for plant-based ingredients, clean content and real flavour. Because we believe the choices on our table can make a difference — for ourselves and for our planet.",
+        ],
       },
     ],
   },
@@ -313,9 +319,18 @@ export default function StoryHero({ locale = "tr" }: { locale?: Locale }) {
             <h2 className="story-scene-heading font-display max-w-3xl text-4xl font-semibold text-cream sm:text-5xl md:text-6xl">
               {scene.heading}
             </h2>
-            <p className="story-scene-fade mt-6 max-w-xl text-base leading-relaxed text-cream/85 sm:text-lg">
-              {scene.body}
-            </p>
+            {/* Paragraflar sırayla beliriyor; GSAP .story-scene-fade
+                öğelerinin tamamını stagger ile alıyor. */}
+            {scene.body.map((paragraf, i) => (
+              <p
+                key={paragraf}
+                className={`story-scene-fade max-w-xl text-base leading-relaxed text-cream/85 sm:text-lg ${
+                  i === 0 ? "mt-6" : "mt-4"
+                }`}
+              >
+                {paragraf}
+              </p>
+            ))}
           </div>
         </section>
       ))}
