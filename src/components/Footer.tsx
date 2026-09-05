@@ -4,9 +4,9 @@ import { href, type Locale } from "@/lib/i18n";
 
 const TEXT = {
   tr: {
-    motto: "Enfes Lezzetiyle Bitki Bazlı",
+    motto: "Bitkisel Proteinin En Lezzetli Hali",
     blurb:
-      "Bitkisel proteini bedeninizi beslemenin ve gezegeni korumanın bir yolu olarak görüyoruz. Katkı maddesi yok, sır yok — sadece doğanın kendisi.",
+      "Doğanın gücünü tabağınıza taşıyoruz. Bedeninize iyi bakan, gezegene saygı duyan %100 bitki bazlı lezzetler sunuyoruz.",
     explore: "Keşfet",
     contact: "İletişim",
     links: [
@@ -20,9 +20,9 @@ const TEXT = {
     tagline: "Doğadan sofranıza — tek bir katkı maddesi olmadan.",
   },
   en: {
-    motto: "Deliciously Plant Based",
+    motto: "Plant Protein at Its Most Delicious",
     blurb:
-      "We see plant protein as a way to nourish your body and protect the planet. No additives, no secrets — just nature itself.",
+      "We bring the power of nature to your plate: 100% plant-based flavours that look after your body and respect the planet.",
     explore: "Explore",
     contact: "Contact",
     links: [
