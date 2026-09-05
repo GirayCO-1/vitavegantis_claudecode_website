@@ -243,7 +243,7 @@ export const products: Product[] = [
     weight: "100g",
     tagline: "Mutfağınızın süperfood dostu",
     description:
-      "B12 vitamini ile zenginleştirilmiş, glutensiz besin mayamız; yemeklerinize peynirimsi bir lezzet ve yüksek protein katar.",
+      "Yüksek protein ve B12 vitamini içerir. Gluten, katkı ve koruyucu maddesi içermeyen besin mayamız; tariflerinize eşsiz bir lezzet katarken yemeklerinizin besleyiciliğini artırır.",
     image: "/products/besin-mayasi.webp",
     sceneImage: "/products/scenes/besin-mayasi-scene.webp",
     ingredients: ["İnaktif Besin Mayası (B12 Vitamini ile Zenginleştirilmiş)"],
@@ -257,7 +257,7 @@ export const products: Product[] = [
       name: "Nutritional Yeast",
       tagline: "Your kitchen's superfood companion",
       description:
-        "Our gluten-free nutritional yeast, fortified with vitamin B12, adds a cheesy flavour and high protein to your dishes.",
+        "High in protein and a source of vitamin B12. Free from gluten, additives and preservatives, our nutritional yeast brings a distinctive flavour to your recipes while adding to their nutritional value.",
       ingredients: ["Inactive Nutritional Yeast (Fortified with Vitamin B12)"],
     },
   },
