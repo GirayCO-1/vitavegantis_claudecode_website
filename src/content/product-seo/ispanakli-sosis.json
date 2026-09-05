@@ -3,7 +3,6 @@
   "sceneAltEn": "Pan-seared Spinach Plant-Based Vosis on a wooden board with fries, pickles and mustard",
   "mapAlt": "Ispanaklı Vosis içindekiler: tofu, kurutulmuş ıspanak, nohut unu, besin mayası",
   "mapAltEn": "Spinach Vosis ingredients: tofu, dried spinach, chickpea flour, nutritional yeast",
-
   "sections": [
     {
       "heading": "Ispanaklı Bitki Bazlı Vosis: Yeşilin Tütsülü Hâli",
@@ -71,7 +70,6 @@
       ]
     }
   ],
-
   "faqHeading": "Sıkça Sorulan Sorular",
   "faqHeadingEn": "Frequently Asked Questions",
   "faq": [
@@ -102,8 +100,8 @@
     {
       "q": "Ispanaklı Vosis ile Vegan Vosis arasındaki fark nedir?",
       "qEn": "What is the difference between the Spinach Vosis and the Vegan Vosis?",
-      "a": "İkisi de tofu ve nohut unu temelli. Ispanaklı olanda kurutulmuş ıspanak ve tütsü aroması var; daha yeşil, daha tütsülü ve 100 gramda 24.1 g ile daha yüksek proteinli. Vegan Vosis ise kurutulmuş sebze karışımıyla klasik sosis tadına daha yakın.",
-      "aEn": "Both are built on tofu and chickpea flour. The spinach version adds dried spinach and smoke flavouring: greener, smokier and higher in protein at 24.1 g per 100 grams. The Vegan Vosis, with its dried vegetable mix, sits closer to the classic sausage taste."
+      "a": "İkisi de tofu ve nohut unu temelli. Ispanaklı olanda kurutulmuş ıspanak ve tütsü aroması var; daha yeşil ve daha tütsülü bir sosis. Vegan Vosis ise kurutulmuş sebze karışımıyla klasik sosis tadına daha yakın.",
+      "aEn": "Both are built on tofu and chickpea flour. The spinach version adds dried spinach and smoke flavouring, making it greener and smokier. The Vegan Vosis, with its dried vegetable mix, sits closer to the classic sausage taste."
     },
     {
       "q": "Ispanaklı sosis nasıl saklanır?",
@@ -116,7 +114,11 @@
       "qEn": "Where can I buy the VitaVegantis Spinach Vosis?",
       "a": "Türkiye genelindeki anlaşmalı market ve satış noktalarından temin edebilirsiniz. Güncel liste için satış noktaları sayfamıza bakabilirsiniz.",
       "aEn": "You can find it at partner shops and stockists across Türkiye. See our sales points page for the current list.",
-      "link": { "section": "satisnoktalari", "label": "Satış noktaları", "labelEn": "Where to buy" }
+      "link": {
+        "section": "satisnoktalari",
+        "label": "Satış noktaları",
+        "labelEn": "Where to buy"
+      }
     }
   ]
 }

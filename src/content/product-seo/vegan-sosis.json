@@ -3,7 +3,6 @@
   "sceneAltEn": "Pizza with vegan sausage — VitaVegantis plant-based sausage",
   "mapAlt": "Vegan sosis içindekiler: tofu, nohut unu, kurutulmuş sebzeler",
   "mapAltEn": "Vegan sausage ingredients: tofu, chickpea flour, dried vegetables",
-
   "sections": [
     {
       "heading": "Vegan Vosis: Bitkilerden Gelen Klasik Lezzet",
@@ -54,16 +53,15 @@
       "heading": "Protein Değeri ve İçindekiler",
       "headingEn": "Protein Content and Ingredients",
       "paragraphs": [
-        "100 gramında 10.8 g bitkisel protein bulunur; enerji değeri 218 kcal'dir. Tam liste ve besin değerleri tablosu yukarıda — çünkü içindekiler listesi kısa olan ürünün anlatacak çok şeyi vardır.",
+        "100 gramında 29 g protein, 218 kcal, 6.5 g yağ ve 10.8 g karbonhidrat bulunur. Protein büyük ölçüde buğday gluteni, tofu ve nohut unundan gelir. Tam içindekiler listesi ve besin değerleri tablosu yukarıda.",
         "Saklama koşulu: ürün +4 °C'de, buzdolabında saklanmalıdır."
       ],
       "paragraphsEn": [
-        "Each 100 grams contains 10.8 g of plant protein and 218 kcal. The full list and nutrition table are above — because a product with a short ingredients list has plenty to say.",
+        "Each 100 grams contains 29 g of protein, 218 kcal, 6.5 g of fat and 10.8 g of carbohydrates. The protein comes largely from wheat gluten, tofu and chickpea flour. The full ingredients list and nutrition table are above.",
         "Storage: the product should be kept at +4 °C, in the fridge."
       ]
     }
   ],
-
   "faqHeading": "Sıkça Sorulan Sorular",
   "faqHeadingEn": "Frequently Asked Questions",
   "faq": [
@@ -82,8 +80,14 @@
     {
       "q": "Vegan sosisin protein değeri nedir?",
       "qEn": "How much protein does vegan sausage contain?",
-      "a": "100 gramında 10.8 g bitkisel protein bulunur. Protein kaynağı tofu, nohut unu ve buğday glutenidir.",
-      "aEn": "Each 100 grams contains 10.8 g of plant protein. The protein comes from tofu, chickpea flour and wheat gluten."
+      "a": "100 gramında 29 g bitkisel protein bulunur. Protein büyük ölçüde buğday gluteni, tofu ve nohut unundan gelir.",
+      "aEn": "Each 100 grams contains 29 g of plant protein, coming largely from wheat gluten, tofu and chickpea flour."
+    },
+    {
+      "q": "Vegan sosis kaç kalori?",
+      "qEn": "How many calories are in vegan sausage?",
+      "a": "100 gramında 218 kcal bulunur. Aynı porsiyonda 6.5 g yağ ve 10.8 g karbonhidrat yer alır.",
+      "aEn": "There are 218 kcal per 100 grams, along with 6.5 g of fat and 10.8 g of carbohydrates."
     },
     {
       "q": "Vegan sosis nasıl saklanır?",
@@ -96,7 +100,11 @@
       "qEn": "Where can I buy VitaVegantis Vegan Vosis?",
       "a": "Türkiye genelindeki anlaşmalı market ve satış noktalarından temin edebilirsiniz. Güncel liste için satış noktaları sayfamıza bakabilirsiniz.",
       "aEn": "You can find it at partner shops and stockists across Türkiye. See our sales points page for the current list.",
-      "link": { "section": "satisnoktalari", "label": "Satış noktaları", "labelEn": "Where to buy" }
+      "link": {
+        "section": "satisnoktalari",
+        "label": "Satış noktaları",
+        "labelEn": "Where to buy"
+      }
     }
   ]
 }

@@ -45,9 +45,9 @@ export const products: Product[] = [
     ],
     nutrition: [
       { label: "Enerji", value: "218 kcal" },
-      { label: "Protein", value: "10.8 g" },
+      { label: "Protein", value: "29 g" },
       { label: "Yağ", value: "6.5 g" },
-      { label: "Karbonhidrat", value: "29 g" },
+      { label: "Karbonhidrat", value: "10.8 g" },
     ],
     en: {
       // "Vosis" markanın kendi ürettiği bir ad; Hot Dog Vosis gibi iki dilde de aynı.
