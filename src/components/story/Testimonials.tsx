@@ -6,14 +6,15 @@ const TEXT = {
   tr: {
     eyebrow: "Sizden Gelenler",
     heading: "Sofranız, Sahnemiz",
-    body: "Mutfağınızda pişen her VitaVegantis karesi bizi gülümsetiyor.",
-    cta: "'i etiketleyin, burada yerinizi alın.",
+    // body ile cta arasına @vitavegantis bağlantısı giriyor.
+    body: "Mutfağınızda VitaVegantis'le yarattığınız her an bizi mutlu ediyor. Fotoğrafınızı",
+    cta: " ile paylaşın, burada yerinizi alın",
   },
   en: {
     eyebrow: "From You",
     heading: "Your Table, Our Stage",
-    body: "Every VitaVegantis moment cooked in your kitchen makes us smile.",
-    cta: " and take your place here.",
+    body: "Every moment you create with VitaVegantis in your kitchen makes us happy. Share your photo with",
+    cta: " and take your place here",
   },
 } as const;
 
