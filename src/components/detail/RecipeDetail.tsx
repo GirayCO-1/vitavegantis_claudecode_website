@@ -18,6 +18,7 @@ const TEXT = {
     ingredients: "Malzemeler",
     steps: "Hazırlanışı",
     others: "Diğer Tarifler",
+    salesPoints: "Satış noktalarına göz atın",
     badges: [
       { label: "Vegan", Icon: LeafIcon },
       { label: "Katkısız", Icon: ShieldIcon },
@@ -30,6 +31,7 @@ const TEXT = {
     ingredients: "Ingredients",
     steps: "Method",
     others: "Other Recipes",
+    salesPoints: "See where to buy",
     badges: [
       { label: "Vegan", Icon: LeafIcon },
       { label: "Additive-Free", Icon: ShieldIcon },
@@ -55,6 +57,12 @@ export default function RecipeDetail({
   const ingredients =
     locale === "en" ? recipe.en.ingredients : recipe.ingredients;
   const steps = locale === "en" ? recipe.en.steps : recipe.steps;
+
+  // Bir sayfada birden fazla tarif anlatılıyorsa (ör. üç farklı hot dog) her
+  // varyant kendi görseli, malzemesi ve adımlarıyla ayrı basılır.
+  const variants = locale === "en" ? recipe.en.variants : recipe.variants;
+  const intro = locale === "en" ? recipe.en.intro : recipe.intro;
+  const closing = locale === "en" ? recipe.en.closing : recipe.closing;
 
   return (
     <>
@@ -112,34 +120,107 @@ export default function RecipeDetail({
             </div>
           </div>
 
-          <div className="mt-10 grid gap-10 sm:grid-cols-2">
-            <div>
-              <h2 className="font-display text-xl font-semibold text-forest">
-                {t.ingredients}
-              </h2>
-              <ul className="mt-4 space-y-2">
-                {ingredients.map((ing) => (
-                  <li key={ing} className="flex items-start gap-2 text-sm text-forest/80">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
-                    {ing}
-                  </li>
-                ))}
-              </ul>
+          {intro && (
+            <p className="mt-10 text-base leading-relaxed text-forest/80">
+              {intro}
+            </p>
+          )}
+
+          {variants ? (
+            <div className="mt-10 space-y-14">
+              {variants.map((variant, vi) => (
+                <article key={variant.title}>
+                  <h2 className="font-playful text-2xl font-bold text-forest sm:text-3xl">
+                    <span className="text-plum">{vi + 1}.</span> {variant.title}
+                  </h2>
+                  <p className="mt-3 text-sm leading-relaxed text-forest/70">
+                    {variant.teaser}
+                  </p>
+
+                  <div className="mt-6 overflow-hidden rounded-[24px] bg-white shadow-lg shadow-forest/10">
+                    <div className="max-h-72 overflow-hidden">
+                      <RecipePhoto src={variant.image} alt={variant.title} />
+                    </div>
+                  </div>
+
+                  <div className="mt-8 grid gap-10 sm:grid-cols-2">
+                    <div>
+                      <h3 className="font-display text-lg font-semibold text-forest">
+                        {t.ingredients}
+                      </h3>
+                      <ul className="mt-4 space-y-2">
+                        {variant.ingredients.map((ing) => (
+                          <li
+                            key={ing}
+                            className="flex items-start gap-2 text-sm text-forest/80"
+                          >
+                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
+                            {ing}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <h3 className="font-display text-lg font-semibold text-forest">
+                        {t.steps}
+                      </h3>
+                      <ol className="mt-4 space-y-3">
+                        {variant.steps.map((step, idx) => (
+                          <li key={idx} className="flex gap-3 text-sm text-forest/80">
+                            <span className="font-display shrink-0 text-plum">
+                              {idx + 1}.
+                            </span>
+                            {step}
+                          </li>
+                        ))}
+                      </ol>
+                    </div>
+                  </div>
+                </article>
+              ))}
             </div>
-            <div>
-              <h2 className="font-display text-xl font-semibold text-forest">
-                {t.steps}
-              </h2>
-              <ol className="mt-4 space-y-3">
-                {steps.map((step, idx) => (
-                  <li key={idx} className="flex gap-3 text-sm text-forest/80">
-                    <span className="font-display shrink-0 text-plum">{idx + 1}.</span>
-                    {step}
-                  </li>
-                ))}
-              </ol>
+          ) : (
+            <div className="mt-10 grid gap-10 sm:grid-cols-2">
+              <div>
+                <h2 className="font-display text-xl font-semibold text-forest">
+                  {t.ingredients}
+                </h2>
+                <ul className="mt-4 space-y-2">
+                  {ingredients.map((ing) => (
+                    <li key={ing} className="flex items-start gap-2 text-sm text-forest/80">
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-forest" />
+                      {ing}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h2 className="font-display text-xl font-semibold text-forest">
+                  {t.steps}
+                </h2>
+                <ol className="mt-4 space-y-3">
+                  {steps.map((step, idx) => (
+                    <li key={idx} className="flex gap-3 text-sm text-forest/80">
+                      <span className="font-display shrink-0 text-plum">{idx + 1}.</span>
+                      {step}
+                    </li>
+                  ))}
+                </ol>
+              </div>
             </div>
-          </div>
+          )}
+
+          {closing && (
+            <p className="mt-14 rounded-3xl bg-white/70 px-8 py-7 text-center text-base leading-relaxed text-forest/80">
+              {closing}{" "}
+              <Link
+                href={href("satisnoktalari", locale)}
+                className="font-semibold text-forest underline decoration-coral decoration-2 underline-offset-4 hover:text-coral"
+              >
+                {t.salesPoints}
+              </Link>
+            </p>
+          )}
         </div>
       </section>
 

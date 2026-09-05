@@ -58,13 +58,13 @@ export async function generateMetadata({
   if (recipe) {
     return {
       title: recipe.title,
-      description: recipe.teaser,
+      description: recipe.metaDescription ?? recipe.teaser,
       alternates: { canonical: url },
       openGraph: {
         type: "article",
         url,
         title: `${recipe.title} — VitaVegantis`,
-        description: recipe.teaser,
+        description: recipe.metaDescription ?? recipe.teaser,
         images: [{ url: `${SITE_URL}${recipe.image}`, alt: recipe.title }],
       },
     };

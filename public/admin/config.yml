@@ -144,6 +144,67 @@ collections:
         widget: list
         field: { name: item, label: Step, widget: string }
 
+      # --- Çok tarifli sayfalar (ör. "3 farklı hot dog") ------------------
+      # Alt tarif eklendiğinde yukarıdaki Malzemeler/Hazırlanışı listeleri
+      # BOŞ bırakılır; sayfa alt tariflerin listelerini kullanır.
+      - name: intro
+        label: Giriş paragrafı
+        widget: text
+        required: false
+        hint: Yalnızca alt tarifli sayfalarda görünür; başlığın altına gelir.
+      - { name: introEn, label: Giriş paragrafı (EN), widget: text, required: false }
+      - name: variants
+        label: Alt tarifler
+        widget: list
+        required: false
+        summary: "{{fields.title}}"
+        hint: >-
+          Aynı sayfada birden fazla tarif anlatmak için kullanın. Boş
+          bırakırsanız sayfa tek tarif olarak görünür.
+        fields:
+          - { name: title, label: Alt tarif başlığı, widget: string }
+          - { name: titleEn, label: Alt tarif başlığı (EN), widget: string }
+          - { name: teaser, label: Kısa tanıtım, widget: text }
+          - { name: teaserEn, label: Kısa tanıtım (EN), widget: text }
+          - { name: image, label: Fotoğraf, widget: image }
+          - name: ingredients
+            label: Malzemeler
+            widget: list
+            field: { name: item, label: Malzeme, widget: string }
+          - name: ingredientsEn
+            label: Malzemeler (EN)
+            widget: list
+            field: { name: item, label: Ingredient, widget: string }
+          - name: steps
+            label: Hazırlanışı
+            widget: list
+            field: { name: item, label: Adım, widget: string }
+          - name: stepsEn
+            label: Hazırlanışı (EN)
+            widget: list
+            field: { name: item, label: Step, widget: string }
+      - name: closing
+        label: Kapanış metni
+        widget: text
+        required: false
+        hint: Sonuna satış noktaları bağlantısı otomatik eklenir.
+      - { name: closingEn, label: Kapanış metni (EN), widget: text, required: false }
+
+      # --- Arama motoru ---------------------------------------------------
+      - name: metaDescription
+        label: Arama sonucu açıklaması
+        widget: text
+        required: false
+        hint: >-
+          Google'da başlığın altında görünen metin. Boş bırakılırsa kısa
+          tanıtım kullanılır. 150-160 karakter idealdir.
+      - { name: metaDescriptionEn, label: Arama sonucu açıklaması (EN), widget: text, required: false }
+      - name: keywords
+        label: Anahtar kelimeler
+        widget: string
+        required: false
+        hint: Virgülle ayırın. Tarif şemasına işlenir.
+
   # --------------------------------------------------------- Sizden Gelenler
   - name: testimonials
     label: Sizden Gelenler

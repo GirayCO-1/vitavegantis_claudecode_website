@@ -179,6 +179,7 @@ export function recipeSchema(recipe: Recipe, locale: "tr" | "en" = "tr") {
   const url = canonical(en ? `en/${recipe.urlSlug}` : recipe.urlSlug);
   const ingredients = en ? recipe.en.ingredients : recipe.ingredients;
   const steps = en ? recipe.en.steps : recipe.steps;
+  const variants = en ? recipe.en.variants : recipe.variants;
   return {
     "@context": "https://schema.org",
     "@type": "Recipe",
@@ -193,17 +194,31 @@ export function recipeSchema(recipe: Recipe, locale: "tr" | "en" = "tr") {
     recipeCategory: en ? "Main Course" : "Ana Yemek",
     recipeCuisine: en ? "Turkish" : "Türk",
     suitableForDiet: "https://schema.org/VeganDiet",
-    keywords: en
-      ? "vegan, plant-based, VitaVegantis"
-      : "vegan, bitki bazlı, VitaVegantis",
+    keywords:
+      recipe.keywords ??
+      (en
+        ? "vegan, plant-based, VitaVegantis"
+        : "vegan, bitki bazlı, VitaVegantis"),
     totalTime: isoDuration(recipe.time),
     recipeYield: servingCount(recipe.servings),
     recipeIngredient: ingredients,
-    recipeInstructions: steps.map((step, i) => ({
-      "@type": "HowToStep",
-      position: i + 1,
-      text: step,
-    })),
+    // Sayfada birden fazla tarif varsa her biri ayrı bir HowToSection olur;
+    // Google adımları böyle gruplu okuyor. Tek tarifte düz HowToStep listesi.
+    recipeInstructions: variants
+      ? variants.map((variant) => ({
+          "@type": "HowToSection",
+          name: variant.title,
+          itemListElement: variant.steps.map((step, i) => ({
+            "@type": "HowToStep",
+            position: i + 1,
+            text: step,
+          })),
+        }))
+      : steps.map((step, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          text: step,
+        })),
   };
 }
 

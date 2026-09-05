@@ -66,14 +66,14 @@ export async function generateMetadata({
   if (recipe) {
     return {
       title: recipe.en.title,
-      description: recipe.en.teaser,
+      description: recipe.en.metaDescription ?? recipe.en.teaser,
       alternates: { canonical: url, languages: altLanguages(slug) },
       openGraph: {
         type: "article",
         locale: "en_US",
         url,
         title: `${recipe.en.title} — VitaVegantis`,
-        description: recipe.en.teaser,
+        description: recipe.en.metaDescription ?? recipe.en.teaser,
         images: [{ url: `${SITE_URL}${recipe.image}`, alt: recipe.en.title }],
       },
     };
