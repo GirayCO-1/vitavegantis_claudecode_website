@@ -77,7 +77,7 @@ export const products: Product[] = [
     description:
       "Kurutulmuş ıspanağın tazeliğini hafif tütsü aromasıyla buluşturduğumuz, yemeklerinize renk ve besin değeri katan bir sosis.",
     image: "/products/ispanakli-sosis.webp",
-    sceneImage: "/products/scenes/ispanakli-sosis-scene.webp",
+    sceneImage: "/products/scenes/ispanakli-sosis-scene-2.webp",
     ingredients: [
       "Tofu",
       "Buğday Gluteni",
