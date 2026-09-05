@@ -74,6 +74,7 @@ export function articleSchema(
     title: string;
     description: string;
     image: string;
+    date?: string;
   },
   locale: "tr" | "en" = "tr",
 ) {
@@ -91,6 +92,12 @@ export function articleSchema(
     inLanguage: en ? "en" : "tr-TR",
     author: { "@id": ORG_ID },
     publisher: { "@id": ORG_ID },
+    // Tarihi girilmiş yazılarda yayın tarihi bildirilir; Google yazının
+    // güncelliğini buradan okuyor. Tarihi olmayan eski yazılarda atlanır.
+    ...(article.date && {
+      datePublished: article.date,
+      dateModified: article.date,
+    }),
   };
 }
 
