@@ -26,11 +26,6 @@ const reasons = [
     body: "Bezelye, nohut, buğday proteini ve tofu gibi bitkisel kaynaklar, günlük protein ihtiyacınızı karşılamanın etkili bir yolu. Ürünlerimizi yüksek besin değerini koruyacak şekilde geliştiriyoruz.",
   },
   {
-    kicker: "İçeriğiniz için",
-    title: "Katkı maddesi yok, sır yok",
-    body: "Etikette okuyamadığınız bir bileşen görmenizi istemiyoruz. Koruyucu madde kullanmıyor, içindekiler listesini olabildiğince sade tutuyoruz.",
-  },
-  {
     kicker: "Gezegen için",
     title: "Sofradaki tercihin bir karşılığı var",
     body: "Bitkisel protein üretimi, hayvansal üretime kıyasla genellikle daha az doğal kaynak gerektirir. Her bitkisel öğün, bu yükü hafifletmeye katkıda bulunur.",

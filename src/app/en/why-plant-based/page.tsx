@@ -34,11 +34,6 @@ const reasons = [
     body: "Plant sources like peas, chickpeas, wheat protein and tofu are an effective way to meet your daily protein needs. We develop our products to preserve high nutritional value.",
   },
   {
-    kicker: "For your ingredients list",
-    title: "No additives, no secrets",
-    body: "We don't want you to see a single ingredient on the label you can't read. We use no preservatives and keep the ingredients list as simple as possible.",
-  },
-  {
     kicker: "For the planet",
     title: "Your choice at the table counts",
     body: "Producing plant protein generally requires fewer natural resources than animal production. Every plant-based meal helps lighten that load.",
