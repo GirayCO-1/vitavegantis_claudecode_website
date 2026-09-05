@@ -1,0 +1,114 @@
+{
+  "order": 0,
+  "urlSlug": "vegan-kofteli-spagetti-tarifi",
+  "image": "/recipes/vegan-kofteli-spagetti.webp",
+  "title": "Vegan Köfteli Spagetti (Spaghetti & Meatballs) — VitaVegantis İsveç Köfte ile",
+  "teaser": "Klasik spaghetti & meatballs; VitaVegantis İsveç Köfte, ev yapımı domates sosu, taze fesleğen ve vegan parmesan ile tamamen bitkisel.",
+  "time": "35 dk",
+  "servings": "2 kişilik",
+  "metaDescription": "VitaVegantis İsveç Köfte ile hazırlanan, ev yapımı domates sosu, taze fesleğen ve vegan parmesan ile klasik İtalyan-Amerikan spaghetti & meatballs tarifinin bitkisel yorumu.",
+  "keywords": "vegan spaghetti meatballs, vegan köfteli spagetti, vegan köfteli makarna, vegan köfte, bitki bazlı köfte, vegan makarna tarifi, domates sosu tarifi, VitaVegantis İsveç Köfte, VitaVegantis",
+  "intro": "Spaghetti & meatballs, İtalyan-Amerikan mutfağının en tanıdık tabağı: sosun içinde pişmiş köfteler, sosla sarılmış spagetti, üstte taze fesleğen ve rendelenmiş peynir. Bu versiyonda köfteler VitaVegantis İsveç Köfte, peynir vegan parmesan. Sosu ayrıca tarif ettik; köfteleri mühürlediğiniz tavada yapılınca lezzeti bir kat artıyor.",
+  "closing": "Pazar akşamı klasiği, 35 dakikada. VitaVegantis İsveç Köfte'yi en yakın satış noktasından bulabilirsiniz:",
+  "ingredients": [],
+  "steps": [],
+  "titleEn": "Vegan Spaghetti & Meatballs — with VitaVegantis Swedish Meatballs",
+  "teaserEn": "The classic spaghetti and meatballs, made entirely plant-based with VitaVegantis Swedish Meatballs, a homemade tomato sauce, fresh basil and vegan parmesan.",
+  "timeEn": "35 min",
+  "servingsEn": "Serves 2",
+  "metaDescriptionEn": "A plant-based take on the classic Italian-American spaghetti and meatballs, made with VitaVegantis Plant-Based Swedish Meatballs, homemade tomato sauce, fresh basil and vegan parmesan.",
+  "introEn": "Spaghetti and meatballs is the most familiar plate in Italian-American cooking: meatballs simmered in sauce, spaghetti coated in it, fresh basil and grated cheese on top. Here the meatballs are VitaVegantis Plant-Based Swedish Meatballs and the cheese is vegan parmesan. We've written the sauce out separately; made in the same pan you seared the meatballs in, it gains a whole extra layer of flavour.",
+  "closingEn": "A Sunday-night classic, in 35 minutes. You can find VitaVegantis Plant-Based Swedish Meatballs at your nearest stockist:",
+  "ingredientsEn": [],
+  "stepsEn": [],
+  "variants": [
+    {
+      "title": "Domates Sosu",
+      "titleEn": "Tomato Sauce",
+      "teaser": "Yaklaşık 2 su bardağı sos çıkar; iki kişilik makarnaya yeter. Meatball sub tarifimizdeki marinara sos da bu tarifte aynen kullanılabilir.",
+      "teaserEn": "Makes about 2 cups — enough for pasta for two. The marinara from our meatball sub recipe works here just as well.",
+      "image": "/recipes/vegan-kofteli-spagetti-sos.webp",
+      "ingredients": [
+        "2 yemek kaşığı zeytinyağı (köfte mühürlemede kullanılan tava ve yağ)",
+        "1 küçük soğan, çok ince doğranmış",
+        "3 diş sarımsak, ezilmiş",
+        "1 yemek kaşığı domates salçası",
+        "400 g konserve doğranmış domates (ya da 4 olgun domates, rendelenmiş)",
+        "1 tatlı kaşığı kuru kekik (oregano)",
+        "1 tatlı kaşığı şeker",
+        "1 avuç taze fesleğen, kıyılmış (bir kısmını servis için ayırın)",
+        "½ tatlı kaşığı pul biber",
+        "Tuz, karabiber"
+      ],
+      "ingredientsEn": [
+        "2 tbsp olive oil (the pan and oil used to sear the meatballs)",
+        "1 small onion, very finely chopped",
+        "3 garlic cloves, crushed",
+        "1 tbsp tomato paste",
+        "400 g tinned chopped tomatoes (or 4 ripe tomatoes, grated)",
+        "1 tsp dried oregano",
+        "1 tsp sugar",
+        "A handful of fresh basil, chopped (keep some back for serving)",
+        "½ tsp chilli flakes",
+        "Salt and black pepper"
+      ],
+      "steps": [
+        "Köfteleri mühürlediğiniz tavada — aşağıdaki bölümün 2. adımı — kalan yağa soğanı ekleyin, orta ateşte 4-5 dakika yumuşayana kadar kavurun. Sarımsağı ekleyip 1 dakika daha kavurun.",
+        "Salçayı ekleyin, 1 dakika kavurun.",
+        "Domatesi, kekiği, şekeri ve pul biberi ekleyin. Kaynayınca ateşi kısın, kapağı aralık bırakarak 10 dakika pişirin.",
+        "Tuz ve karabiberle tatlandırın, fesleğenin yarısını karıştırın. Köfteleri eklemeye hazır."
+      ],
+      "stepsEn": [
+        "In the pan you seared the meatballs in — step 2 of the section below — add the onion to the remaining oil and soften over medium heat for 4-5 minutes. Add the garlic and cook for 1 minute more.",
+        "Stir in the tomato paste and cook for 1 minute.",
+        "Add the tomatoes, oregano, sugar and chilli flakes. Once it boils, lower the heat and simmer with the lid ajar for 10 minutes.",
+        "Season with salt and pepper and stir through half the basil. Now it's ready for the meatballs."
+      ]
+    },
+    {
+      "title": "Vegan Köfteli Spagetti",
+      "titleEn": "The Spaghetti",
+      "teaser": "Köfteler sosun içinde pişiyor, makarna sosla tavada buluşuyor; üstte vegan parmesan ve taze fesleğen.",
+      "teaserEn": "The meatballs simmer in the sauce, the pasta meets it in the pan, and vegan parmesan and fresh basil finish the plate.",
+      "image": "/recipes/vegan-kofteli-spagetti-tabak.webp",
+      "ingredients": [
+        "8 adet VitaVegantis İsveç Köfte",
+        "200 g spagetti",
+        "2 su bardağı domates sosu (yukarıdaki tarif)",
+        "2 yemek kaşığı zeytinyağı",
+        "6-8 adet kiraz domates, ikiye kesilmiş",
+        "3 yemek kaşığı vegan parmesan, rendelenmiş",
+        "1 avuç taze fesleğen yaprağı",
+        "Tuz, karabiber"
+      ],
+      "ingredientsEn": [
+        "8 VitaVegantis Plant-Based Swedish Meatballs",
+        "200 g spaghetti",
+        "2 cups tomato sauce (from the recipe above)",
+        "2 tbsp olive oil",
+        "6-8 cherry tomatoes, halved",
+        "3 tbsp vegan parmesan, grated",
+        "A handful of fresh basil leaves",
+        "Salt and black pepper"
+      ],
+      "steps": [
+        "Büyük bir tencerede bol tuzlu suyu kaynamaya bırakın.",
+        "VitaVegantis İsveç Köfteleri geniş bir tavada zeytinyağıyla, döndürerek her tarafı kızarana kadar 5-6 dakika mühürleyin. Tavadan alın, yağı tavada bırakın.",
+        "Aynı tavada domates sosunu hazırlayın (yukarıdaki bölüm).",
+        "VitaVegantis İsveç Köfteleri ve kiraz domatesleri sosa ekleyin, kapağı kapalı kısık ateşte 8-10 dakika, köfteler sosu çekene kadar pişirin.",
+        "Bu arada spagettiyi paket süresinden 1 dakika az, al dente haşlayın. Süzmeden önce ½ su bardağı makarna suyu ayırın.",
+        "Süzülen spagettiyi sos tavasına aktarın; köfteleri kenara alarak makarnayı sosla karıştırın. Sos koyuysa ayırdığınız makarna suyundan azar azar ekleyin.",
+        "Tabaklara paylaştırın, VitaVegantis İsveç Köfteleri üste dizin. Vegan parmesanı rendeleyip taze fesleğen yapraklarını serperek sıcak servis edin."
+      ],
+      "stepsEn": [
+        "Bring a large pot of well-salted water to the boil.",
+        "Sear the VitaVegantis Plant-Based Swedish Meatballs in a wide pan with the olive oil for 5-6 minutes, turning until browned all over. Lift them out, leaving the oil in the pan.",
+        "Make the tomato sauce in that same pan (the section above).",
+        "Return the meatballs to the sauce with the halved cherry tomatoes, cover and simmer over low heat for 8-10 minutes, until the meatballs take up the sauce.",
+        "Meanwhile cook the spaghetti one minute short of the packet time, al dente. Reserve ½ cup of the pasta water before draining.",
+        "Tip the drained spaghetti into the sauce pan; move the meatballs to one side and toss the pasta through the sauce. If it's too thick, loosen it with the reserved pasta water, a little at a time.",
+        "Divide between plates and arrange the meatballs on top. Grate over the vegan parmesan, scatter the fresh basil leaves and serve hot."
+      ]
+    }
+  ]
+}

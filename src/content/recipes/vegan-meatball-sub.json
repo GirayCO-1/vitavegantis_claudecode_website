@@ -1,5 +1,5 @@
 {
-  "order": 0,
+  "order": 1,
   "urlSlug": "vegan-kofteli-sandvic-meatball-sub-tarifi",
   "image": "/recipes/vegan-meatball-sub.webp",
   "title": "Vegan Köfteli Sandviç (Meatball Sub)",
@@ -12,7 +12,6 @@
   "closing": "Sosu bir gün önceden hazırlarsanız sandviç 15 dakikada masada. VitaVegantis İsveç Köfte'yi en yakın satış noktasından bulabilirsiniz:",
   "ingredients": [],
   "steps": [],
-
   "titleEn": "Vegan Meatball Sub",
   "teaserEn": "New York's iconic meatball sub, made entirely plant-based with VitaVegantis Swedish Meatballs, homemade marinara and melting vegan mozzarella.",
   "timeEn": "35 min",
@@ -22,7 +21,6 @@
   "closingEn": "Make the sauce a day ahead and the sandwich is on the table in 15 minutes. You can find VitaVegantis Plant-Based Swedish Meatballs at your nearest stockist:",
   "ingredientsEn": [],
   "stepsEn": [],
-
   "variants": [
     {
       "title": "Marinara Sos",
